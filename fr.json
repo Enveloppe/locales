@@ -446,7 +446,8 @@
         },
         "shortRepo": "Autorise l'utilisation de l'un des dépôts définis dans les paramètres.",
         "title": "Aide-mémoire des propriétés",
-        "titleKey": "Change le titre de la note."
+        "titleKey": "Change le titre de la note.",
+        "unlink": "Permet de supprimer la syntaxe de lien (conserve uniquement le nom ou l'alias) uniquement pour les fichiers non-partagés."
       },
       "multiRepoHelp": {
         "desc": "Si vous souhaitez envoyer vos notes dans plusieurs dépôt en même temps, vous pouvez utiliser la clé ",

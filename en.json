@@ -446,7 +446,8 @@
         },
         "shortRepo": "Allow to use one of the repo set in other repo settings.",
         "title": "Property key cheatsheet",
-        "titleKey": "Change the title of the note."
+        "titleKey": "Change the title of the note.",
+        "unlink": "Deletes link syntax (retains only name or alias) for unshared files only."
       },
       "multiRepoHelp": {
         "desc": "If you want to send your notes to multiple repository, you can use the ",
