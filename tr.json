@@ -4,19 +4,19 @@
       "error": "Geçersiz yapılandırma",
       "inBranch": {
         "error403": "Hata 403: {{- repo.owner}}/{{- repo.repo}} (buradan {{- repo.branch}}) kalıcı olarak taşındı",
-        "error404": ""
+        "error404": "Hata 404: {{- repo.branch}} dalı {{- repo.owner}}/{{- repo.repo}} konumunda bulunamadı."
       },
       "inRepo": {
         "error301": "",
-        "error403": "",
-        "error404": ""
+        "error403": "Hata 403: Bu eylem {{- repo.owner}}/{{- repo.repo}} için yasaktır.",
+        "error404": "Hata 404: {{- repo.owner}}/{{- repo.repo}}: bulunamadı."
       },
       "rateLimit": {
         "command": "Github API'ının istek limitini kontrol edin",
         "limited": "Github API'ının istek limitini doldurdunuz. Limit {{- resetTime}} içerisinde sıfırlanacak.",
         "notLimited": "İstek limitini aşmadınız. {{- remaining}} kadar istek atabilirsiniz ta ki {{- resetTime}} zamanında sıfırlanana kadar."
       },
-      "repoExistsTestBranch": "",
+      "repoExistsTestBranch": "Depo {{- repo.owner}}/{{- repo.repo}} mevcut. Şimdi {{- repo.branch}} dalı test ediliyor.",
       "success": "{{- repo.owner}}/{{- repo.repo}} geçerli gözüküyor!",
       "title": "Yapılandırılmış repoyu test edin"
     },
@@ -24,75 +24,75 @@
       "onActivation": "Link kopyalandı",
       "title": "Bu nota bir link oluştur"
     },
-    "publisherDeleteClean": "",
-    "refreshAllSets": "",
-    "refreshOpenedSet": "",
+    "publisherDeleteClean": "Yayımlanmamış ve silinmiş dosyaları temizle",
+    "refreshAllSets": "(Diğer depolar): Kaydedilen tüm kümeleri yeniden yükle",
+    "refreshOpenedSet": "(Diğer depolar): Açılan ön metni yeniden yükle",
     "runOtherRepo": {
-      "noFile": "",
-      "title": ""
+      "noFile": "Hiçbir dosya etkin değil veya dosya paylaşılmıyor",
+      "title": "Bir depo için komut çalıştır"
     },
-    "shareActiveFile": "",
+    "shareActiveFile": "Tek bir geçerli aktif notu yükleyin",
     "shareViewFiles": {
       "multiple": {
-        "on": "",
-        "other": ""
+        "on": "{{- doc}} dosyasını {{- smartKey }}'e yükleyin",
+        "other": "Şuraya yükle…"
       }
     },
-    "uploadAllEditedNote": "",
-    "uploadAllNewEditedNote": "",
-    "uploadAllNotes": "",
-    "uploadNewNotes": ""
+    "uploadAllEditedNote": "Yayımlanan tüm notları yenile",
+    "uploadAllNewEditedNote": "Yayımlanan notları yenile ve yeni notlar yükle",
+    "uploadAllNotes": "Paylaşılan tüm notları yükle",
+    "uploadNewNotes": "Yayımlanmamış notları yükle"
   },
   "common": {
-    "add": "",
-    "after": "",
-    "attachments": "",
-    "before": "",
-    "cancel": "",
-    "close": "",
-    "default": "",
-    "defaultName": "",
-    "delete": "",
-    "edit": "",
-    "error": "",
-    "files": "",
-    "ghToken": "",
-    "here": "",
-    "in": "",
-    "no": "",
-    "or": "",
+    "add": "{{-şeyler}} ekle",
+    "after": "Sonrasında",
+    "attachments": "Ekler",
+    "before": "Önce",
+    "cancel": "İptal etmek",
+    "close": "Kapalı",
+    "default": "default",
+    "defaultName": "varsayılan klasör",
+    "delete": "{{-şeyleri}} sil",
+    "edit": "{{-şeyleri}} düzenle",
+    "error": "Hata",
+    "files": "Dosyalar",
+    "ghToken": "GitHub belirteci",
+    "here": "here",
+    "in": "in",
+    "no": "HAYIR",
+    "or": "or",
     "path": {
-      "file": "",
-      "folder": "",
-      "full": ""
+      "file": "Dosya adı",
+      "folder": "Klasör yolu",
+      "full": "Dosya yolu"
     },
-    "points": "",
-    "published": "",
-    "regex": "",
-    "rename": "",
-    "repository": "",
-    "rootFolder": "",
-    "save": "",
-    "shared": "",
-    "text": "",
-    "warning": "",
-    "yes": ""
+    "points": ": ",
+    "published": "yayınlandı",
+    "regex": "düzenli ifade",
+    "rename": "Yeniden adlandırılan anahtar(lar)…",
+    "repository": "Depo",
+    "rootFolder": "kök klasör",
+    "save": "Kaydetmek",
+    "shared": "Paylaşılan",
+    "text": "text",
+    "warning": "Uyarı",
+    "yes": "Evet"
   },
   "deletion": {
-    "failed": "",
-    "noFile": "",
-    "success": ""
+    "failed": "{{- nb}} dosya silinemedi.",
+    "noFile": "Hiçbir dosya silinmedi.",
+    "success": "{{- nb}} dosya başarıyla silindi."
   },
   "error": {
-    "alreadyExists": "",
-    "autoClean": "",
-    "dataview": "",
-    "errorConfig": "",
-    "errorPublish": "",
-    "isEmpty": "",
-    "mergeconflic": "",
-    "normal": "",
-    "parseYaml": "",
+    "alreadyExists": "{{- dosya}} zaten mevcut.",
+    "autoClean": "{{- what}} boş olduğundan, otomatik temizleme devre dışıdır. Bunu yeniden etkinleştirebilirsiniz, ancak şablonunuzun ihtiyaç duyduğu dosya silme işlemine dikkat edin.",
+    "dataview": "Dataview sorgusu işlenemiyor. Lütfen dataview eklentisini son sürüme güncelleyin.",
+    "errorConfig": "{{- repo.owner}}/{{- repo.repo}} yapılandırılırken hata oluştu. Lütfen ayarlarınızı kontrol edin.",
+    "errorPublish": "<u>{{- repo.owner}}/{{- repo.repo}}</u> adresine yükleme sırasında hata: <i>{{- repo.branch}}</i>",
+    "isEmpty": "{{- ne}} boştur.",
+    "mergeconflic": "Çekme isteği birleştirilemez, bunu manuel olarak yapmanız gerekir.",
+    "normal": "404 hatası normaldir! Dosyanın henüz mevcut olmadığı anlamına gelir. Endişelenmeyin ❤️.",
+    "parseYaml": "Ön sayfaya etiket veya başlık ekleme hatası.\nDataview veya başka bir eklenti buna müdahale ediyor olmalı.\nAdım atlandı.",
     "reading-token-file": "",
     "unablePublishMultiNotes": "",
     "unablePublishNote": "",
@@ -489,9 +489,9 @@
           "disable": "",
           "lower": "",
           "strict": "",
-          "title": ""
+          "title": "Bağlantı yavaşladı"
         },
-        "title": "",
+        "title": "Bağlantıyı kopyala",
         "toUri": {
           "desc": "",
           "title": ""
@@ -503,7 +503,7 @@
       },
       "editorMenu": {
         "desc": "",
-        "title": ""
+        "title": "Editör menüsü"
       },
       "embedEditRepo": {
         "desc": "",
@@ -511,18 +511,18 @@
       },
       "excludedFolder": {
         "desc": "",
-        "title": ""
+        "title": "Hariç tutulan klasörler"
       },
       "fileMenu": {
         "desc": "",
-        "title": ""
+        "title": "Dosya menüsü"
       },
       "head": {
         "copyLinks": "",
         "log": "",
         "menu": "",
         "other": "",
-        "share": ""
+        "share": "Yapılandırmayı paylaşma"
       },
       "logNoticeHeader": {
         "desc": "",
@@ -530,7 +530,7 @@
       },
       "saveTab": {
         "desc": "",
-        "title": ""
+        "title": "Sekmeyi kaydet"
       },
       "set": {
         "desc": "",
@@ -550,9 +550,9 @@
           "title": ""
         },
         "otherRepo": "",
-        "title": ""
+        "title": "Anahtar paylaşımı"
       },
-      "title": ""
+      "title": "Eklenti ayarları"
     },
     "regexReplacing": {
       "empty": "",
@@ -565,12 +565,12 @@
       "invalidRegex": "",
       "modal": {
         "desc": "",
-        "force": "",
+        "force": "Kuvvet itme",
         "keywords": "",
         "name": "",
         "title": {
           "all": "",
-          "only": "",
+          "only": "Dosya adını değiştir",
           "text": ""
         }
       },
