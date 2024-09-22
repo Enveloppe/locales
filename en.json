@@ -195,6 +195,10 @@
           "title": "Sluglify anchor in markdown links"
         },
         "title": "Links",
+        "unlink": {
+          "desc": "Deletes link syntax (retains only name or alias) for unshared files only.",
+          "title": "Unlink"
+        },
         "wikilinks": {
           "desc": "Convert Wikilinks to MDlinks, without changing the contents.",
           "title": "[[Wikilinks]] to [MDlinks](links)"
