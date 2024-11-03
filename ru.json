@@ -1,630 +1,630 @@
 {
-  "commands": {
-    "checkValidity": {
-      "error": "",
-      "inBranch": {
-        "error403": "",
-        "error404": ""
-      },
-      "inRepo": {
-        "error301": "",
-        "error403": "",
-        "error404": ""
-      },
-      "rateLimit": {
-        "command": "",
-        "limited": "",
-        "notLimited": ""
-      },
-      "repoExistsTestBranch": "",
-      "success": "",
-      "title": ""
-    },
-    "copyLink": {
-      "onActivation": "",
-      "title": ""
-    },
-    "publisherDeleteClean": "",
-    "refreshAllSets": "",
-    "refreshOpenedSet": "",
-    "runOtherRepo": {
-      "noFile": "",
-      "title": ""
-    },
-    "shareActiveFile": "",
-    "shareViewFiles": {
-      "multiple": {
-        "on": "",
-        "other": ""
-      }
-    },
-    "uploadAllEditedNote": "",
-    "uploadAllNewEditedNote": "",
-    "uploadAllNotes": "",
-    "uploadNewNotes": ""
-  },
-  "common": {
-    "add": "",
-    "after": "",
-    "attachments": "",
-    "before": "",
-    "cancel": "",
-    "close": "",
-    "default": "",
-    "defaultName": "",
-    "delete": "",
-    "edit": "",
-    "error": "",
-    "files": "",
-    "ghToken": "",
-    "here": "",
-    "in": "",
-    "no": "",
-    "or": "",
-    "path": {
-      "file": "",
-      "folder": "",
-      "full": ""
-    },
-    "points": "",
-    "published": "",
-    "regex": "",
-    "rename": "",
-    "repository": "",
-    "rootFolder": "",
-    "save": "",
-    "shared": "",
-    "text": "",
-    "warning": "",
-    "yes": ""
-  },
-  "deletion": {
-    "failed": "",
-    "noFile": "",
-    "success": ""
-  },
-  "error": {
-    "alreadyExists": "",
-    "autoClean": "",
-    "dataview": "",
-    "errorConfig": "",
-    "errorPublish": "",
-    "isEmpty": "",
-    "mergeconflic": "",
-    "normal": "",
-    "parseYaml": "",
-    "reading-token-file": "",
-    "unablePublishMultiNotes": "",
-    "unablePublishNote": "",
-    "whatEmpty": {
-      "branch": "",
-      "owner": ""
-    }
-  },
-  "informations": {
-    "foundNoteToSend": "",
-    "migrating": {
-      "fileReplace": "",
-      "normalFormat": "",
-      "oldSettings": "",
-      "subFolder": ""
-    },
-    "noNewNote": "",
-    "scanningRepo": "",
-    "sendMessage": "",
-    "startingClean": "",
-    "successPublishOneNote": "",
-    "successfulPublish": "",
-    "waitingWorkflow": ""
-  },
-  "modals": {
-    "export": {
-      "copy": "",
-      "desc": "",
-      "download": "",
-      "title": ""
-    },
-    "import": {
-      "desc": "",
-      "error": {
-        "isEmpty": "",
-        "span": ""
-      },
-      "importFromFile": "",
-      "paste": "",
-      "presets": {
-        "desc": "",
-        "title": ""
-      },
-      "title": ""
-    },
-    "listChangedFiles": {
-      "added": "",
-      "deleted": "",
-      "edited": "",
-      "error": "",
-      "notDeleted": "",
-      "title": "",
-      "unpublished": ""
-    }
-  },
-  "publish": {
-    "branch": {
-      "alreadyExists": "",
-      "error": "",
-      "prMessage": "",
-      "success": ""
-    },
-    "upToDate": ""
-  },
-  "regex": {
-    "entry": "",
-    "replace": ""
-  },
-  "settings": {
-    "conversion": {
-      "dataview": {
-        "desc": "",
-        "title": ""
-      },
-      "desc": "",
-      "hardBreak": {
-        "desc": "",
-        "title": ""
-      },
-      "links": {
-        "desc": "",
-        "folderNote": {
-          "desc": "",
-          "title": ""
-        },
-        "internals": {
-          "dataview": "",
-          "desc": "",
-          "shareAll": "",
-          "title": ""
-        },
-        "nonShared": {
-          "desc": "",
-          "title": ""
-        },
-        "slugify": {
-          "desc": "",
-          "disable": "",
-          "lower": "",
-          "strict": "",
-          "title": ""
-        },
-        "title": "",
-        "unlink": {
-          "desc": "",
-          "title": ""
-        },
-        "wikilinks": {
-          "desc": "",
-          "title": ""
-        }
-      },
-      "sectionTitle": "",
-      "tags": {
-        "desc": "",
-        "exclude": {
-          "desc": "",
-          "placeholder": "",
-          "title": ""
-        },
-        "inlineTags": {
-          "desc": "",
-          "title": ""
-        },
-        "title": ""
-      },
-      "title": ""
-    },
-    "embed": {
-      "attachment": "",
-      "bake": {
-        "text": "",
-        "textAfter": {
-          "title": ""
-        },
-        "textBefore": {
-          "title": ""
-        },
-        "title": "",
-        "variable": {
-          "desc": "",
-          "title": "",
-          "url": ""
-        },
-        "warning": ""
-      },
-      "char": {
-        "desc": "",
-        "title": ""
-      },
-      "defaultImageFolder": {
-        "desc": "",
-        "title": ""
-      },
-      "forcePush": {
-        "all": "",
-        "default": "",
-        "desc": "",
-        "info": "",
-        "title": ""
-      },
-      "imagePath": {
-        "desc": "",
-        "title": ""
-      },
-      "links": {
-        "desc": "",
-        "dp": {
-          "bake": "",
-          "keep": "",
-          "links": "",
-          "remove": ""
-        },
-        "title": ""
-      },
-      "notes": "",
-      "overrides": {
-        "desc": "",
-        "modal": {
-          "dest": "",
-          "path": "",
-          "title": ""
-        }
-      },
-      "sendSimpleLinks": {
-        "desc": "",
-        "title": ""
-      },
-      "title": "",
-      "transferImage": {
-        "title": ""
-      },
-      "transferMetaFile": {
-        "desc": "",
-        "title": ""
-      },
-      "transferNotes": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "embeds": {
-      "unHandledObsidianExt": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "github": {
-      "apiType": {
-        "desc": "",
-        "dropdown": {
-          "enterprise": "",
-          "free": ""
-        },
-        "hostname": {
-          "desc": "",
-          "title": ""
-        },
-        "title": ""
-      },
-      "automaticallyMergePR": "",
-      "branch": {
-        "desc": "",
-        "title": ""
-      },
-      "dryRun": {
-        "enable": {
-          "desc": "",
-          "title": ""
-        },
-        "folder": {
-          "desc": "",
-          "title": ""
-        }
-      },
-      "ghToken": {
-        "button": {
-          "configDir": "",
-          "default": "",
-          "description": "",
-          "pluginID": "",
-          "tooltip": "",
-          "variables": ""
-        },
-        "desc": "",
-        "error": ""
-      },
-      "repoName": {
-        "desc": "",
-        "placeholder": "",
-        "title": ""
-      },
-      "smartRepo": {
-        "button": "",
-        "modals": {
-          "default": "",
-          "desc": "",
-          "duplicate": "",
-          "empty": "",
-          "frontmatterInfo": "",
-          "newRepo": "",
-          "otherConfig": "",
-          "shortcuts": {
-            "desc": "",
+    "commands": {
+        "checkValidity": {
+            "error": "Неверная конфигурация",
+            "inBranch": {
+                "error403": "Ошибка 403: {{- repo.owner}}/{{- repo.repo}} был навсегда перемещён (из {{- repo.branch}}).",
+                "error404": "Ошибка 404: Ветвь {{- repo.branch}} не найдена в {{- repo.owner}}/{{- repo.repo}}."
+            },
+            "inRepo": {
+                "error301": "Ошибка 301: {{- repo.owner}}/{{- repo.repo}}   был навсегда перемещён.",
+                "error403": "Ошибка 403: данное действие было не допущено до {{- repo.owner}}/{{- repo.repo}}.",
+                "error404": "Ошибка 404: {{- repo.owner}}/{{- repo.repo}}: не найден."
+            },
+            "rateLimit": {
+                "command": "Проверьте лимит запросов API GitHub",
+                "limited": "Вы достигли лимита запросов API GitHub. Лимит будет сброшен в {{- resetTime}}.",
+                "notLimited": "Вы не ограничены лимитом запросов. Вы можете сделать ещё {{- remaining}} запросов до того, как лимит будет сброшен в {{- resetTime}}."
+            },
+            "repoExistsTestBranch": "Репозиторий {{- repo.owner}}/{{- repo.repo}} существует. Сейчас проверяется ветвь {{- repo.branch}}.",
+            "success": "{{- repo.owner}}/{{- repo.repo}} кажется верны!",
             "title": ""
-          },
-          "title": ""
-        }
-      },
-      "testConnection": "",
-      "title": "",
-      "username": {
-        "desc": "",
-        "title": ""
-      }
+        },
+        "copyLink": {
+            "onActivation": "Ссылка скопирована",
+            "title": "Создайте ссылку на данную запись"
+        },
+        "publisherDeleteClean": "Чистка неопубликованных и удаленных файлов",
+        "refreshAllSets": "(Others repositories): Перезагрузка вех сохранённых наборов",
+        "refreshOpenedSet": "",
+        "runOtherRepo": {
+            "noFile": "Нет активных файлов, либо файл не доступен",
+            "title": "Запуск команды для репозитория"
+        },
+        "shareActiveFile": "Загрузить только активную заметку",
+        "shareViewFiles": {
+            "multiple": {
+                "on": "Загрузить {{- doc}} в {{- smartKey }}",
+                "other": "Загрузка …"
+            }
+        },
+        "uploadAllEditedNote": "Обновить все опубликованные заметки",
+        "uploadAllNewEditedNote": "Обновить опубликованные заметки и загрузить новые",
+        "uploadAllNotes": "",
+        "uploadNewNotes": "Загрузить неопубликованные заметки"
     },
-    "githubWorkflow": {
-      "autoCleanUp": {
-        "desc": "",
-        "popup": {
-          "desc": "",
-          "exclude": "",
-          "sure": "",
-          "title": ""
+    "common": {
+        "add": "Добавить {{- things}}",
+        "after": "После",
+        "attachments": "",
+        "before": "Ранее",
+        "cancel": "Отмена",
+        "close": "Закрыть",
+        "default": "",
+        "defaultName": "стандартная папка",
+        "delete": "Удалить {{- things}}",
+        "edit": "Изменить {{- things}}",
+        "error": "Ошибка",
+        "files": "Файлы",
+        "ghToken": "Токен GitHub",
+        "here": "",
+        "in": "",
+        "no": "Нет",
+        "or": "или",
+        "path": {
+            "file": "Имя файла",
+            "folder": "Путь к папке",
+            "full": "Путь к файлу"
         },
-        "title": ""
-      },
-      "excludedFiles": {
-        "desc": "",
-        "title": ""
-      },
-      "githubAction": {
-        "desc": "",
-        "title": ""
-      },
-      "includeAttachments": {
-        "desc": "",
-        "title": ""
-      },
-      "prRequest": {
-        "desc": "",
-        "error": "",
-        "title": ""
-      },
-      "useMetadataExtractor": {
-        "desc": "",
-        "title": ""
-      }
+        "points": "",
+        "published": "",
+        "regex": "",
+        "rename": "",
+        "repository": "",
+        "rootFolder": "",
+        "save": "",
+        "shared": "",
+        "text": "",
+        "warning": "",
+        "yes": ""
     },
-    "help": {
-      "frontmatter": {
-        "attachment": {
-          "folder": "",
-          "send": ""
-        },
-        "autoclean": "",
-        "baselink": {
-          "desc": "",
-          "remove": ""
-        },
-        "convert": {
-          "enableOrDisable": "",
-          "syntax": ""
-        },
+    "deletion": {
+        "failed": "",
+        "noFile": "",
+        "success": ""
+    },
+    "error": {
+        "alreadyExists": "",
+        "autoClean": "",
         "dataview": "",
-        "desc": "",
-        "embed": {
-          "char": "",
-          "remove": {
-            "bake": "",
+        "errorConfig": "",
+        "errorPublish": "",
+        "isEmpty": "",
+        "mergeconflic": "",
+        "normal": "",
+        "parseYaml": "",
+        "reading-token-file": "",
+        "unablePublishMultiNotes": "",
+        "unablePublishNote": "",
+        "whatEmpty": {
+            "branch": "",
+            "owner": ""
+        }
+    },
+    "informations": {
+        "foundNoteToSend": "",
+        "migrating": {
+            "fileReplace": "",
+            "normalFormat": "",
+            "oldSettings": "",
+            "subFolder": ""
+        },
+        "noNewNote": "",
+        "scanningRepo": "",
+        "sendMessage": "",
+        "startingClean": "",
+        "successPublishOneNote": "",
+        "successfulPublish": "",
+        "waitingWorkflow": ""
+    },
+    "modals": {
+        "export": {
+            "copy": "",
             "desc": "",
-            "keep": "",
-            "links": "",
-            "remove": ""
-          },
-          "send": ""
+            "download": "",
+            "title": ""
         },
-        "hardBreak": "",
-        "includeLinks": "",
-        "internals": "",
-        "mdlinks": "",
-        "nestedKey": "",
-        "nonShared": "",
-        "path": "",
-        "repo": {
-          "branch": "",
-          "desc": "",
-          "owner": ""
+        "import": {
+            "desc": "",
+            "error": {
+                "isEmpty": "",
+                "span": ""
+            },
+            "importFromFile": "",
+            "paste": "",
+            "presets": {
+                "desc": "",
+                "title": ""
+            },
+            "title": ""
         },
-        "share": {
-          "other": "",
-          "title": ""
-        },
-        "shortRepo": "",
-        "title": "",
-        "titleKey": "",
-        "unlink": ""
-      },
-      "multiRepoHelp": {
-        "desc": "",
-        "desc2": "",
-        "exampleDesc": "",
-        "title": ""
-      },
-      "title": "",
-      "usefulLinks": {
-        "discussion": "",
-        "documentation": "",
-        "issue": "",
-        "links": "",
-        "title": "",
-        "translation": ""
-      }
+        "listChangedFiles": {
+            "added": "",
+            "deleted": "",
+            "edited": "",
+            "error": "",
+            "notDeleted": "",
+            "title": "",
+            "unpublished": ""
+        }
     },
-    "plugin": {
-      "copyLink": {
-        "applyRegex": {
-          "desc": "",
-          "title": ""
+    "publish": {
+        "branch": {
+            "alreadyExists": "",
+            "error": "",
+            "prMessage": "",
+            "success": ""
         },
-        "baselink": {
-          "desc": "",
-          "title": ""
-        },
-        "command": {
-          "desc": ""
-        },
-        "desc": "",
-        "linkPathRemover": {
-          "desc": "",
-          "title": ""
-        },
-        "slugify": {
-          "disable": "",
-          "lower": "",
-          "strict": "",
-          "title": ""
-        },
-        "title": "",
-        "toUri": {
-          "desc": "",
-          "title": ""
-        }
-      },
-      "dev": {
-        "desc": "",
-        "title": ""
-      },
-      "editorMenu": {
-        "desc": "",
-        "title": ""
-      },
-      "embedEditRepo": {
-        "desc": "",
-        "title": ""
-      },
-      "excludedFolder": {
-        "desc": "",
-        "title": ""
-      },
-      "fileMenu": {
-        "desc": "",
-        "title": ""
-      },
-      "head": {
-        "copyLinks": "",
-        "log": "",
-        "menu": "",
-        "other": "",
-        "share": ""
-      },
-      "logNoticeHeader": {
-        "desc": "",
-        "title": ""
-      },
-      "saveTab": {
-        "desc": "",
-        "title": ""
-      },
-      "set": {
-        "desc": "",
-        "title": ""
-      },
-      "setImport": {
-        "desc": "",
-        "title": ""
-      },
-      "shareKey": {
-        "all": {
-          "desc": "",
-          "title": ""
-        },
-        "desc": "",
-        "excludedFileName": {
-          "title": ""
-        },
-        "otherRepo": "",
-        "title": ""
-      },
-      "title": ""
+        "upToDate": ""
     },
-    "regexReplacing": {
-      "empty": "",
-      "emptyRegex": "",
-      "forbiddenValue": "",
-      "inCodeBlocks": {
-        "runIn": "",
-        "runOut": ""
-      },
-      "invalidRegex": "",
-      "modal": {
-        "desc": "",
-        "force": "",
-        "keywords": "",
-        "name": "",
-        "title": {
-          "all": "",
-          "only": "",
-          "text": ""
-        }
-      },
-      "momentReplaceRegex": "",
-      "warningPath": ""
+    "regex": {
+        "entry": "",
+        "replace": ""
     },
-    "upload": {
-      "defaultFolder": {
-        "desc": "",
-        "placeholder": "",
-        "title": ""
-      },
-      "folderBehavior": {
-        "desc": "",
-        "fixedFolder": "",
-        "obsidianPath": "",
-        "title": "",
-        "yaml": ""
-      },
-      "folderNote": {
-        "addTitle": {
-          "key": "",
-          "title": ""
+    "settings": {
+        "conversion": {
+            "dataview": {
+                "desc": "",
+                "title": ""
+            },
+            "desc": "",
+            "hardBreak": {
+                "desc": "",
+                "title": ""
+            },
+            "links": {
+                "desc": "",
+                "folderNote": {
+                    "desc": "",
+                    "title": ""
+                },
+                "internals": {
+                    "dataview": "",
+                    "desc": "",
+                    "shareAll": "",
+                    "title": ""
+                },
+                "nonShared": {
+                    "desc": "",
+                    "title": ""
+                },
+                "slugify": {
+                    "desc": "",
+                    "disable": "",
+                    "lower": "",
+                    "strict": "",
+                    "title": ""
+                },
+                "title": "",
+                "unlink": {
+                    "desc": "",
+                    "title": ""
+                },
+                "wikilinks": {
+                    "desc": "",
+                    "title": ""
+                }
+            },
+            "sectionTitle": "",
+            "tags": {
+                "desc": "",
+                "exclude": {
+                    "desc": "",
+                    "placeholder": "",
+                    "title": ""
+                },
+                "inlineTags": {
+                    "desc": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "title": ""
+        },
+        "embed": {
+            "attachment": "",
+            "bake": {
+                "text": "",
+                "textAfter": {
+                    "title": ""
+                },
+                "textBefore": {
+                    "title": ""
+                },
+                "title": "",
+                "variable": {
+                    "desc": "",
+                    "title": "",
+                    "url": ""
+                },
+                "warning": ""
+            },
+            "char": {
+                "desc": "",
+                "title": ""
+            },
+            "defaultImageFolder": {
+                "desc": "",
+                "title": ""
+            },
+            "forcePush": {
+                "all": "",
+                "default": "",
+                "desc": "",
+                "info": "",
+                "title": ""
+            },
+            "imagePath": {
+                "desc": "",
+                "title": ""
+            },
+            "links": {
+                "desc": "",
+                "dp": {
+                    "bake": "",
+                    "keep": "",
+                    "links": "",
+                    "remove": ""
+                },
+                "title": ""
+            },
+            "notes": "",
+            "overrides": {
+                "desc": "",
+                "modal": {
+                    "dest": "",
+                    "path": "",
+                    "title": ""
+                }
+            },
+            "sendSimpleLinks": {
+                "desc": "",
+                "title": ""
+            },
+            "title": "",
+            "transferImage": {
+                "title": ""
+            },
+            "transferMetaFile": {
+                "desc": "",
+                "title": ""
+            },
+            "transferNotes": {
+                "desc": "",
+                "title": ""
+            }
+        },
+        "embeds": {
+            "unHandledObsidianExt": {
+                "desc": "",
+                "title": ""
+            }
+        },
+        "github": {
+            "apiType": {
+                "desc": "",
+                "dropdown": {
+                    "enterprise": "",
+                    "free": ""
+                },
+                "hostname": {
+                    "desc": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "automaticallyMergePR": "",
+            "branch": {
+                "desc": "",
+                "title": ""
+            },
+            "dryRun": {
+                "enable": {
+                    "desc": "",
+                    "title": ""
+                },
+                "folder": {
+                    "desc": "",
+                    "title": ""
+                }
+            },
+            "ghToken": {
+                "button": {
+                    "configDir": "",
+                    "default": "",
+                    "description": "",
+                    "pluginID": "",
+                    "tooltip": "",
+                    "variables": ""
+                },
+                "desc": "",
+                "error": ""
+            },
+            "repoName": {
+                "desc": "",
+                "placeholder": "",
+                "title": ""
+            },
+            "smartRepo": {
+                "button": "",
+                "modals": {
+                    "default": "",
+                    "desc": "",
+                    "duplicate": "",
+                    "empty": "",
+                    "frontmatterInfo": "",
+                    "newRepo": "",
+                    "otherConfig": "",
+                    "shortcuts": {
+                        "desc": "",
+                        "title": ""
+                    },
+                    "title": ""
+                }
+            },
+            "testConnection": "",
+            "title": "",
+            "username": {
+                "desc": "",
+                "title": ""
+            }
+        },
+        "githubWorkflow": {
+            "autoCleanUp": {
+                "desc": "",
+                "popup": {
+                    "desc": "",
+                    "exclude": "",
+                    "sure": "",
+                    "title": ""
+                },
+                "title": ""
+            },
+            "excludedFiles": {
+                "desc": "",
+                "title": ""
+            },
+            "githubAction": {
+                "desc": "",
+                "title": ""
+            },
+            "includeAttachments": {
+                "desc": "",
+                "title": ""
+            },
+            "prRequest": {
+                "desc": "",
+                "error": "",
+                "title": ""
+            },
+            "useMetadataExtractor": {
+                "desc": "",
+                "title": ""
+            }
+        },
+        "help": {
+            "frontmatter": {
+                "attachment": {
+                    "folder": "",
+                    "send": ""
+                },
+                "autoclean": "",
+                "baselink": {
+                    "desc": "",
+                    "remove": ""
+                },
+                "convert": {
+                    "enableOrDisable": "",
+                    "syntax": ""
+                },
+                "dataview": "",
+                "desc": "",
+                "embed": {
+                    "char": "",
+                    "remove": {
+                        "bake": "",
+                        "desc": "",
+                        "keep": "",
+                        "links": "",
+                        "remove": ""
+                    },
+                    "send": ""
+                },
+                "hardBreak": "",
+                "includeLinks": "",
+                "internals": "",
+                "mdlinks": "",
+                "nestedKey": "",
+                "nonShared": "",
+                "path": "",
+                "repo": {
+                    "branch": "",
+                    "desc": "",
+                    "owner": ""
+                },
+                "share": {
+                    "other": "",
+                    "title": ""
+                },
+                "shortRepo": "",
+                "title": "",
+                "titleKey": "",
+                "unlink": ""
+            },
+            "multiRepoHelp": {
+                "desc": "",
+                "desc2": "",
+                "exampleDesc": "",
+                "title": ""
+            },
+            "title": "",
+            "usefulLinks": {
+                "discussion": "",
+                "documentation": "",
+                "issue": "",
+                "links": "",
+                "title": "",
+                "translation": ""
+            }
+        },
+        "plugin": {
+            "copyLink": {
+                "applyRegex": {
+                    "desc": "",
+                    "title": ""
+                },
+                "baselink": {
+                    "desc": "",
+                    "title": ""
+                },
+                "command": {
+                    "desc": ""
+                },
+                "desc": "",
+                "linkPathRemover": {
+                    "desc": "",
+                    "title": ""
+                },
+                "slugify": {
+                    "disable": "",
+                    "lower": "",
+                    "strict": "",
+                    "title": ""
+                },
+                "title": "",
+                "toUri": {
+                    "desc": "",
+                    "title": ""
+                }
+            },
+            "dev": {
+                "desc": "",
+                "title": ""
+            },
+            "editorMenu": {
+                "desc": "",
+                "title": ""
+            },
+            "embedEditRepo": {
+                "desc": "",
+                "title": ""
+            },
+            "excludedFolder": {
+                "desc": "",
+                "title": ""
+            },
+            "fileMenu": {
+                "desc": "",
+                "title": ""
+            },
+            "head": {
+                "copyLinks": "",
+                "log": "",
+                "menu": "",
+                "other": "",
+                "share": ""
+            },
+            "logNoticeHeader": {
+                "desc": "",
+                "title": ""
+            },
+            "saveTab": {
+                "desc": "",
+                "title": ""
+            },
+            "set": {
+                "desc": "",
+                "title": ""
+            },
+            "setImport": {
+                "desc": "",
+                "title": ""
+            },
+            "shareKey": {
+                "all": {
+                    "desc": "",
+                    "title": ""
+                },
+                "desc": "",
+                "excludedFileName": {
+                    "title": ""
+                },
+                "otherRepo": "",
+                "title": ""
+            },
+            "title": ""
+        },
+        "regexReplacing": {
+            "empty": "",
+            "emptyRegex": "",
+            "forbiddenValue": "",
+            "inCodeBlocks": {
+                "runIn": "",
+                "runOut": ""
+            },
+            "invalidRegex": "",
+            "modal": {
+                "desc": "",
+                "force": "",
+                "keywords": "",
+                "name": "",
+                "title": {
+                    "all": "",
+                    "only": "",
+                    "text": ""
+                }
+            },
+            "momentReplaceRegex": "",
+            "warningPath": ""
+        },
+        "upload": {
+            "defaultFolder": {
+                "desc": "",
+                "placeholder": "",
+                "title": ""
+            },
+            "folderBehavior": {
+                "desc": "",
+                "fixedFolder": "",
+                "obsidianPath": "",
+                "title": "",
+                "yaml": ""
+            },
+            "folderNote": {
+                "addTitle": {
+                    "key": "",
+                    "title": ""
+                }
+            },
+            "frontmatterKey": {
+                "desc": "",
+                "placeholder": "",
+                "title": ""
+            },
+            "regexFilePathTitle": {
+                "desc": "",
+                "title": {
+                    "FolderPathTitle": "",
+                    "titleOnly": ""
+                }
+            },
+            "rootFolder": {
+                "desc": "",
+                "other": "",
+                "title": ""
+            },
+            "title": "",
+            "useFrontmatterTitle": {
+                "desc": "",
+                "title": ""
+            }
         }
-      },
-      "frontmatterKey": {
-        "desc": "",
-        "placeholder": "",
-        "title": ""
-      },
-      "regexFilePathTitle": {
-        "desc": "",
-        "title": {
-          "FolderPathTitle": "",
-          "titleOnly": ""
-        }
-      },
-      "rootFolder": {
-        "desc": "",
-        "other": "",
-        "title": ""
-      },
-      "title": "",
-      "useFrontmatterTitle": {
-        "desc": "",
-        "title": ""
-      }
+    },
+    "statusBar": {
+        "counter": "",
+        "loading": "",
+        "markedForSharing": "",
+        "sharing": "",
+        "success": ""
     }
-  },
-  "statusBar": {
-    "counter": "",
-    "loading": "",
-    "markedForSharing": "",
-    "sharing": "",
-    "success": ""
-  }
 }
