@@ -67,99 +67,99 @@
             "full": "Путь к файлу"
         },
         "points": "",
-        "published": "",
+        "published": "опубликовано",
         "regex": "",
-        "rename": "",
-        "repository": "",
-        "rootFolder": "",
-        "save": "",
+        "rename": "Переименованная(ые) клавиша(ы)…",
+        "repository": "Репозиторий",
+        "rootFolder": "корневая папка",
+        "save": "Сохранить",
         "shared": "",
         "text": "",
-        "warning": "",
-        "yes": ""
+        "warning": "Предупреждение",
+        "yes": "Да"
     },
     "deletion": {
-        "failed": "",
-        "noFile": "",
-        "success": ""
+        "failed": "Не удалось удалить файлы {{- nb}}.",
+        "noFile": "Ни один файл не удалён.",
+        "success": "Успешно удалены файлы {{-nb}}."
     },
     "error": {
-        "alreadyExists": "",
-        "autoClean": "",
-        "dataview": "",
-        "errorConfig": "",
-        "errorPublish": "",
-        "isEmpty": "",
-        "mergeconflic": "",
-        "normal": "",
+        "alreadyExists": "{{- file}} уже существует.",
+        "autoClean": "Пока {{- what}} был пуст, авто-удаление было отключено. Вы можете её активировать, но остерегайтесь удаления файлов, которые нужны вашим шаблонам.",
+        "dataview": "Невозможен рендер запросов \"Dataview\". Пожалуйста, обновите плагин \"Dataview\" до последней версии.",
+        "errorConfig": "Ошибка конфигурации {{- repo.owner}}/{{- repo.repo}}. Пожалуйста, проверьте настройки.",
+        "errorPublish": "Ошибка во время загрузки в <u>{{- repo.owner}}/{{- repo.repo}}</u>: <i>{{- repo.branch}}</i>",
+        "isEmpty": "{{- what}} пуст.",
+        "mergeconflic": "Pull-request не подлежит слиянию, вам нужно сделать это вручную.",
+        "normal": "Ошибка 404 это нормально! Это значит, что файла больше нет. Не волнуйтесь ❤️.",
         "parseYaml": "",
-        "reading-token-file": "",
-        "unablePublishMultiNotes": "",
-        "unablePublishNote": "",
+        "reading-token-file": "Ошибка: кажется путь неверен.",
+        "unablePublishMultiNotes": "Невозможно загрузить несколько заметок, что-то пошло не так.",
+        "unablePublishNote": "Невозможно загрузить записку {{- file}}, пропуск",
         "whatEmpty": {
-            "branch": "",
-            "owner": ""
+            "branch": "Ветвь",
+            "owner": "Владелец"
         }
     },
     "informations": {
-        "foundNoteToSend": "",
+        "foundNoteToSend": "Найдены {{- nbNotes}} новые записки для отправки",
         "migrating": {
             "fileReplace": "",
-            "normalFormat": "",
-            "oldSettings": "",
+            "normalFormat": "Перенос настроек…",
+            "oldSettings": "Перенос старых настроек в новый формат…",
             "subFolder": ""
         },
-        "noNewNote": "",
-        "scanningRepo": "",
-        "sendMessage": "",
-        "startingClean": "",
-        "successPublishOneNote": "",
-        "successfulPublish": "",
-        "waitingWorkflow": ""
+        "noNewNote": "Нет новых заметок для загрузки.",
+        "scanningRepo": "Сканирование репозитория, может занять время…",
+        "sendMessage": "Загрузка <i>{{- nbNotes}}</i> заметок в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+        "startingClean": "Начинается чистка <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+        "successPublishOneNote": "Успешно загружен <i><u>{{- file}}</u></i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+        "successfulPublish": "Успешно загружен <i>{{- nbNotes}}</i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+        "waitingWorkflow": "Теперь ждем завершения рабочего процесса…"
     },
     "modals": {
         "export": {
-            "copy": "",
-            "desc": "",
-            "download": "",
-            "title": ""
+            "copy": "Скопировано",
+            "desc": "Экспорт настроек в буфер обмена или файл.",
+            "download": "Скачать",
+            "title": "Экспорт настроек"
         },
         "import": {
-            "desc": "",
+            "desc": "Загрузка настроек из текста или файла. Предупреждение: это перезапишет нынешние настройки (кроме имени, репозитория и токена).",
             "error": {
-                "isEmpty": "",
-                "span": ""
+                "isEmpty": "конфигурация пуста.",
+                "span": "Ошибка при загрузки конфигурации: "
             },
-            "importFromFile": "",
-            "paste": "",
+            "importFromFile": "Загрузить из файла",
+            "paste": "Вставить конфигурацию здесь…",
             "presets": {
-                "desc": "",
-                "title": ""
+                "desc": "Загрузить пред установки из репозитория \"plugin-presets\"",
+                "title": "Пред установки"
             },
-            "title": ""
+            "title": "Загрузить настройки"
         },
         "listChangedFiles": {
-            "added": "",
-            "deleted": "",
-            "edited": "",
-            "error": "",
-            "notDeleted": "",
-            "title": "",
-            "unpublished": ""
+            "added": "Добавлено",
+            "deleted": "Удалено",
+            "edited": "Изменено",
+            "error": "Ошибки",
+            "notDeleted": "Не может быть удалено",
+            "title": "Список изменённых в репозитории файлов",
+            "unpublished": "Не может быть опубликовано"
         }
     },
     "publish": {
         "branch": {
-            "alreadyExists": "",
-            "error": "",
-            "prMessage": "",
-            "success": ""
+            "alreadyExists": "Ветвь уже существует ({{- branchName}} в {{- repo.owner}}/{{- repo.repo}} - Используйте её.",
+            "error": "Ошибка с {{- repo.owner}}/{{- repo.repo}}: {{- error}}",
+            "prMessage": "Pull-Request [{{- branchName}}] из Obsidian",
+            "success": "Ветвь успешно создана (status: {{- branchStatus}}) в {{- repo.owner}}/{{- repo.repo}}"
         },
-        "upToDate": ""
+        "upToDate": "{{- file}} актуален в {{- repo}}"
     },
     "regex": {
-        "entry": "",
-        "replace": ""
+        "entry": "Значение для замены",
+        "replace": "Замена"
     },
     "settings": {
         "conversion": {
