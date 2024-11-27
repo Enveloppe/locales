@@ -153,133 +153,133 @@
             "alreadyExists": "Haara on jo olemassa ({{- branchName}} {{- repo.owner}}/{{- repo.repo}}:lla - sitä käytetään.",
             "error": "Virhe {{- repo.owner}}/{{- repo.repo}}:n kanssa: {{- error}}",
             "prMessage": "Vetopyyntö [{{- branchName}}] Obsidianilta",
-            "success": ""
+            "success": "Haara luotu onnistuneesti (tila: {{- branchStatus}}) {{- repo.owner}}/{{- repo.repo}}:lla"
         },
-        "upToDate": ""
+        "upToDate": "{{- file}} on ajan tasalla {{- repo}}:lla"
     },
     "regex": {
-        "entry": "",
-        "replace": ""
+        "entry": "Korvattava arvo",
+        "replace": "Korvaaminen"
     },
     "settings": {
         "conversion": {
             "dataview": {
-                "desc": "",
+                "desc": "Muunna Dataview-kyselyt markdowniksi.\nToimii vain, jos Dataview ja sisäisen linkin muuntaminen ovat käytössä.",
                 "title": ""
             },
-            "desc": "",
+            "desc": "Nämä vaihtoehdot eivät muuta tiedoston sisältöä Obsidian Vaultissa, mutta ne muuttavat tiedoston sisältöä GitHubissa.",
             "hardBreak": {
-                "desc": "",
-                "title": ""
+                "desc": "Lisää jokaisen rivin jälkeen kova rivinvaihto -merkintä (kaksoisvälilyönti).",
+                "title": "Kova rivinvaihto -merkintä"
             },
             "links": {
                 "desc": "",
                 "folderNote": {
-                    "desc": "",
-                    "title": ""
+                    "desc": "Nimeä tiedostot uudelleen määritetyllä nimellä (oletus: index.md), jos sillä on sama nimi kuin niiden yläkansion/luokan (toimii myös, jos muistiinpano on kansion ulkopuolella).",
+                    "title": "Kansion muistiinpano"
                 },
                 "internals": {
-                    "dataview": "",
-                    "desc": "",
+                    "dataview": "Pakollinen, jos haluat muuntaa linkit datanäkymälohkoiksi!",
+                    "desc": "Muunna sisäiset linkit tietovaraston vastaaviksi suhteellisella polulla.",
                     "shareAll": "",
-                    "title": ""
+                    "title": "Sisäiset linkit"
                 },
                 "nonShared": {
-                    "desc": "",
-                    "title": ""
+                    "desc": "Sama vaihtoehto kuin sisäiset, mutta muistiinpanoille, joita ei ole vielä julkaistu. Kun se on poistettu käytöstä, vain tiedostonimi säilytetään.",
+                    "title": "Muunna julkaisemattomiin muistiinpanoihin osoittavat sisäiset linkit"
                 },
                 "slugify": {
                     "desc": "",
-                    "disable": "",
-                    "lower": "",
-                    "strict": "",
+                    "disable": "Poista käytöstä",
+                    "lower": "Alempi",
+                    "strict": "Muunna kaikki aakkosnumeerisiksi ja yhdysviivoiksi, mukaan lukien unicode-kieli ja muut kuin latinalaiset kielet.",
                     "title": ""
                 },
-                "title": "",
+                "title": "Linkit",
                 "unlink": {
-                    "desc": "",
-                    "title": ""
+                    "desc": "Poistaa linkkien syntaksin (säilyttää vain nimen tai aliaksen) vain jakamattomille tiedostoille.",
+                    "title": "Pura linkitys"
                 },
                 "wikilinks": {
-                    "desc": "",
-                    "title": ""
+                    "desc": "Muunna Wikilinkit MD-linkeiksi sisältöä muuttamatta.",
+                    "title": "[[Wikilinkit]] [MDlinkit](links):hin"
                 }
             },
-            "sectionTitle": "",
+            "sectionTitle": "Pääteksti",
             "tags": {
                 "desc": "",
                 "exclude": {
-                    "desc": "",
-                    "placeholder": "",
-                    "title": ""
+                    "desc": "Tämä sulkee pois arvon muuntamisen. Erottele kentät pilkulla.",
+                    "placeholder": "Kentän arvo",
+                    "title": "Sulje arvo pois muunnoksesta"
                 },
                 "inlineTags": {
                     "desc": "",
                     "title": ""
                 },
-                "title": ""
+                "title": "Muunna ominaisuudet/tietonäkymäkentät tunnisteiksi"
             },
-            "title": ""
+            "title": "Sisältö"
         },
         "embed": {
-            "attachment": "",
+            "attachment": "Liitteet",
             "bake": {
                 "text": "",
                 "textAfter": {
-                    "title": ""
+                    "title": "Teksti lohkon jälkeen"
                 },
                 "textBefore": {
-                    "title": ""
+                    "title": "Teksti ennen lohkoa"
                 },
-                "title": "",
+                "title": "Sisällytä upotusasetukset",
                 "variable": {
-                    "desc": "",
+                    "desc": "On mahdollista käyttää seuraavaa muuttujaa:",
                     "title": "",
-                    "url": ""
+                    "url": ": polku upotettuun muistiinpanoon"
                 },
-                "warning": ""
+                "warning": "Jos käytät HTML:ta, isäntäasetuksistasi riippuen, merkintä katkeaa."
             },
             "char": {
-                "desc": "",
-                "title": ""
+                "desc": "Ennen linkkiä lisättävät merkit.",
+                "title": "Upota merkkejä"
             },
             "defaultImageFolder": {
-                "desc": "",
-                "title": ""
+                "desc": "Oletuksesta poikkeavan kansion kyttäämiseksi",
+                "title": "Oletusliitekansio"
             },
             "forcePush": {
-                "all": "",
-                "default": "",
-                "desc": "",
-                "info": "",
-                "title": ""
+                "all": ": Muuta kaikkien liitteiden kohdetta (ja/tai pakota ne lähetettäväksi).",
+                "default": ": Käytä oletuskohdepolkua.",
+                "desc": "Uloslataa aina linkitetyt muistiinpanot tietovarastoon, vaikka ne olisivat jo olemassa ja ajan tasalla.",
+                "info": "Oletuksena liitteet lähetetään vain, jos niitä on muokattu viimeisimmän lähetyksen jälkeen tai jos niitä ei ole tietovarastossa.",
+                "title": "Pakotetut päivitykset"
             },
             "imagePath": {
                 "desc": "",
-                "title": ""
+                "title": "Rakenne"
             },
             "links": {
-                "desc": "",
+                "desc": "Salli upotteiden linkkien muokkaaminen poistamalla lainaus kokonaan tai muuntamalla yksinkertaiseksi linkiksi",
                 "dp": {
-                    "bake": "",
-                    "keep": "",
-                    "links": "",
-                    "remove": ""
+                    "bake": "Sisällytä upotussisältö",
+                    "keep": "Ei muutosta",
+                    "links": "Muunna linkiksi",
+                    "remove": "Poista linkki kokonaan"
                 },
                 "title": ""
             },
-            "notes": "",
+            "notes": "Upota muistiinpanoja",
             "overrides": {
-                "desc": "",
+                "desc": "Salli liitteen lähettäminen tietylle polulle ja pakota liitteiden työntäminen.",
                 "modal": {
-                    "dest": "",
-                    "path": "",
-                    "title": ""
+                    "dest": "Kohde",
+                    "path": "Polku tai laajennus",
+                    "title": "Ohita liitteiden polku"
                 }
             },
             "sendSimpleLinks": {
-                "desc": "",
-                "title": ""
+                "desc": "Sovella seuraavia asetuksia tiedostoille, jotka on linkitetty yksinkertaisilla linkeillä (mukaan lukien liite).",
+                "title": "Lähetä linkitetyt tiedostot"
             },
             "title": "",
             "transferImage": {
