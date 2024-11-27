@@ -58,101 +58,101 @@
         "files": "Tiedostot",
         "ghToken": "GitHub-tunnus",
         "here": "täällä",
-        "in": "",
-        "no": "",
-        "or": "",
+        "in": "tähän",
+        "no": "Ei",
+        "or": "tai",
         "path": {
-            "file": "",
-            "folder": "",
-            "full": ""
+            "file": "Tiedoston nimi",
+            "folder": "Kansion polku",
+            "full": "Tiedoston polku"
         },
         "points": "",
-        "published": "",
+        "published": "julkaistu",
         "regex": "",
-        "rename": "",
-        "repository": "",
-        "rootFolder": "",
-        "save": "",
-        "shared": "",
-        "text": "",
-        "warning": "",
-        "yes": ""
+        "rename": "Uudelleennimetyt avaimet…",
+        "repository": "Tietovarasto",
+        "rootFolder": "juurikansio",
+        "save": "Tallenna",
+        "shared": "jaettu",
+        "text": "teksti",
+        "warning": "Varoitus",
+        "yes": "Kyllä"
     },
     "deletion": {
-        "failed": "",
-        "noFile": "",
-        "success": ""
+        "failed": "{{- nb}} tiedostojen poistaminen epäonnistui.",
+        "noFile": "Tiedostoja ei ole poistettu.",
+        "success": "{{- nb}} tiedostoa poistettiin onnistuneesti."
     },
     "error": {
-        "alreadyExists": "",
-        "autoClean": "",
+        "alreadyExists": "{{- file}} on jo olemassa.",
+        "autoClean": "Koska {{- what}} on tyhjä, automaattinen puhdistus on poistettu käytöstä. Voit aktivoida sen uudelleen, mutta varo tiedostojen poistamista, jota mallisi tarvitsee.",
         "dataview": "",
-        "errorConfig": "",
-        "errorPublish": "",
-        "isEmpty": "",
-        "mergeconflic": "",
-        "normal": "",
+        "errorConfig": "Virhe määritettäessä {{- repo.owner}}/{{- repo.repo}}. Tarkista asetuksesi.",
+        "errorPublish": "Virhe uloslatauksen aikana <u>{{- repo.owner}}/{{- repo.repo}}</u>:een: <i>{{- repo.branch}}</i>",
+        "isEmpty": "{{- what}} on tyhjä.",
+        "mergeconflic": "Vetopyyntö ei ole yhdistettävissä, se on tehtävä manuaalisesti.",
+        "normal": "404-virhe on normaali; se tarkoittaa, että tiedostoa ei ole vielä olemassa. Älä huoli, ❤️.",
         "parseYaml": "",
-        "reading-token-file": "",
-        "unablePublishMultiNotes": "",
-        "unablePublishNote": "",
+        "reading-token-file": "Virhe: polku näyttää väärältä.",
+        "unablePublishMultiNotes": "Useiden muistiinpanojen uloslataaminen ei onnistu. jotain meni pieleen.",
+        "unablePublishNote": "Muistiinpanoa {{- file}} ei voi ulosladata, se ohitetaan",
         "whatEmpty": {
-            "branch": "",
-            "owner": ""
+            "branch": "Haara",
+            "owner": "Omistaja"
         }
     },
     "informations": {
-        "foundNoteToSend": "",
+        "foundNoteToSend": "Löytyi {{- nbNotes}} uutta lähetettävää muistiinpanoa",
         "migrating": {
             "fileReplace": "",
-            "normalFormat": "",
-            "oldSettings": "",
+            "normalFormat": "Asetuksia siirretään…",
+            "oldSettings": "Vanhojen asetusten siirto uuteen asetusmuotoon…",
             "subFolder": ""
         },
-        "noNewNote": "",
-        "scanningRepo": "",
-        "sendMessage": "",
-        "startingClean": "",
-        "successPublishOneNote": "",
-        "successfulPublish": "",
-        "waitingWorkflow": ""
+        "noNewNote": "Ei uusia ulosladattavia muistiinpanoja.",
+        "scanningRepo": "Tietovaraston skannaus voi kestää hetken…",
+        "sendMessage": "Uloslataa <i>{{- nbNotes}}</i> muistiinpanoa <u>{{- repo.owner}}/{{- repo.repo}}</u>:een",
+        "startingClean": "Aloitetaan <u>{{- repo.owner}}/{{- repo.repo}}</u>:n puhdistaminen",
+        "successPublishOneNote": "<i><u>{{- file}}</u></i> :n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
+        "successfulPublish": "<i>{{- nbNotes}}</i>:n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
+        "waitingWorkflow": "Nyt odotellaan työnkulun valmistumista…"
     },
     "modals": {
         "export": {
-            "copy": "",
-            "desc": "",
-            "download": "",
-            "title": ""
+            "copy": "Kopioi leikepöydälle",
+            "desc": "Vie asetukset leikepöydälle tai tiedostoon.",
+            "download": "Lataa",
+            "title": "Vie asetukset"
         },
         "import": {
-            "desc": "",
+            "desc": "Tuo asetukset tekstistä tai tiedostosta. Huomautus: tämä korvaa nykyiset asetuksesi, paitsi käyttäjätunnus, tietovaraston nimi ja tunnus.",
             "error": {
-                "isEmpty": "",
-                "span": ""
+                "isEmpty": "kokoonpano on tyhjä.",
+                "span": "Virhe kokoonpanon tuonnissa: "
             },
-            "importFromFile": "",
-            "paste": "",
+            "importFromFile": "Tuo tiedostosta",
+            "paste": "Liitä kokoonpano tähän…",
             "presets": {
-                "desc": "",
-                "title": ""
+                "desc": "Lataa esiasetukset tietovarastosta \"plugin-presets\"",
+                "title": "Esiasetukset"
             },
-            "title": ""
+            "title": "Tuo asetukset"
         },
         "listChangedFiles": {
-            "added": "",
-            "deleted": "",
-            "edited": "",
-            "error": "",
-            "notDeleted": "",
-            "title": "",
-            "unpublished": ""
+            "added": "Lisätty",
+            "deleted": "Poistettu",
+            "edited": "Muokattu",
+            "error": "Virheet",
+            "notDeleted": "Ei voida poistaa",
+            "title": "Luettelo tietovarastossa muokatuista tiedostoista",
+            "unpublished": "Ei voida julkaista"
         }
     },
     "publish": {
         "branch": {
-            "alreadyExists": "",
-            "error": "",
-            "prMessage": "",
+            "alreadyExists": "Haara on jo olemassa ({{- branchName}} {{- repo.owner}}/{{- repo.repo}}:lla - sitä käytetään.",
+            "error": "Virhe {{- repo.owner}}/{{- repo.repo}}:n kanssa: {{- error}}",
+            "prMessage": "Vetopyyntö [{{- branchName}}] Obsidianilta",
             "success": ""
         },
         "upToDate": ""
