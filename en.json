@@ -182,10 +182,10 @@
           "dataview": "Mandatory if you want to convert links in dataview blocks!",
           "desc": "Convert internal links to their counterpart in the repository, with relative path.",
           "shareAll": "Includes all links for the \"share all\" settings, as it impossible without frontmatter to know the sharing state of a file.",
-          "title": "Internals links"
+          "title": "Internal links"
         },
         "nonShared": {
-          "desc": "Same option as internals, but for notes that are not yet published. Disabled, only the filename will be conserved.",
+          "desc": "Same option as internal links, but for notes that are not yet published. Disabled, only the filename will be conserved.",
           "title": "Convert internal links pointing to unpublished notes"
         },
         "slugify": {
@@ -197,8 +197,8 @@
         },
         "title": "Links",
         "unlink": {
-          "desc": "Deletes link syntax (retains only name or alias) for unshared files only.",
-          "title": "Unlink"
+          "desc": "E.g. `[[note name|alias]]` → `alias`",
+          "title": "Unlink unshared files"
         },
         "wikilinks": {
           "desc": "Convert Wikilinks to MDlinks, without changing the contents.",
