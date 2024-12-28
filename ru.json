@@ -1,630 +1,630 @@
 {
-  "commands": {
-    "checkValidity": {
-      "error": "Неверная конфигурация",
-      "inBranch": {
-        "error403": "Ошибка 403: {{- repo.owner}}/{{- repo.repo}} был навсегда перемещён (из {{- repo.branch}}).",
-        "error404": "Ошибка 404: Ветвь {{- repo.branch}} не найдена в {{- repo.owner}}/{{- repo.repo}}."
-      },
-      "inRepo": {
-        "error301": "Ошибка 301: {{- repo.owner}}/{{- repo.repo}}   был навсегда перемещён.",
-        "error403": "Ошибка 403: данное действие было не допущено до {{- repo.owner}}/{{- repo.repo}}.",
-        "error404": "Ошибка 404: {{- repo.owner}}/{{- repo.repo}}: не найден."
-      },
-      "rateLimit": {
-        "command": "Проверьте лимит запросов API GitHub",
-        "limited": "Вы достигли лимита запросов API GitHub. Лимит будет сброшен в {{- resetTime}}.",
-        "notLimited": "Вы не ограничены лимитом запросов. Вы можете сделать ещё {{- remaining}} запросов до того, как лимит будет сброшен в {{- resetTime}}."
-      },
-      "repoExistsTestBranch": "Репозиторий {{- repo.owner}}/{{- repo.repo}} существует. Сейчас проверяется ветвь {{- repo.branch}}.",
-      "success": "{{- repo.owner}}/{{- repo.repo}} кажется верны!",
-      "title": ""
-    },
-    "copyLink": {
-      "onActivation": "Ссылка скопирована",
-      "title": "Создайте ссылку на данную запись"
-    },
-    "publisherDeleteClean": "Чистка неопубликованных и удаленных файлов",
-    "refreshAllSets": "(Others repositories): Перезагрузка вех сохранённых наборов",
-    "refreshOpenedSet": "",
-    "runOtherRepo": {
-      "noFile": "Нет активных файлов, либо файл не доступен",
-      "title": "Запуск команды для репозитория"
-    },
-    "shareActiveFile": "Загрузить только активную заметку",
-    "shareViewFiles": {
-      "multiple": {
-        "on": "Загрузить {{- doc}} в {{- smartKey }}",
-        "other": "Загрузка …"
-      }
-    },
-    "uploadAllEditedNote": "Обновить все опубликованные заметки",
-    "uploadAllNewEditedNote": "Обновить опубликованные заметки и загрузить новые",
-    "uploadAllNotes": "",
-    "uploadNewNotes": "Загрузить неопубликованные заметки"
-  },
-  "common": {
-    "add": "Добавить {{- things}}",
-    "after": "После",
-    "attachments": "",
-    "before": "Ранее",
-    "cancel": "Отмена",
-    "close": "Закрыть",
-    "default": "",
-    "defaultName": "стандартная папка",
-    "delete": "Удалить {{- things}}",
-    "edit": "Изменить {{- things}}",
-    "error": "Ошибка",
-    "files": "Файлы",
-    "ghToken": "Токен GitHub",
-    "here": "",
-    "in": "",
-    "no": "Нет",
-    "or": "или",
-    "path": {
-      "file": "Имя файла",
-      "folder": "Путь к папке",
-      "full": "Путь к файлу"
-    },
-    "points": "",
-    "published": "опубликовано",
-    "regex": "",
-    "rename": "Переименованная(ые) клавиша(ы)…",
-    "repository": "Репозиторий",
-    "rootFolder": "корневая папка",
-    "save": "Сохранить",
-    "shared": "",
-    "text": "",
-    "warning": "Предупреждение",
-    "yes": "Да"
-  },
-  "deletion": {
-    "failed": "Не удалось удалить файлы {{- nb}}.",
-    "noFile": "Ни один файл не удалён.",
-    "success": "Успешно удалены файлы {{-nb}}."
-  },
-  "error": {
-    "alreadyExists": "{{- file}} уже существует.",
-    "autoClean": "Пока {{- what}} был пуст, авто-удаление было отключено. Вы можете её активировать, но остерегайтесь удаления файлов, которые нужны вашим шаблонам.",
-    "dataview": "Невозможен рендер запросов \"Dataview\". Пожалуйста, обновите плагин \"Dataview\" до последней версии.",
-    "errorConfig": "Ошибка конфигурации {{- repo.owner}}/{{- repo.repo}}. Пожалуйста, проверьте настройки.",
-    "errorPublish": "Ошибка во время загрузки в <u>{{- repo.owner}}/{{- repo.repo}}</u>: <i>{{- repo.branch}}</i>",
-    "isEmpty": "{{- what}} пуст.",
-    "mergeconflic": "Pull-request не подлежит слиянию, вам нужно сделать это вручную.",
-    "normal": "Ошибка 404 это нормально! Это значит, что файла больше нет. Не волнуйтесь ❤️.",
-    "parseYaml": "",
-    "reading-token-file": "Ошибка: кажется путь неверен.",
-    "unablePublishMultiNotes": "Невозможно загрузить несколько заметок, что-то пошло не так.",
-    "unablePublishNote": "Невозможно загрузить записку {{- file}}, пропуск",
-    "whatEmpty": {
-      "branch": "Ветвь",
-      "owner": "Владелец"
-    }
-  },
-  "informations": {
-    "foundNoteToSend": "Найдены {{- nbNotes}} новые записки для отправки",
-    "migrating": {
-      "fileReplace": "",
-      "normalFormat": "Перенос настроек…",
-      "oldSettings": "Перенос старых настроек в новый формат…",
-      "subFolder": ""
-    },
-    "noNewNote": "Нет новых заметок для загрузки.",
-    "scanningRepo": "Сканирование репозитория, может занять время…",
-    "sendMessage": "Загрузка <i>{{- nbNotes}}</i> заметок в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
-    "startingClean": "Начинается чистка <u>{{- repo.owner}}/{{- repo.repo}}</u>",
-    "successPublishOneNote": "Успешно загружен <i><u>{{- file}}</u></i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
-    "successfulPublish": "Успешно загружен <i>{{- nbNotes}}</i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
-    "waitingWorkflow": "Теперь ждем завершения рабочего процесса…"
-  },
-  "modals": {
-    "export": {
-      "copy": "Скопировано",
-      "desc": "Экспорт настроек в буфер обмена или файл.",
-      "download": "Скачать",
-      "title": "Экспорт настроек"
-    },
-    "import": {
-      "desc": "Загрузка настроек из текста или файла. Предупреждение: это перезапишет нынешние настройки (кроме имени, репозитория и токена).",
-      "error": {
-        "isEmpty": "конфигурация пуста.",
-        "span": "Ошибка при загрузки конфигурации: "
-      },
-      "importFromFile": "Загрузить из файла",
-      "paste": "Вставить конфигурацию здесь…",
-      "presets": {
-        "desc": "Загрузить пред установки из репозитория \"plugin-presets\"",
-        "title": "Пред установки"
-      },
-      "title": "Загрузить настройки"
-    },
-    "listChangedFiles": {
-      "added": "Добавлено",
-      "deleted": "Удалено",
-      "edited": "Изменено",
-      "error": "Ошибки",
-      "notDeleted": "Не может быть удалено",
-      "title": "Список изменённых в репозитории файлов",
-      "unpublished": "Не может быть опубликовано"
-    }
-  },
-  "publish": {
-    "branch": {
-      "alreadyExists": "Ветвь уже существует ({{- branchName}} в {{- repo.owner}}/{{- repo.repo}} - Используйте её.",
-      "error": "Ошибка с {{- repo.owner}}/{{- repo.repo}}: {{- error}}",
-      "prMessage": "Pull-Request [{{- branchName}}] из Obsidian",
-      "success": "Ветвь успешно создана (status: {{- branchStatus}}) в {{- repo.owner}}/{{- repo.repo}}"
-    },
-    "upToDate": "{{- file}} актуален в {{- repo}}"
-  },
-  "regex": {
-    "entry": "Значение для замены",
-    "replace": "Замена"
-  },
-  "settings": {
-    "conversion": {
-      "dataview": {
-        "desc": "Конвертация запросов Dataview в markdown. \nРаботает только при включённых внешних ссылках и Dataview.",
-        "title": ""
-      },
-      "desc": "Эти настройки не изменят наполнение вашего хранилища Obsidian, но изменит наполнение файлов GitHub.",
-      "hardBreak": {
-        "desc": "Добавить жёсткое разделение markdown(двойной пробел) после каждой линии.",
-        "title": "Жёсткое разделение линий markdown"
-      },
-      "links": {
-        "desc": "",
-        "folderNote": {
-          "desc": "",
-          "title": ""
-        },
-        "internals": {
-          "dataview": "",
-          "desc": "",
-          "shareAll": "",
-          "title": ""
-        },
-        "nonShared": {
-          "desc": "",
-          "title": ""
-        },
-        "slugify": {
-          "desc": "",
-          "disable": "",
-          "lower": "",
-          "strict": "",
-          "title": ""
-        },
-        "title": "",
-        "unlink": {
-          "desc": "",
-          "title": ""
-        },
-        "wikilinks": {
-          "desc": "",
-          "title": ""
-        }
-      },
-      "sectionTitle": "",
-      "tags": {
-        "desc": "",
-        "exclude": {
-          "desc": "",
-          "placeholder": "",
-          "title": ""
-        },
-        "inlineTags": {
-          "desc": "",
-          "title": ""
-        },
-        "title": ""
-      },
-      "title": ""
-    },
-    "embed": {
-      "attachment": "",
-      "bake": {
-        "text": "",
-        "textAfter": {
-          "title": ""
-        },
-        "textBefore": {
-          "title": ""
-        },
-        "title": "",
-        "variable": {
-          "desc": "",
-          "title": "",
-          "url": ""
-        },
-        "warning": ""
-      },
-      "char": {
-        "desc": "",
-        "title": ""
-      },
-      "defaultImageFolder": {
-        "desc": "",
-        "title": ""
-      },
-      "forcePush": {
-        "all": "",
-        "default": "",
-        "desc": "",
-        "info": "",
-        "title": ""
-      },
-      "imagePath": {
-        "desc": "",
-        "title": ""
-      },
-      "links": {
-        "desc": "",
-        "dp": {
-          "bake": "",
-          "keep": "",
-          "links": "",
-          "remove": ""
-        },
-        "title": ""
-      },
-      "notes": "",
-      "overrides": {
-        "desc": "",
-        "modal": {
-          "dest": "",
-          "path": "",
-          "title": ""
-        }
-      },
-      "sendSimpleLinks": {
-        "desc": "",
-        "title": ""
-      },
-      "title": "",
-      "transferImage": {
-        "title": ""
-      },
-      "transferMetaFile": {
-        "desc": "",
-        "title": ""
-      },
-      "transferNotes": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "embeds": {
-      "unHandledObsidianExt": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "github": {
-      "apiType": {
-        "desc": "",
-        "dropdown": {
-          "enterprise": "",
-          "free": ""
-        },
-        "hostname": {
-          "desc": "",
-          "title": ""
-        },
-        "title": ""
-      },
-      "automaticallyMergePR": "",
-      "branch": {
-        "desc": "",
-        "title": ""
-      },
-      "dryRun": {
-        "enable": {
-          "desc": "",
-          "title": ""
-        },
-        "folder": {
-          "desc": "",
-          "title": ""
-        }
-      },
-      "ghToken": {
-        "button": {
-          "configDir": "",
-          "default": "",
-          "description": "",
-          "pluginID": "",
-          "tooltip": "",
-          "variables": ""
-        },
-        "desc": "",
-        "error": ""
-      },
-      "repoName": {
-        "desc": "",
-        "placeholder": "",
-        "title": ""
-      },
-      "smartRepo": {
-        "button": "",
-        "modals": {
-          "default": "",
-          "desc": "",
-          "duplicate": "",
-          "empty": "",
-          "frontmatterInfo": "",
-          "newRepo": "",
-          "otherConfig": "",
-          "shortcuts": {
-            "desc": "",
-            "title": ""
-          },
-          "title": ""
-        }
-      },
-      "testConnection": "",
-      "title": "",
-      "username": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "githubWorkflow": {
-      "autoCleanUp": {
-        "desc": "",
-        "popup": {
-          "desc": "",
-          "exclude": "",
-          "sure": "",
-          "title": ""
-        },
-        "title": ""
-      },
-      "excludedFiles": {
-        "desc": "",
-        "title": ""
-      },
-      "githubAction": {
-        "desc": "",
-        "title": ""
-      },
-      "includeAttachments": {
-        "desc": "",
-        "title": ""
-      },
-      "prRequest": {
-        "desc": "",
-        "error": "",
-        "title": ""
-      },
-      "useMetadataExtractor": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "help": {
-      "frontmatter": {
-        "attachment": {
-          "folder": "",
-          "send": ""
-        },
-        "autoclean": "",
-        "baselink": {
-          "desc": "",
-          "remove": ""
-        },
-        "convert": {
-          "enableOrDisable": "",
-          "syntax": ""
-        },
-        "dataview": "",
-        "desc": "",
-        "embed": {
-          "char": "",
-          "remove": {
-            "bake": "",
-            "desc": "",
-            "keep": "",
-            "links": "",
-            "remove": ""
-          },
-          "send": ""
-        },
-        "hardBreak": "",
-        "includeLinks": "",
-        "internals": "",
-        "mdlinks": "",
-        "nestedKey": "",
-        "nonShared": "",
-        "path": "",
-        "repo": {
-          "branch": "",
-          "desc": "",
-          "owner": ""
-        },
-        "share": {
-          "other": "",
-          "title": ""
-        },
-        "shortRepo": "",
-        "title": "",
-        "titleKey": "",
-        "unlink": ""
-      },
-      "multiRepoHelp": {
-        "desc": "",
-        "desc2": "",
-        "exampleDesc": "",
-        "title": ""
-      },
-      "title": "",
-      "usefulLinks": {
-        "discussion": "",
-        "documentation": "",
-        "issue": "",
-        "links": "",
-        "title": "",
-        "translation": ""
-      }
-    },
-    "plugin": {
-      "copyLink": {
-        "applyRegex": {
-          "desc": "",
-          "title": ""
-        },
-        "baselink": {
-          "desc": "",
-          "title": ""
-        },
-        "command": {
-          "desc": ""
-        },
-        "desc": "",
-        "linkPathRemover": {
-          "desc": "",
-          "title": ""
-        },
-        "slugify": {
-          "disable": "",
-          "lower": "",
-          "strict": "",
-          "title": ""
-        },
-        "title": "",
-        "toUri": {
-          "desc": "",
-          "title": ""
-        }
-      },
-      "dev": {
-        "desc": "",
-        "title": ""
-      },
-      "editorMenu": {
-        "desc": "",
-        "title": ""
-      },
-      "embedEditRepo": {
-        "desc": "",
-        "title": ""
-      },
-      "excludedFolder": {
-        "desc": "",
-        "title": ""
-      },
-      "fileMenu": {
-        "desc": "",
-        "title": ""
-      },
-      "head": {
-        "copyLinks": "",
-        "log": "",
-        "menu": "",
-        "other": "",
-        "share": ""
-      },
-      "logNoticeHeader": {
-        "desc": "",
-        "title": ""
-      },
-      "saveTab": {
-        "desc": "",
-        "title": ""
-      },
-      "set": {
-        "desc": "",
-        "title": ""
-      },
-      "setImport": {
-        "desc": "",
-        "title": ""
-      },
-      "shareKey": {
-        "all": {
-          "desc": "",
-          "title": ""
-        },
-        "desc": "",
-        "excludedFileName": {
-          "title": ""
-        },
-        "otherRepo": "",
-        "title": ""
-      },
-      "title": ""
-    },
-    "regexReplacing": {
-      "empty": "",
-      "emptyRegex": "",
-      "forbiddenValue": "",
-      "inCodeBlocks": {
-        "runIn": "",
-        "runOut": ""
-      },
-      "invalidRegex": "",
-      "modal": {
-        "desc": "",
-        "force": "",
-        "keywords": "",
-        "name": "",
-        "title": {
-          "all": "",
-          "only": "",
-          "text": ""
-        }
-      },
-      "momentReplaceRegex": "",
-      "warningPath": ""
-    },
-    "upload": {
-      "defaultFolder": {
-        "desc": "",
-        "placeholder": "",
-        "title": ""
-      },
-      "folderBehavior": {
-        "desc": "",
-        "fixedFolder": "",
-        "obsidianPath": "",
-        "title": "",
-        "yaml": ""
-      },
-      "folderNote": {
-        "addTitle": {
-          "key": "",
-          "title": ""
-        }
-      },
-      "frontmatterKey": {
-        "desc": "",
-        "placeholder": "",
-        "title": ""
-      },
-      "regexFilePathTitle": {
-        "desc": "",
-        "title": {
-          "FolderPathTitle": "",
-          "titleOnly": ""
-        }
-      },
-      "rootFolder": {
-        "desc": "",
-        "other": "",
-        "title": ""
-      },
-      "title": "",
-      "useFrontmatterTitle": {
-        "desc": "",
-        "title": ""
-      }
-    }
-  },
-  "statusBar": {
-    "counter": "",
-    "loading": "",
-    "markedForSharing": "",
-    "sharing": "",
-    "success": ""
-  }
+	"commands": {
+		"checkValidity": {
+			"error": "Неверная конфигурация",
+			"inBranch": {
+				"error403": "Ошибка 403: {{- repo.owner}}/{{- repo.repo}} был навсегда перемещён (из {{- repo.branch}}).",
+				"error404": "Ошибка 404: Ветвь {{- repo.branch}} не найдена в {{- repo.owner}}/{{- repo.repo}}."
+			},
+			"inRepo": {
+				"error301": "Ошибка 301: {{- repo.owner}}/{{- repo.repo}}   был навсегда перемещён.",
+				"error403": "Ошибка 403: данное действие было не допущено до {{- repo.owner}}/{{- repo.repo}}.",
+				"error404": "Ошибка 404: {{- repo.owner}}/{{- repo.repo}}: не найден."
+			},
+			"rateLimit": {
+				"command": "Проверьте лимит запросов API GitHub",
+				"limited": "Вы достигли лимита запросов API GitHub. Лимит будет сброшен в {{- resetTime}}.",
+				"notLimited": "Вы не ограничены лимитом запросов. Вы можете сделать ещё {{- remaining}} запросов до того, как лимит будет сброшен в {{- resetTime}}."
+			},
+			"repoExistsTestBranch": "Репозиторий {{- repo.owner}}/{{- repo.repo}} существует. Сейчас проверяется ветвь {{- repo.branch}}.",
+			"success": "{{- repo.owner}}/{{- repo.repo}} кажется верны!",
+			"title": ""
+		},
+		"copyLink": {
+			"onActivation": "Ссылка скопирована",
+			"title": "Создайте ссылку на данную запись"
+		},
+		"publisherDeleteClean": "Чистка неопубликованных и удаленных файлов",
+		"refreshAllSets": "(Others repositories): Перезагрузка вех сохранённых наборов",
+		"refreshOpenedSet": "",
+		"runOtherRepo": {
+			"noFile": "Нет активных файлов, либо файл не доступен",
+			"title": "Запуск команды для репозитория"
+		},
+		"shareActiveFile": "Загрузить только активную заметку",
+		"shareViewFiles": {
+			"multiple": {
+				"on": "Загрузить {{- doc}} в {{- smartKey }}",
+				"other": "Загрузка …"
+			}
+		},
+		"uploadAllEditedNote": "Обновить все опубликованные заметки",
+		"uploadAllNewEditedNote": "Обновить опубликованные заметки и загрузить новые",
+		"uploadAllNotes": "",
+		"uploadNewNotes": "Загрузить неопубликованные заметки"
+	},
+	"common": {
+		"add": "Добавить {{- things}}",
+		"after": "После",
+		"attachments": "",
+		"before": "Ранее",
+		"cancel": "Отмена",
+		"close": "Закрыть",
+		"default": "",
+		"defaultName": "стандартная папка",
+		"delete": "Удалить {{- things}}",
+		"edit": "Изменить {{- things}}",
+		"error": "Ошибка",
+		"files": "Файлы",
+		"ghToken": "Токен GitHub",
+		"here": "",
+		"in": "",
+		"no": "Нет",
+		"or": "или",
+		"path": {
+			"file": "Имя файла",
+			"folder": "Путь к папке",
+			"full": "Путь к файлу"
+		},
+		"points": "",
+		"published": "опубликовано",
+		"regex": "",
+		"rename": "Переименованная(ые) клавиша(ы)…",
+		"repository": "Репозиторий",
+		"rootFolder": "корневая папка",
+		"save": "Сохранить",
+		"shared": "",
+		"text": "",
+		"warning": "Предупреждение",
+		"yes": "Да"
+	},
+	"deletion": {
+		"failed": "Не удалось удалить файлы {{- nb}}.",
+		"noFile": "Ни один файл не удалён.",
+		"success": "Успешно удалены файлы {{-nb}}."
+	},
+	"error": {
+		"alreadyExists": "{{- file}} уже существует.",
+		"autoClean": "Пока {{- what}} был пуст, авто-удаление было отключено. Вы можете её активировать, но остерегайтесь удаления файлов, которые нужны вашим шаблонам.",
+		"dataview": "Невозможен рендер запросов \"Dataview\". Пожалуйста, обновите плагин \"Dataview\" до последней версии.",
+		"errorConfig": "Ошибка конфигурации {{- repo.owner}}/{{- repo.repo}}. Пожалуйста, проверьте настройки.",
+		"errorPublish": "Ошибка во время загрузки в <u>{{- repo.owner}}/{{- repo.repo}}</u>: <i>{{- repo.branch}}</i>",
+		"isEmpty": "{{- what}} пуст.",
+		"mergeconflic": "Pull-request не подлежит слиянию, вам нужно сделать это вручную.",
+		"normal": "Ошибка 404 это нормально! Это значит, что файла больше нет. Не волнуйтесь ❤️.",
+		"parseYaml": "",
+		"reading-token-file": "Ошибка: кажется путь неверен.",
+		"unablePublishMultiNotes": "Невозможно загрузить несколько заметок, что-то пошло не так.",
+		"unablePublishNote": "Невозможно загрузить записку {{- file}}, пропуск",
+		"whatEmpty": {
+			"branch": "Ветвь",
+			"owner": "Владелец"
+		}
+	},
+	"informations": {
+		"foundNoteToSend": "Найдены {{- nbNotes}} новые записки для отправки",
+		"migrating": {
+			"fileReplace": "",
+			"normalFormat": "Перенос настроек…",
+			"oldSettings": "Перенос старых настроек в новый формат…",
+			"subFolder": ""
+		},
+		"noNewNote": "Нет новых заметок для загрузки.",
+		"scanningRepo": "Сканирование репозитория, может занять время…",
+		"sendMessage": "Загрузка <i>{{- nbNotes}}</i> заметок в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+		"startingClean": "Начинается чистка <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+		"successPublishOneNote": "Успешно загружен <i><u>{{- file}}</u></i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+		"successfulPublish": "Успешно загружен <i>{{- nbNotes}}</i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+		"waitingWorkflow": "Теперь ждем завершения рабочего процесса…"
+	},
+	"modals": {
+		"export": {
+			"copy": "Скопировано",
+			"desc": "Экспорт настроек в буфер обмена или файл.",
+			"download": "Скачать",
+			"title": "Экспорт настроек"
+		},
+		"import": {
+			"desc": "Загрузка настроек из текста или файла. Предупреждение: это перезапишет нынешние настройки (кроме имени, репозитория и токена).",
+			"error": {
+				"isEmpty": "конфигурация пуста.",
+				"span": "Ошибка при загрузки конфигурации: "
+			},
+			"importFromFile": "Загрузить из файла",
+			"paste": "Вставить конфигурацию здесь…",
+			"presets": {
+				"desc": "Загрузить пред установки из репозитория \"plugin-presets\"",
+				"title": "Пред установки"
+			},
+			"title": "Загрузить настройки"
+		},
+		"listChangedFiles": {
+			"added": "Добавлено",
+			"deleted": "Удалено",
+			"edited": "Изменено",
+			"error": "Ошибки",
+			"notDeleted": "Не может быть удалено",
+			"title": "Список изменённых в репозитории файлов",
+			"unpublished": "Не может быть опубликовано"
+		}
+	},
+	"publish": {
+		"branch": {
+			"alreadyExists": "Ветвь уже существует ({{- branchName}} в {{- repo.owner}}/{{- repo.repo}} - Используйте её.",
+			"error": "Ошибка с {{- repo.owner}}/{{- repo.repo}}: {{- error}}",
+			"prMessage": "Pull-Request [{{- branchName}}] из Obsidian",
+			"success": "Ветвь успешно создана (status: {{- branchStatus}}) в {{- repo.owner}}/{{- repo.repo}}"
+		},
+		"upToDate": "{{- file}} актуален в {{- repo}}"
+	},
+	"regex": {
+		"entry": "Значение для замены",
+		"replace": "Замена"
+	},
+	"settings": {
+		"conversion": {
+			"dataview": {
+				"desc": "Конвертация запросов Dataview в markdown. \nРаботает только при включённых внешних ссылках и Dataview.",
+				"title": ""
+			},
+			"desc": "Эти настройки не изменят наполнение вашего хранилища Obsidian, но изменит наполнение файлов GitHub.",
+			"hardBreak": {
+				"desc": "Добавить жёсткое разделение markdown(двойной пробел) после каждой линии.",
+				"title": "Жёсткое разделение линий markdown"
+			},
+			"links": {
+				"desc": "",
+				"folderNote": {
+					"desc": "",
+					"title": ""
+				},
+				"internals": {
+					"dataview": "",
+					"desc": "",
+					"shareAll": "",
+					"title": ""
+				},
+				"nonShared": {
+					"desc": "",
+					"title": ""
+				},
+				"slugify": {
+					"desc": "",
+					"disable": "",
+					"lower": "",
+					"strict": "",
+					"title": ""
+				},
+				"title": "",
+				"unlink": {
+					"desc": "",
+					"title": ""
+				},
+				"wikilinks": {
+					"desc": "",
+					"title": ""
+				}
+			},
+			"sectionTitle": "",
+			"tags": {
+				"desc": "",
+				"exclude": {
+					"desc": "",
+					"placeholder": "",
+					"title": ""
+				},
+				"inlineTags": {
+					"desc": "",
+					"title": ""
+				},
+				"title": ""
+			},
+			"title": ""
+		},
+		"embed": {
+			"attachment": "",
+			"bake": {
+				"text": "",
+				"textAfter": {
+					"title": ""
+				},
+				"textBefore": {
+					"title": ""
+				},
+				"title": "",
+				"variable": {
+					"desc": "",
+					"title": "",
+					"url": ""
+				},
+				"warning": ""
+			},
+			"char": {
+				"desc": "",
+				"title": ""
+			},
+			"defaultImageFolder": {
+				"desc": "",
+				"title": ""
+			},
+			"forcePush": {
+				"all": "",
+				"default": "",
+				"desc": "",
+				"info": "",
+				"title": ""
+			},
+			"imagePath": {
+				"desc": "",
+				"title": ""
+			},
+			"links": {
+				"desc": "",
+				"dp": {
+					"bake": "",
+					"keep": "",
+					"links": "",
+					"remove": ""
+				},
+				"title": ""
+			},
+			"notes": "",
+			"overrides": {
+				"desc": "",
+				"modal": {
+					"dest": "",
+					"path": "",
+					"title": ""
+				}
+			},
+			"sendSimpleLinks": {
+				"desc": "",
+				"title": ""
+			},
+			"title": "",
+			"transferImage": {
+				"title": ""
+			},
+			"transferMetaFile": {
+				"desc": "",
+				"title": ""
+			},
+			"transferNotes": {
+				"desc": "",
+				"title": ""
+			}
+		},
+		"embeds": {
+			"unHandledObsidianExt": {
+				"desc": "",
+				"title": ""
+			}
+		},
+		"github": {
+			"apiType": {
+				"desc": "",
+				"dropdown": {
+					"enterprise": "",
+					"free": ""
+				},
+				"hostname": {
+					"desc": "",
+					"title": ""
+				},
+				"title": ""
+			},
+			"automaticallyMergePR": "",
+			"branch": {
+				"desc": "",
+				"title": ""
+			},
+			"dryRun": {
+				"enable": {
+					"desc": "",
+					"title": ""
+				},
+				"folder": {
+					"desc": "",
+					"title": ""
+				}
+			},
+			"ghToken": {
+				"button": {
+					"configDir": "",
+					"default": "",
+					"description": "",
+					"pluginID": "",
+					"tooltip": "",
+					"variables": ""
+				},
+				"desc": "",
+				"error": ""
+			},
+			"repoName": {
+				"desc": "",
+				"placeholder": "",
+				"title": ""
+			},
+			"smartRepo": {
+				"button": "",
+				"modals": {
+					"default": "",
+					"desc": "",
+					"duplicate": "",
+					"empty": "",
+					"frontmatterInfo": "",
+					"newRepo": "",
+					"otherConfig": "",
+					"shortcuts": {
+						"desc": "",
+						"title": ""
+					},
+					"title": ""
+				}
+			},
+			"testConnection": "",
+			"title": "",
+			"username": {
+				"desc": "",
+				"title": ""
+			}
+		},
+		"githubWorkflow": {
+			"autoCleanUp": {
+				"desc": "",
+				"popup": {
+					"desc": "",
+					"exclude": "",
+					"sure": "",
+					"title": ""
+				},
+				"title": ""
+			},
+			"excludedFiles": {
+				"desc": "",
+				"title": ""
+			},
+			"githubAction": {
+				"desc": "",
+				"title": ""
+			},
+			"includeAttachments": {
+				"desc": "",
+				"title": ""
+			},
+			"prRequest": {
+				"desc": "",
+				"error": "",
+				"title": ""
+			},
+			"useMetadataExtractor": {
+				"desc": "",
+				"title": ""
+			}
+		},
+		"help": {
+			"frontmatter": {
+				"attachment": {
+					"folder": "",
+					"send": ""
+				},
+				"autoclean": "",
+				"baselink": {
+					"desc": "",
+					"remove": ""
+				},
+				"convert": {
+					"enableOrDisable": "",
+					"syntax": ""
+				},
+				"dataview": "",
+				"desc": "",
+				"embed": {
+					"char": "",
+					"remove": {
+						"bake": "",
+						"desc": "",
+						"keep": "",
+						"links": "",
+						"remove": ""
+					},
+					"send": ""
+				},
+				"hardBreak": "",
+				"includeLinks": "",
+				"internals": "",
+				"mdlinks": "",
+				"nestedKey": "",
+				"nonShared": "",
+				"path": "",
+				"repo": {
+					"branch": "",
+					"desc": "",
+					"owner": ""
+				},
+				"share": {
+					"other": "",
+					"title": ""
+				},
+				"shortRepo": "",
+				"title": "",
+				"titleKey": "",
+				"unlink": ""
+			},
+			"multiRepoHelp": {
+				"desc": "",
+				"desc2": "",
+				"exampleDesc": "",
+				"title": ""
+			},
+			"title": "",
+			"usefulLinks": {
+				"discussion": "",
+				"documentation": "",
+				"issue": "",
+				"links": "",
+				"title": "",
+				"translation": ""
+			}
+		},
+		"plugin": {
+			"copyLink": {
+				"applyRegex": {
+					"desc": "",
+					"title": ""
+				},
+				"baselink": {
+					"desc": "",
+					"title": ""
+				},
+				"command": {
+					"desc": ""
+				},
+				"desc": "",
+				"linkPathRemover": {
+					"desc": "",
+					"title": ""
+				},
+				"slugify": {
+					"disable": "",
+					"lower": "",
+					"strict": "",
+					"title": ""
+				},
+				"title": "",
+				"toUri": {
+					"desc": "",
+					"title": ""
+				}
+			},
+			"dev": {
+				"desc": "",
+				"title": ""
+			},
+			"editorMenu": {
+				"desc": "",
+				"title": ""
+			},
+			"embedEditRepo": {
+				"desc": "",
+				"title": ""
+			},
+			"excludedFolder": {
+				"desc": "",
+				"title": ""
+			},
+			"fileMenu": {
+				"desc": "",
+				"title": ""
+			},
+			"head": {
+				"copyLinks": "",
+				"log": "",
+				"menu": "",
+				"other": "",
+				"share": ""
+			},
+			"logNoticeHeader": {
+				"desc": "",
+				"title": ""
+			},
+			"saveTab": {
+				"desc": "",
+				"title": ""
+			},
+			"set": {
+				"desc": "",
+				"title": ""
+			},
+			"setImport": {
+				"desc": "",
+				"title": ""
+			},
+			"shareKey": {
+				"all": {
+					"desc": "",
+					"title": ""
+				},
+				"desc": "",
+				"excludedFileName": {
+					"title": ""
+				},
+				"otherRepo": "",
+				"title": ""
+			},
+			"title": ""
+		},
+		"regexReplacing": {
+			"empty": "",
+			"emptyRegex": "",
+			"forbiddenValue": "",
+			"inCodeBlocks": {
+				"runIn": "",
+				"runOut": ""
+			},
+			"invalidRegex": "",
+			"modal": {
+				"desc": "",
+				"force": "",
+				"keywords": "",
+				"name": "",
+				"title": {
+					"all": "",
+					"only": "",
+					"text": ""
+				}
+			},
+			"momentReplaceRegex": "",
+			"warningPath": ""
+		},
+		"upload": {
+			"defaultFolder": {
+				"desc": "",
+				"placeholder": "",
+				"title": ""
+			},
+			"folderBehavior": {
+				"desc": "",
+				"fixedFolder": "",
+				"obsidianPath": "",
+				"title": "",
+				"yaml": ""
+			},
+			"folderNote": {
+				"addTitle": {
+					"key": "",
+					"title": ""
+				}
+			},
+			"frontmatterKey": {
+				"desc": "",
+				"placeholder": "",
+				"title": ""
+			},
+			"regexFilePathTitle": {
+				"desc": "",
+				"title": {
+					"FolderPathTitle": "",
+					"titleOnly": ""
+				}
+			},
+			"rootFolder": {
+				"desc": "",
+				"other": "",
+				"title": ""
+			},
+			"title": "",
+			"useFrontmatterTitle": {
+				"desc": "",
+				"title": ""
+			}
+		}
+	},
+	"statusBar": {
+		"counter": "",
+		"loading": "",
+		"markedForSharing": "",
+		"sharing": "",
+		"success": ""
+	}
 }
