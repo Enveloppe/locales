@@ -1,5 +1,14 @@
 {
-	"common": {
-		"points": ""
-	}
+  "common": {
+    "points": ""
+  },
+  "settings": {
+    "github": {
+      "dryRun": {
+        "folder": {
+          "error": ""
+        }
+      }
+    }
+  }
 }

@@ -325,6 +325,7 @@
         },
         "folder": {
           "desc": "Use {{owner}}, {{repo}} and {{branch}} to dynamically name the folder.",
+          "error": "The folder name can't be empty!",
           "title": "Folder where the repository will be simulated (test mode only)"
         }
       },
@@ -462,7 +463,6 @@
         "discussion": "Discussion",
         "documentation": "Documentation",
         "issue": "Report a problem",
-        "links": "https://obsidian-publisher.netlify.app/",
         "title": "Useful links",
         "translation": "Help with translation"
       }
