@@ -1,0 +1,11 @@
+{
+	"settings": {
+		"github": {
+			"dryRun": {
+				"folder": {
+					"error": ""
+				}
+			}
+		}
+	}
+}

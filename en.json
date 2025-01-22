@@ -41,7 +41,7 @@
     "uploadAllEditedNote": "Refresh all published notes",
     "uploadAllNewEditedNote": "Refresh published and upload new notes",
     "uploadAllNotes": "Upload all shared notes",
-    "uploadNewNotes": "Upload unpublished notes"
+    "uploadNewNotes": "Upload only new notes"
   },
   "common": {
     "add": "Add {{- things}}",
