@@ -1,630 +1,631 @@
 {
-	"commands": {
-		"checkValidity": {
-			"error": "Virheellinen kokoonpano",
-			"inBranch": {
-				"error403": "",
-				"error404": ""
-			},
-			"inRepo": {
-				"error301": "",
-				"error403": "",
-				"error404": ""
-			},
-			"rateLimit": {
-				"command": "Tarkista GitHub API:n nopeusrajoitus",
-				"limited": "Olet saavuttanut GitHub API:n nopeusrajan. Raja nollataan hetkellä {{- resetTime}}.",
-				"notLimited": "Sinulla ei ole rajoituksia. Voit tehdä {{- remaining}} pyyntöä ennen kuin raja nollataan hetkellä {{- resetTime}}."
-			},
-			"repoExistsTestBranch": "",
-			"success": "{{- repo.owner}}/{{- repo.repo}} näyttää olevan kelvollinen!",
-			"title": "Testaa yhteyttä määritettyyn tietovarastoon"
-		},
-		"copyLink": {
-			"onActivation": "Linkki kopioitu leikepöydällesi",
-			"title": "Luo linkki tähän muistiinpanoon"
-		},
-		"publisherDeleteClean": "Puhdistaa julkaisusta poistetut tiedostot ja poistetut tiedostot",
-		"refreshAllSets": "(Muut tietovarastot): Lataa kaikki tallennetut kohteet uudelleen",
-		"refreshOpenedSet": "",
-		"runOtherRepo": {
-			"noFile": "Mikään tiedosto ei ole aktiivinen tai tiedostoa ei ole jaettu",
-			"title": "Suorita komento tietovarastolle"
-		},
-		"shareActiveFile": "Uloslataa yksittäinen aktiivinen muistiinpano",
-		"shareViewFiles": {
-			"multiple": {
-				"on": "Uloslataa {{- doc}} {{- smartKey }}:een",
-				"other": "Uloslataa kohteeseen…"
-			}
-		},
-		"uploadAllEditedNote": "Virkistä kaikkia julkaistuja muistiinpanoja",
-		"uploadAllNewEditedNote": "Virkistä julkaistut muistiinpanot ja uloslataa uudet muistiinpanot",
-		"uploadAllNotes": "Uloslataa kaikki jaetut muistiinpanot",
-		"uploadNewNotes": "Uloslataa julkaisemattomat muistiinpanot"
-	},
-	"common": {
-		"add": "Lisää {{- things}}",
-		"after": "Jälkeen",
-		"attachments": "Liitteet",
-		"before": "Ennen",
-		"cancel": "Peru",
-		"close": "Sulje",
-		"default": "oletus",
-		"defaultName": "oletuskansio",
-		"delete": "Poista {{- things}}",
-		"edit": "Muokkaa {{- things}}",
-		"error": "Virhe",
-		"files": "Tiedostot",
-		"ghToken": "GitHub-tunnus",
-		"here": "täällä",
-		"in": "tähän",
-		"no": "Ei",
-		"or": "tai",
-		"path": {
-			"file": "Tiedoston nimi",
-			"folder": "Kansion polku",
-			"full": "Tiedoston polku"
-		},
-		"points": "",
-		"published": "julkaistu",
-		"regex": "",
-		"rename": "Uudelleennimetyt avaimet…",
-		"repository": "Tietovarasto",
-		"rootFolder": "juurikansio",
-		"save": "Tallenna",
-		"shared": "jaettu",
-		"text": "teksti",
-		"warning": "Varoitus",
-		"yes": "Kyllä"
-	},
-	"deletion": {
-		"failed": "{{- nb}} tiedostojen poistaminen epäonnistui.",
-		"noFile": "Tiedostoja ei ole poistettu.",
-		"success": "{{- nb}} tiedostoa poistettiin onnistuneesti."
-	},
-	"error": {
-		"alreadyExists": "{{- file}} on jo olemassa.",
-		"autoClean": "Koska {{- what}} on tyhjä, automaattinen puhdistus on poistettu käytöstä. Voit aktivoida sen uudelleen, mutta varo tiedostojen poistamista, jota mallisi tarvitsee.",
-		"dataview": "",
-		"errorConfig": "Virhe määritettäessä {{- repo.owner}}/{{- repo.repo}}. Tarkista asetuksesi.",
-		"errorPublish": "Virhe uloslatauksen aikana <u>{{- repo.owner}}/{{- repo.repo}}</u>:een: <i>{{- repo.branch}}</i>",
-		"isEmpty": "{{- what}} on tyhjä.",
-		"mergeconflic": "Vetopyyntö ei ole yhdistettävissä, se on tehtävä manuaalisesti.",
-		"normal": "404-virhe on normaali; se tarkoittaa, että tiedostoa ei ole vielä olemassa. Älä huoli, ❤️.",
-		"parseYaml": "",
-		"reading-token-file": "Virhe: polku näyttää väärältä.",
-		"unablePublishMultiNotes": "Useiden muistiinpanojen uloslataaminen ei onnistu. jotain meni pieleen.",
-		"unablePublishNote": "Muistiinpanoa {{- file}} ei voi ulosladata, se ohitetaan",
-		"whatEmpty": {
-			"branch": "Haara",
-			"owner": "Omistaja"
-		}
-	},
-	"informations": {
-		"foundNoteToSend": "Löytyi {{- nbNotes}} uutta lähetettävää muistiinpanoa",
-		"migrating": {
-			"fileReplace": "",
-			"normalFormat": "Asetuksia siirretään…",
-			"oldSettings": "Vanhojen asetusten siirto uuteen asetusmuotoon…",
-			"subFolder": ""
-		},
-		"noNewNote": "Ei uusia ulosladattavia muistiinpanoja.",
-		"scanningRepo": "Tietovaraston skannaus voi kestää hetken…",
-		"sendMessage": "Uloslataa <i>{{- nbNotes}}</i> muistiinpanoa <u>{{- repo.owner}}/{{- repo.repo}}</u>:een",
-		"startingClean": "Aloitetaan <u>{{- repo.owner}}/{{- repo.repo}}</u>:n puhdistaminen",
-		"successPublishOneNote": "<i><u>{{- file}}</u></i> :n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
-		"successfulPublish": "<i>{{- nbNotes}}</i>:n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
-		"waitingWorkflow": "Nyt odotellaan työnkulun valmistumista…"
-	},
-	"modals": {
-		"export": {
-			"copy": "Kopioi leikepöydälle",
-			"desc": "Vie asetukset leikepöydälle tai tiedostoon.",
-			"download": "Lataa",
-			"title": "Vie asetukset"
-		},
-		"import": {
-			"desc": "Tuo asetukset tekstistä tai tiedostosta. Huomautus: tämä korvaa nykyiset asetuksesi, paitsi käyttäjätunnus, tietovaraston nimi ja tunnus.",
-			"error": {
-				"isEmpty": "kokoonpano on tyhjä.",
-				"span": "Virhe kokoonpanon tuonnissa: "
-			},
-			"importFromFile": "Tuo tiedostosta",
-			"paste": "Liitä kokoonpano tähän…",
-			"presets": {
-				"desc": "Lataa esiasetukset tietovarastosta \"plugin-presets\"",
-				"title": "Esiasetukset"
-			},
-			"title": "Tuo asetukset"
-		},
-		"listChangedFiles": {
-			"added": "Lisätty",
-			"deleted": "Poistettu",
-			"edited": "Muokattu",
-			"error": "Virheet",
-			"notDeleted": "Ei voida poistaa",
-			"title": "Luettelo tietovarastossa muokatuista tiedostoista",
-			"unpublished": "Ei voida julkaista"
-		}
-	},
-	"publish": {
-		"branch": {
-			"alreadyExists": "Haara on jo olemassa ({{- branchName}} {{- repo.owner}}/{{- repo.repo}}:lla - sitä käytetään.",
-			"error": "Virhe {{- repo.owner}}/{{- repo.repo}}:n kanssa: {{- error}}",
-			"prMessage": "Vetopyyntö [{{- branchName}}] Obsidianilta",
-			"success": "Haara luotu onnistuneesti (tila: {{- branchStatus}}) {{- repo.owner}}/{{- repo.repo}}:lla"
-		},
-		"upToDate": "{{- file}} on ajan tasalla {{- repo}}:lla"
-	},
-	"regex": {
-		"entry": "Korvattava arvo",
-		"replace": "Korvaaminen"
-	},
-	"settings": {
-		"conversion": {
-			"dataview": {
-				"desc": "Muunna Dataview-kyselyt markdowniksi.\nToimii vain, jos Dataview ja sisäisen linkin muuntaminen ovat käytössä.",
-				"title": ""
-			},
-			"desc": "Nämä vaihtoehdot eivät muuta tiedoston sisältöä Obsidian Vaultissa, mutta ne muuttavat tiedoston sisältöä GitHubissa.",
-			"hardBreak": {
-				"desc": "Lisää jokaisen rivin jälkeen kova rivinvaihto -merkintä (kaksoisvälilyönti).",
-				"title": "Kova rivinvaihto -merkintä"
-			},
-			"links": {
-				"desc": "",
-				"folderNote": {
-					"desc": "Nimeä tiedostot uudelleen määritetyllä nimellä (oletus: index.md), jos sillä on sama nimi kuin niiden yläkansion/luokan (toimii myös, jos muistiinpano on kansion ulkopuolella).",
-					"title": "Kansion muistiinpano"
-				},
-				"internals": {
-					"dataview": "Pakollinen, jos haluat muuntaa linkit datanäkymälohkoiksi!",
-					"desc": "Muunna sisäiset linkit tietovaraston vastaaviksi suhteellisella polulla.",
-					"shareAll": "",
-					"title": "Sisäiset linkit"
-				},
-				"nonShared": {
-					"desc": "Sama vaihtoehto kuin sisäiset, mutta muistiinpanoille, joita ei ole vielä julkaistu. Kun se on poistettu käytöstä, vain tiedostonimi säilytetään.",
-					"title": "Muunna julkaisemattomiin muistiinpanoihin osoittavat sisäiset linkit"
-				},
-				"slugify": {
-					"desc": "",
-					"disable": "Poista käytöstä",
-					"lower": "Alempi",
-					"strict": "Muunna kaikki aakkosnumeerisiksi ja yhdysviivoiksi, mukaan lukien unicode-kieli ja muut kuin latinalaiset kielet.",
-					"title": ""
-				},
-				"title": "Linkit",
-				"unlink": {
-					"desc": "Poistaa linkkien syntaksin (säilyttää vain nimen tai aliaksen) vain jakamattomille tiedostoille.",
-					"title": "Pura linkitys"
-				},
-				"wikilinks": {
-					"desc": "Muunna Wikilinkit MD-linkeiksi sisältöä muuttamatta.",
-					"title": "[[Wikilinkit]] [MDlinkit](links):hin"
-				}
-			},
-			"sectionTitle": "Pääteksti",
-			"tags": {
-				"desc": "",
-				"exclude": {
-					"desc": "Tämä sulkee pois arvon muuntamisen. Erottele kentät pilkulla.",
-					"placeholder": "Kentän arvo",
-					"title": "Sulje arvo pois muunnoksesta"
-				},
-				"inlineTags": {
-					"desc": "",
-					"title": ""
-				},
-				"title": "Muunna ominaisuudet/tietonäkymäkentät tunnisteiksi"
-			},
-			"title": "Sisältö"
-		},
-		"embed": {
-			"attachment": "Liitteet",
-			"bake": {
-				"text": "",
-				"textAfter": {
-					"title": "Teksti lohkon jälkeen"
-				},
-				"textBefore": {
-					"title": "Teksti ennen lohkoa"
-				},
-				"title": "Sisällytä upotusasetukset",
-				"variable": {
-					"desc": "On mahdollista käyttää seuraavaa muuttujaa:",
-					"title": "",
-					"url": ": polku upotettuun muistiinpanoon"
-				},
-				"warning": "Jos käytät HTML:ta, isäntäasetuksistasi riippuen, merkintä katkeaa."
-			},
-			"char": {
-				"desc": "Ennen linkkiä lisättävät merkit.",
-				"title": "Upota merkkejä"
-			},
-			"defaultImageFolder": {
-				"desc": "Oletuksesta poikkeavan kansion kyttäämiseksi",
-				"title": "Oletusliitekansio"
-			},
-			"forcePush": {
-				"all": ": Muuta kaikkien liitteiden kohdetta (ja/tai pakota ne lähetettäväksi).",
-				"default": ": Käytä oletuskohdepolkua.",
-				"desc": "Uloslataa aina linkitetyt muistiinpanot tietovarastoon, vaikka ne olisivat jo olemassa ja ajan tasalla.",
-				"info": "Oletuksena liitteet lähetetään vain, jos niitä on muokattu viimeisimmän lähetyksen jälkeen tai jos niitä ei ole tietovarastossa.",
-				"title": "Pakotetut päivitykset"
-			},
-			"imagePath": {
-				"desc": "",
-				"title": "Rakenne"
-			},
-			"links": {
-				"desc": "Salli upotteiden linkkien muokkaaminen poistamalla lainaus kokonaan tai muuntamalla yksinkertaiseksi linkiksi",
-				"dp": {
-					"bake": "Sisällytä upotussisältö",
-					"keep": "Ei muutosta",
-					"links": "Muunna linkiksi",
-					"remove": "Poista linkki kokonaan"
-				},
-				"title": ""
-			},
-			"notes": "Upota muistiinpanoja",
-			"overrides": {
-				"desc": "Salli liitteen lähettäminen tietylle polulle ja pakota liitteiden työntäminen.",
-				"modal": {
-					"dest": "Kohde",
-					"path": "Polku tai laajennus",
-					"title": "Ohita liitteiden polku"
-				}
-			},
-			"sendSimpleLinks": {
-				"desc": "Sovella seuraavia asetuksia tiedostoille, jotka on linkitetty yksinkertaisilla linkeillä (mukaan lukien liite).",
-				"title": "Lähetä linkitetyt tiedostot"
-			},
-			"title": "",
-			"transferImage": {
-				"title": ""
-			},
-			"transferMetaFile": {
-				"desc": "",
-				"title": ""
-			},
-			"transferNotes": {
-				"desc": "",
-				"title": ""
-			}
-		},
-		"embeds": {
-			"unHandledObsidianExt": {
-				"desc": "",
-				"title": ""
-			}
-		},
-		"github": {
-			"apiType": {
-				"desc": "",
-				"dropdown": {
-					"enterprise": "",
-					"free": ""
-				},
-				"hostname": {
-					"desc": "",
-					"title": ""
-				},
-				"title": ""
-			},
-			"automaticallyMergePR": "",
-			"branch": {
-				"desc": "",
-				"title": ""
-			},
-			"dryRun": {
-				"enable": {
-					"desc": "",
-					"title": ""
-				},
-				"folder": {
-					"desc": "",
-					"error": "",
-					"title": ""
-				}
-			},
-			"ghToken": {
-				"button": {
-					"configDir": "",
-					"default": "",
-					"description": "",
-					"pluginID": "",
-					"tooltip": "",
-					"variables": ""
-				},
-				"desc": "",
-				"error": ""
-			},
-			"repoName": {
-				"desc": "",
-				"placeholder": "",
-				"title": ""
-			},
-			"smartRepo": {
-				"button": "",
-				"modals": {
-					"default": "",
-					"desc": "",
-					"duplicate": "",
-					"empty": "",
-					"frontmatterInfo": "",
-					"newRepo": "",
-					"otherConfig": "",
-					"shortcuts": {
-						"desc": "",
-						"title": ""
-					},
-					"title": ""
-				}
-			},
-			"testConnection": "",
-			"title": "",
-			"username": {
-				"desc": "",
-				"title": ""
-			}
-		},
-		"githubWorkflow": {
-			"autoCleanUp": {
-				"desc": "",
-				"popup": {
-					"desc": "",
-					"exclude": "",
-					"sure": "",
-					"title": ""
-				},
-				"title": ""
-			},
-			"excludedFiles": {
-				"desc": "",
-				"title": ""
-			},
-			"githubAction": {
-				"desc": "",
-				"title": ""
-			},
-			"includeAttachments": {
-				"desc": "",
-				"title": ""
-			},
-			"prRequest": {
-				"desc": "",
-				"error": "",
-				"title": ""
-			},
-			"useMetadataExtractor": {
-				"desc": "",
-				"title": ""
-			}
-		},
-		"help": {
-			"frontmatter": {
-				"attachment": {
-					"folder": "",
-					"send": ""
-				},
-				"autoclean": "",
-				"baselink": {
-					"desc": "",
-					"remove": ""
-				},
-				"convert": {
-					"enableOrDisable": "",
-					"syntax": ""
-				},
-				"dataview": "",
-				"desc": "",
-				"embed": {
-					"char": "",
-					"remove": {
-						"bake": "",
-						"desc": "",
-						"keep": "",
-						"links": "",
-						"remove": ""
-					},
-					"send": ""
-				},
-				"hardBreak": "",
-				"includeLinks": "",
-				"internals": "",
-				"mdlinks": "",
-				"nestedKey": "",
-				"nonShared": "",
-				"path": "",
-				"repo": {
-					"branch": "",
-					"desc": "",
-					"owner": ""
-				},
-				"share": {
-					"other": "",
-					"title": ""
-				},
-				"shortRepo": "",
-				"title": "",
-				"titleKey": "",
-				"unlink": ""
-			},
-			"multiRepoHelp": {
-				"desc": "",
-				"desc2": "",
-				"exampleDesc": "",
-				"title": ""
-			},
-			"title": "",
-			"usefulLinks": {
-				"discussion": "",
-				"documentation": "",
-				"issue": "",
-				"title": "",
-				"translation": ""
-			}
-		},
-		"plugin": {
-			"copyLink": {
-				"applyRegex": {
-					"desc": "",
-					"title": ""
-				},
-				"baselink": {
-					"desc": "",
-					"title": ""
-				},
-				"command": {
-					"desc": ""
-				},
-				"desc": "",
-				"linkPathRemover": {
-					"desc": "",
-					"title": ""
-				},
-				"slugify": {
-					"disable": "",
-					"lower": "",
-					"strict": "",
-					"title": ""
-				},
-				"title": "",
-				"toUri": {
-					"desc": "",
-					"title": ""
-				}
-			},
-			"dev": {
-				"desc": "",
-				"title": ""
-			},
-			"editorMenu": {
-				"desc": "",
-				"title": ""
-			},
-			"embedEditRepo": {
-				"desc": "",
-				"title": ""
-			},
-			"excludedFolder": {
-				"desc": "",
-				"title": ""
-			},
-			"fileMenu": {
-				"desc": "",
-				"title": ""
-			},
-			"head": {
-				"copyLinks": "",
-				"log": "",
-				"menu": "",
-				"other": "",
-				"share": ""
-			},
-			"logNoticeHeader": {
-				"desc": "",
-				"title": ""
-			},
-			"saveTab": {
-				"desc": "",
-				"title": ""
-			},
-			"set": {
-				"desc": "",
-				"title": ""
-			},
-			"setImport": {
-				"desc": "",
-				"title": ""
-			},
-			"shareKey": {
-				"all": {
-					"desc": "",
-					"title": ""
-				},
-				"desc": "",
-				"excludedFileName": {
-					"title": ""
-				},
-				"otherRepo": "",
-				"title": ""
-			},
-			"title": ""
-		},
-		"regexReplacing": {
-			"empty": "",
-			"emptyRegex": "",
-			"forbiddenValue": "",
-			"inCodeBlocks": {
-				"runIn": "",
-				"runOut": ""
-			},
-			"invalidRegex": "",
-			"modal": {
-				"desc": "",
-				"force": "",
-				"keywords": "",
-				"name": "",
-				"title": {
-					"all": "",
-					"only": "",
-					"text": ""
-				}
-			},
-			"momentReplaceRegex": "",
-			"warningPath": ""
-		},
-		"upload": {
-			"defaultFolder": {
-				"desc": "",
-				"placeholder": "",
-				"title": ""
-			},
-			"folderBehavior": {
-				"desc": "",
-				"fixedFolder": "",
-				"obsidianPath": "",
-				"title": "",
-				"yaml": ""
-			},
-			"folderNote": {
-				"addTitle": {
-					"key": "",
-					"title": ""
-				}
-			},
-			"frontmatterKey": {
-				"desc": "",
-				"placeholder": "",
-				"title": ""
-			},
-			"regexFilePathTitle": {
-				"desc": "",
-				"title": {
-					"FolderPathTitle": "",
-					"titleOnly": ""
-				}
-			},
-			"rootFolder": {
-				"desc": "",
-				"other": "",
-				"title": ""
-			},
-			"title": "",
-			"useFrontmatterTitle": {
-				"desc": "",
-				"title": ""
-			}
-		}
-	},
-	"statusBar": {
-		"counter": "",
-		"loading": "",
-		"markedForSharing": "",
-		"sharing": "",
-		"success": ""
-	}
+  "commands": {
+    "checkValidity": {
+      "error": "Virheellinen kokoonpano",
+      "inBranch": {
+        "error403": "",
+        "error404": ""
+      },
+      "inRepo": {
+        "error301": "",
+        "error403": "",
+        "error404": ""
+      },
+      "rateLimit": {
+        "command": "Tarkista GitHub API:n nopeusrajoitus",
+        "limited": "Olet saavuttanut GitHub API:n nopeusrajan. Raja nollataan hetkellä {{- resetTime}}.",
+        "notLimited": "Sinulla ei ole rajoituksia. Voit tehdä {{- remaining}} pyyntöä ennen kuin raja nollataan hetkellä {{- resetTime}}."
+      },
+      "repoExistsTestBranch": "",
+      "success": "{{- repo.owner}}/{{- repo.repo}} näyttää olevan kelvollinen!",
+      "title": "Testaa yhteyttä määritettyyn tietovarastoon"
+    },
+    "copyLink": {
+      "onActivation": "Linkki kopioitu leikepöydällesi",
+      "title": "Luo linkki tähän muistiinpanoon"
+    },
+    "publisherDeleteClean": "Puhdistaa julkaisusta poistetut tiedostot ja poistetut tiedostot",
+    "refreshAllSets": "(Muut tietovarastot): Lataa kaikki tallennetut kohteet uudelleen",
+    "refreshOpenedSet": "",
+    "runOtherRepo": {
+      "noFile": "Mikään tiedosto ei ole aktiivinen tai tiedostoa ei ole jaettu",
+      "title": "Suorita komento tietovarastolle"
+    },
+    "shareActiveFile": "Uloslataa yksittäinen aktiivinen muistiinpano",
+    "shareViewFiles": {
+      "multiple": {
+        "on": "Uloslataa {{- doc}} {{- smartKey }}:een",
+        "other": "Uloslataa kohteeseen…"
+      }
+    },
+    "uploadAllEditedNote": "Virkistä kaikkia julkaistuja muistiinpanoja",
+    "uploadAllNewEditedNote": "Virkistä julkaistut muistiinpanot ja uloslataa uudet muistiinpanot",
+    "uploadAllNotes": "Uloslataa kaikki jaetut muistiinpanot",
+    "uploadNewNotes": "Uloslataa julkaisemattomat muistiinpanot"
+  },
+  "common": {
+    "add": "Lisää {{- things}}",
+    "after": "Jälkeen",
+    "attachments": "Liitteet",
+    "before": "Ennen",
+    "cancel": "Peru",
+    "close": "Sulje",
+    "default": "oletus",
+    "defaultName": "oletuskansio",
+    "delete": "Poista {{- things}}",
+    "edit": "Muokkaa {{- things}}",
+    "error": "Virhe",
+    "files": "Tiedostot",
+    "ghToken": "GitHub-tunnus",
+    "here": "täällä",
+    "in": "tähän",
+    "main": "",
+    "no": "Ei",
+    "or": "tai",
+    "path": {
+      "file": "Tiedoston nimi",
+      "folder": "Kansion polku",
+      "full": "Tiedoston polku"
+    },
+    "points": "",
+    "published": "julkaistu",
+    "regex": "",
+    "rename": "Uudelleennimetyt avaimet…",
+    "repository": "Tietovarasto",
+    "rootFolder": "juurikansio",
+    "save": "Tallenna",
+    "shared": "jaettu",
+    "text": "teksti",
+    "warning": "Varoitus",
+    "yes": "Kyllä"
+  },
+  "deletion": {
+    "failed": "{{- nb}} tiedostojen poistaminen epäonnistui.",
+    "noFile": "Tiedostoja ei ole poistettu.",
+    "success": "{{- nb}} tiedostoa poistettiin onnistuneesti."
+  },
+  "error": {
+    "alreadyExists": "{{- file}} on jo olemassa.",
+    "autoClean": "Koska {{- what}} on tyhjä, automaattinen puhdistus on poistettu käytöstä. Voit aktivoida sen uudelleen, mutta varo tiedostojen poistamista, jota mallisi tarvitsee.",
+    "dataview": "",
+    "errorConfig": "Virhe määritettäessä {{- repo.owner}}/{{- repo.repo}}. Tarkista asetuksesi.",
+    "errorPublish": "Virhe uloslatauksen aikana <u>{{- repo.owner}}/{{- repo.repo}}</u>:een: <i>{{- repo.branch}}</i>",
+    "isEmpty": "{{- what}} on tyhjä.",
+    "mergeconflic": "Vetopyyntö ei ole yhdistettävissä, se on tehtävä manuaalisesti.",
+    "normal": "404-virhe on normaali; se tarkoittaa, että tiedostoa ei ole vielä olemassa. Älä huoli, ❤️.",
+    "parseYaml": "",
+    "reading-token-file": "Virhe: polku näyttää väärältä.",
+    "unablePublishMultiNotes": "Useiden muistiinpanojen uloslataaminen ei onnistu. jotain meni pieleen.",
+    "unablePublishNote": "Muistiinpanoa {{- file}} ei voi ulosladata, se ohitetaan",
+    "whatEmpty": {
+      "branch": "Haara",
+      "owner": "Omistaja"
+    }
+  },
+  "informations": {
+    "foundNoteToSend": "Löytyi {{- nbNotes}} uutta lähetettävää muistiinpanoa",
+    "migrating": {
+      "fileReplace": "",
+      "normalFormat": "Asetuksia siirretään…",
+      "oldSettings": "Vanhojen asetusten siirto uuteen asetusmuotoon…",
+      "subFolder": ""
+    },
+    "noNewNote": "Ei uusia ulosladattavia muistiinpanoja.",
+    "scanningRepo": "Tietovaraston skannaus voi kestää hetken…",
+    "sendMessage": "Uloslataa <i>{{- nbNotes}}</i> muistiinpanoa <u>{{- repo.owner}}/{{- repo.repo}}</u>:een",
+    "startingClean": "Aloitetaan <u>{{- repo.owner}}/{{- repo.repo}}</u>:n puhdistaminen",
+    "successPublishOneNote": "<i><u>{{- file}}</u></i> :n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
+    "successfulPublish": "<i>{{- nbNotes}}</i>:n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
+    "waitingWorkflow": "Nyt odotellaan työnkulun valmistumista…"
+  },
+  "modals": {
+    "export": {
+      "copy": "Kopioi leikepöydälle",
+      "desc": "Vie asetukset leikepöydälle tai tiedostoon.",
+      "download": "Lataa",
+      "title": "Vie asetukset"
+    },
+    "import": {
+      "desc": "Tuo asetukset tekstistä tai tiedostosta. Huomautus: tämä korvaa nykyiset asetuksesi, paitsi käyttäjätunnus, tietovaraston nimi ja tunnus.",
+      "error": {
+        "isEmpty": "kokoonpano on tyhjä.",
+        "span": "Virhe kokoonpanon tuonnissa: "
+      },
+      "importFromFile": "Tuo tiedostosta",
+      "paste": "Liitä kokoonpano tähän…",
+      "presets": {
+        "desc": "Lataa esiasetukset tietovarastosta \"plugin-presets\"",
+        "title": "Esiasetukset"
+      },
+      "title": "Tuo asetukset"
+    },
+    "listChangedFiles": {
+      "added": "Lisätty",
+      "deleted": "Poistettu",
+      "edited": "Muokattu",
+      "error": "Virheet",
+      "notDeleted": "Ei voida poistaa",
+      "title": "Luettelo tietovarastossa muokatuista tiedostoista",
+      "unpublished": "Ei voida julkaista"
+    }
+  },
+  "publish": {
+    "branch": {
+      "alreadyExists": "Haara on jo olemassa ({{- branchName}} {{- repo.owner}}/{{- repo.repo}}:lla - sitä käytetään.",
+      "error": "Virhe {{- repo.owner}}/{{- repo.repo}}:n kanssa: {{- error}}",
+      "prMessage": "Vetopyyntö [{{- branchName}}] Obsidianilta",
+      "success": "Haara luotu onnistuneesti (tila: {{- branchStatus}}) {{- repo.owner}}/{{- repo.repo}}:lla"
+    },
+    "upToDate": "{{- file}} on ajan tasalla {{- repo}}:lla"
+  },
+  "regex": {
+    "entry": "Korvattava arvo",
+    "replace": "Korvaaminen"
+  },
+  "settings": {
+    "conversion": {
+      "dataview": {
+        "desc": "Muunna Dataview-kyselyt markdowniksi.\nToimii vain, jos Dataview ja sisäisen linkin muuntaminen ovat käytössä.",
+        "title": ""
+      },
+      "desc": "Nämä vaihtoehdot eivät muuta tiedoston sisältöä Obsidian Vaultissa, mutta ne muuttavat tiedoston sisältöä GitHubissa.",
+      "hardBreak": {
+        "desc": "Lisää jokaisen rivin jälkeen kova rivinvaihto -merkintä (kaksoisvälilyönti).",
+        "title": "Kova rivinvaihto -merkintä"
+      },
+      "links": {
+        "desc": "",
+        "folderNote": {
+          "desc": "Nimeä tiedostot uudelleen määritetyllä nimellä (oletus: index.md), jos sillä on sama nimi kuin niiden yläkansion/luokan (toimii myös, jos muistiinpano on kansion ulkopuolella).",
+          "title": "Kansion muistiinpano"
+        },
+        "internals": {
+          "dataview": "Pakollinen, jos haluat muuntaa linkit datanäkymälohkoiksi!",
+          "desc": "Muunna sisäiset linkit tietovaraston vastaaviksi suhteellisella polulla.",
+          "shareAll": "",
+          "title": "Sisäiset linkit"
+        },
+        "nonShared": {
+          "desc": "Sama vaihtoehto kuin sisäiset, mutta muistiinpanoille, joita ei ole vielä julkaistu. Kun se on poistettu käytöstä, vain tiedostonimi säilytetään.",
+          "title": "Muunna julkaisemattomiin muistiinpanoihin osoittavat sisäiset linkit"
+        },
+        "slugify": {
+          "desc": "",
+          "disable": "Poista käytöstä",
+          "lower": "Alempi",
+          "strict": "Muunna kaikki aakkosnumeerisiksi ja yhdysviivoiksi, mukaan lukien unicode-kieli ja muut kuin latinalaiset kielet.",
+          "title": ""
+        },
+        "title": "Linkit",
+        "unlink": {
+          "desc": "Poistaa linkkien syntaksin (säilyttää vain nimen tai aliaksen) vain jakamattomille tiedostoille.",
+          "title": "Pura linkitys"
+        },
+        "wikilinks": {
+          "desc": "Muunna Wikilinkit MD-linkeiksi sisältöä muuttamatta.",
+          "title": "[[Wikilinkit]] [MDlinkit](links):hin"
+        }
+      },
+      "sectionTitle": "Pääteksti",
+      "tags": {
+        "desc": "",
+        "exclude": {
+          "desc": "Tämä sulkee pois arvon muuntamisen. Erottele kentät pilkulla.",
+          "placeholder": "Kentän arvo",
+          "title": "Sulje arvo pois muunnoksesta"
+        },
+        "inlineTags": {
+          "desc": "",
+          "title": ""
+        },
+        "title": "Muunna ominaisuudet/tietonäkymäkentät tunnisteiksi"
+      },
+      "title": "Sisältö"
+    },
+    "embed": {
+      "attachment": "Liitteet",
+      "bake": {
+        "text": "",
+        "textAfter": {
+          "title": "Teksti lohkon jälkeen"
+        },
+        "textBefore": {
+          "title": "Teksti ennen lohkoa"
+        },
+        "title": "Sisällytä upotusasetukset",
+        "variable": {
+          "desc": "On mahdollista käyttää seuraavaa muuttujaa:",
+          "title": "",
+          "url": ": polku upotettuun muistiinpanoon"
+        },
+        "warning": "Jos käytät HTML:ta, isäntäasetuksistasi riippuen, merkintä katkeaa."
+      },
+      "char": {
+        "desc": "Ennen linkkiä lisättävät merkit.",
+        "title": "Upota merkkejä"
+      },
+      "defaultImageFolder": {
+        "desc": "Oletuksesta poikkeavan kansion kyttäämiseksi",
+        "title": "Oletusliitekansio"
+      },
+      "forcePush": {
+        "all": ": Muuta kaikkien liitteiden kohdetta (ja/tai pakota ne lähetettäväksi).",
+        "default": ": Käytä oletuskohdepolkua.",
+        "desc": "Uloslataa aina linkitetyt muistiinpanot tietovarastoon, vaikka ne olisivat jo olemassa ja ajan tasalla.",
+        "info": "Oletuksena liitteet lähetetään vain, jos niitä on muokattu viimeisimmän lähetyksen jälkeen tai jos niitä ei ole tietovarastossa.",
+        "title": "Pakotetut päivitykset"
+      },
+      "imagePath": {
+        "desc": "",
+        "title": "Rakenne"
+      },
+      "links": {
+        "desc": "Salli upotteiden linkkien muokkaaminen poistamalla lainaus kokonaan tai muuntamalla yksinkertaiseksi linkiksi",
+        "dp": {
+          "bake": "Sisällytä upotussisältö",
+          "keep": "Ei muutosta",
+          "links": "Muunna linkiksi",
+          "remove": "Poista linkki kokonaan"
+        },
+        "title": ""
+      },
+      "notes": "Upota muistiinpanoja",
+      "overrides": {
+        "desc": "Salli liitteen lähettäminen tietylle polulle ja pakota liitteiden työntäminen.",
+        "modal": {
+          "dest": "Kohde",
+          "path": "Polku tai laajennus",
+          "title": "Ohita liitteiden polku"
+        }
+      },
+      "sendSimpleLinks": {
+        "desc": "Sovella seuraavia asetuksia tiedostoille, jotka on linkitetty yksinkertaisilla linkeillä (mukaan lukien liite).",
+        "title": "Lähetä linkitetyt tiedostot"
+      },
+      "title": "",
+      "transferImage": {
+        "title": ""
+      },
+      "transferMetaFile": {
+        "desc": "",
+        "title": ""
+      },
+      "transferNotes": {
+        "desc": "",
+        "title": ""
+      }
+    },
+    "embeds": {
+      "unHandledObsidianExt": {
+        "desc": "",
+        "title": ""
+      }
+    },
+    "github": {
+      "apiType": {
+        "desc": "",
+        "dropdown": {
+          "enterprise": "",
+          "free": ""
+        },
+        "hostname": {
+          "desc": "",
+          "title": ""
+        },
+        "title": ""
+      },
+      "automaticallyMergePR": "",
+      "branch": {
+        "desc": "",
+        "title": ""
+      },
+      "dryRun": {
+        "enable": {
+          "desc": "",
+          "title": ""
+        },
+        "folder": {
+          "desc": "",
+          "error": "",
+          "title": ""
+        }
+      },
+      "ghToken": {
+        "button": {
+          "configDir": "",
+          "default": "",
+          "description": "",
+          "pluginID": "",
+          "tooltip": "",
+          "variables": ""
+        },
+        "desc": "",
+        "error": ""
+      },
+      "repoName": {
+        "desc": "",
+        "placeholder": "",
+        "title": ""
+      },
+      "smartRepo": {
+        "button": "",
+        "modals": {
+          "default": "",
+          "desc": "",
+          "duplicate": "",
+          "empty": "",
+          "frontmatterInfo": "",
+          "newRepo": "",
+          "otherConfig": "",
+          "shortcuts": {
+            "desc": "",
+            "title": ""
+          },
+          "title": ""
+        }
+      },
+      "testConnection": "",
+      "title": "",
+      "username": {
+        "desc": "",
+        "title": ""
+      }
+    },
+    "githubWorkflow": {
+      "autoCleanUp": {
+        "desc": "",
+        "popup": {
+          "desc": "",
+          "exclude": "",
+          "sure": "",
+          "title": ""
+        },
+        "title": ""
+      },
+      "excludedFiles": {
+        "desc": "",
+        "title": ""
+      },
+      "githubAction": {
+        "desc": "",
+        "title": ""
+      },
+      "includeAttachments": {
+        "desc": "",
+        "title": ""
+      },
+      "prRequest": {
+        "desc": "",
+        "error": "",
+        "title": ""
+      },
+      "useMetadataExtractor": {
+        "desc": "",
+        "title": ""
+      }
+    },
+    "help": {
+      "frontmatter": {
+        "attachment": {
+          "folder": "",
+          "send": ""
+        },
+        "autoclean": "",
+        "baselink": {
+          "desc": "",
+          "remove": ""
+        },
+        "convert": {
+          "enableOrDisable": "",
+          "syntax": ""
+        },
+        "dataview": "",
+        "desc": "",
+        "embed": {
+          "char": "",
+          "remove": {
+            "bake": "",
+            "desc": "",
+            "keep": "",
+            "links": "",
+            "remove": ""
+          },
+          "send": ""
+        },
+        "hardBreak": "",
+        "includeLinks": "",
+        "internals": "",
+        "mdlinks": "",
+        "nestedKey": "",
+        "nonShared": "",
+        "path": "",
+        "repo": {
+          "branch": "",
+          "desc": "",
+          "owner": ""
+        },
+        "share": {
+          "other": "",
+          "title": ""
+        },
+        "shortRepo": "",
+        "title": "",
+        "titleKey": "",
+        "unlink": ""
+      },
+      "multiRepoHelp": {
+        "desc": "",
+        "desc2": "",
+        "exampleDesc": "",
+        "title": ""
+      },
+      "title": "",
+      "usefulLinks": {
+        "discussion": "",
+        "documentation": "",
+        "issue": "",
+        "title": "",
+        "translation": ""
+      }
+    },
+    "plugin": {
+      "copyLink": {
+        "applyRegex": {
+          "desc": "",
+          "title": ""
+        },
+        "baselink": {
+          "desc": "",
+          "title": ""
+        },
+        "command": {
+          "desc": ""
+        },
+        "desc": "",
+        "linkPathRemover": {
+          "desc": "",
+          "title": ""
+        },
+        "slugify": {
+          "disable": "",
+          "lower": "",
+          "strict": "",
+          "title": ""
+        },
+        "title": "",
+        "toUri": {
+          "desc": "",
+          "title": ""
+        }
+      },
+      "dev": {
+        "desc": "",
+        "title": ""
+      },
+      "editorMenu": {
+        "desc": "",
+        "title": ""
+      },
+      "embedEditRepo": {
+        "desc": "",
+        "title": ""
+      },
+      "excludedFolder": {
+        "desc": "",
+        "title": ""
+      },
+      "fileMenu": {
+        "desc": "",
+        "title": ""
+      },
+      "head": {
+        "copyLinks": "",
+        "log": "",
+        "menu": "",
+        "other": "",
+        "share": ""
+      },
+      "logNoticeHeader": {
+        "desc": "",
+        "title": ""
+      },
+      "saveTab": {
+        "desc": "",
+        "title": ""
+      },
+      "set": {
+        "desc": "",
+        "title": ""
+      },
+      "setImport": {
+        "desc": "",
+        "title": ""
+      },
+      "shareKey": {
+        "all": {
+          "desc": "",
+          "title": ""
+        },
+        "desc": "",
+        "excludedFileName": {
+          "title": ""
+        },
+        "otherRepo": "",
+        "title": ""
+      },
+      "title": ""
+    },
+    "regexReplacing": {
+      "empty": "",
+      "emptyRegex": "",
+      "forbiddenValue": "",
+      "inCodeBlocks": {
+        "runIn": "",
+        "runOut": ""
+      },
+      "invalidRegex": "",
+      "modal": {
+        "desc": "",
+        "force": "",
+        "keywords": "",
+        "name": "",
+        "title": {
+          "all": "",
+          "only": "",
+          "text": ""
+        }
+      },
+      "momentReplaceRegex": "",
+      "warningPath": ""
+    },
+    "upload": {
+      "defaultFolder": {
+        "desc": "",
+        "placeholder": "",
+        "title": ""
+      },
+      "folderBehavior": {
+        "desc": "",
+        "fixedFolder": "",
+        "obsidianPath": "",
+        "title": "",
+        "yaml": ""
+      },
+      "folderNote": {
+        "addTitle": {
+          "key": "",
+          "title": ""
+        }
+      },
+      "frontmatterKey": {
+        "desc": "",
+        "placeholder": "",
+        "title": ""
+      },
+      "regexFilePathTitle": {
+        "desc": "",
+        "title": {
+          "FolderPathTitle": "",
+          "titleOnly": ""
+        }
+      },
+      "rootFolder": {
+        "desc": "",
+        "other": "",
+        "title": ""
+      },
+      "title": "",
+      "useFrontmatterTitle": {
+        "desc": "",
+        "title": ""
+      }
+    }
+  },
+  "statusBar": {
+    "counter": "",
+    "loading": "",
+    "markedForSharing": "",
+    "sharing": "",
+    "success": ""
+  }
 }
