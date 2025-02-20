@@ -59,7 +59,6 @@
     "ghToken": "GitHub token",
     "here": "here",
     "in": "in",
-    "main": "File published !",
     "no": "No",
     "or": "or",
     "path": {
@@ -529,6 +528,11 @@
         "desc": "On mobile, it can be hard to debug the plugin. Enable this option to log every error in a Notice.",
         "title": "Notice every error"
       },
+      "noticeLength": {
+        "desc": "Display length of the differents notifications send by the plugin. Set 0 to display them indefinitelly.",
+        "error": "Please use a valid number.",
+        "title": "Notice display length (in seconds)"
+      },
       "saveTab": {
         "desc": "Allows you to reopen the settings on the previously used tab",
         "title": "Save tab"
@@ -624,6 +628,7 @@
   "statusBar": {
     "counter": "{{- msg}}: {{- counter}}/{{- nb}}",
     "loading": "Loading…",
+    "main": "File published !",
     "markedForSharing": "{{- nb}} {{- type}} marked for sharing",
     "sharing": "Sharing {{- type}}",
     "success": "{{- type}} {{- action}}"

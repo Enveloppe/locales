@@ -1,0 +1,14 @@
+{
+  "settings": {
+    "plugin": {
+      "noticeLength": {
+        "desc": "",
+        "error": "",
+        "title": ""
+      }
+    }
+  },
+  "statusBar": {
+    "main": ""
+  }
+}

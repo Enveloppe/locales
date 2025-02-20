@@ -59,7 +59,6 @@
     "ghToken": "Token GitHub",
     "here": "ici",
     "in": "en",
-    "main": "Fichier publié !",
     "no": "Non",
     "or": "ou",
     "path": {
@@ -529,6 +528,11 @@
         "desc": "Sur mobile, il peut être difficile de debug le module. Activer cette option pour notifier toutes les erreurs via une notification Obsidian.",
         "title": "Notifier toutes les erreurs"
       },
+      "noticeLength": {
+        "desc": "Durée d'affichage des différentes notifications envoyées par le plugin. Mettre 0 pour les afficher indéfiniment.",
+        "error": "Merci d'utiliser un nombre valide.",
+        "title": "Longueur de la notification (en secondes)"
+      },
       "saveTab": {
         "desc": "Permet de rouvrir les paramètres sur l'onglet précédemment utilisé",
         "title": "Sauvegarder l'onglet"
@@ -624,6 +628,7 @@
   "statusBar": {
     "counter": "{{- msg}} : {{- counter}}/{{- nb}}",
     "loading": "Chargement en cours…",
+    "main": "Fichier publié !",
     "markedForSharing": "{{- nb}} {{- type}} à partager",
     "sharing": "Partage de {{- type}}",
     "success": "{{- type}} {{- action}}"

@@ -59,7 +59,6 @@
     "ghToken": "GitHub 令牌",
     "here": "這裏",
     "in": "",
-    "main": "",
     "no": "否",
     "or": "或",
     "path": {
@@ -529,6 +528,11 @@
         "desc": "",
         "title": ""
       },
+      "noticeLength": {
+        "desc": "",
+        "error": "",
+        "title": ""
+      },
       "saveTab": {
         "desc": "",
         "title": "儲存分頁"
@@ -624,6 +628,7 @@
   "statusBar": {
     "counter": "{{- msg}}：{{- counter}}／{{- nb}}",
     "loading": "正在載入…",
+    "main": "",
     "markedForSharing": "{{- nb}} {{- type}} 已標示為分享",
     "sharing": "正在分享 {{- type}}",
     "success": "{{- type}} {{- action}}"

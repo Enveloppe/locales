@@ -59,7 +59,6 @@
     "ghToken": "GitHub-tunnus",
     "here": "täällä",
     "in": "tähän",
-    "main": "",
     "no": "Ei",
     "or": "tai",
     "path": {
@@ -529,6 +528,11 @@
         "desc": "",
         "title": ""
       },
+      "noticeLength": {
+        "desc": "",
+        "error": "",
+        "title": ""
+      },
       "saveTab": {
         "desc": "",
         "title": ""
@@ -624,6 +628,7 @@
   "statusBar": {
     "counter": "",
     "loading": "",
+    "main": "",
     "markedForSharing": "",
     "sharing": "",
     "success": ""
