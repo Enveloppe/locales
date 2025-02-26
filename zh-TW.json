@@ -115,6 +115,8 @@
     "startingClean": "正在開始清理 <u>{{- repo.owner}}/{{- repo.repo}}</u>",
     "successPublishOneNote": "已成功上載 <i><u>{{- file}}</u></i> 至 <u>{{- repo.owner}}/{{- repo.repo}}</u>",
     "successfulPublish": "已成功上載 <i>{{- nbNotes}}</i> 至 <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+    "wait": "",
+    "wait_plural": "",
     "waitingWorkflow": "現在，等待工作流程完成…"
   },
   "modals": {

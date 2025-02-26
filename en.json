@@ -115,6 +115,8 @@
     "startingClean": "Starting cleaning <u>{{- repo.owner}}/{{- repo.repo}}</u>",
     "successPublishOneNote": "Successfully uploaded <i><u>{{- file}}</u></i> to <u>{{- repo.owner}}/{{- repo.repo}}</u>",
     "successfulPublish": "Successfully uploaded <i>{{- nbNotes}}</i> to <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+    "wait": "Scanning file {{-file}}... Please wait...",
+    "wait_plural": "Scanning files... Please wait...",
     "waitingWorkflow": "Now, waiting for the workflow to be completed…"
   },
   "modals": {

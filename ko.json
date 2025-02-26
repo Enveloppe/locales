@@ -115,6 +115,8 @@
     "startingClean": "<u>{{- repo.owner}}/{{- repo.repo}}</u> 정리 작업 시작",
     "successPublishOneNote": "<u>{{- repo.owner}}/{{- repo.repo}}</u>에 <i><u>{{- file}}</u></i>를 성공적으로 업로드했습니다",
     "successfulPublish": "<u>{{- repo.owner}}/{{- repo.repo}}</u>에 <i>{{- nbNotes}}</i>개를 성공적으로 업로드했습니다",
+    "wait": "",
+    "wait_plural": "",
     "waitingWorkflow": "지금, 워크플로우가 완료될 때까지 기다리는 중입니다…"
   },
   "modals": {

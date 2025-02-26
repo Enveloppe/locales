@@ -115,6 +115,8 @@
     "startingClean": "Aloitetaan <u>{{- repo.owner}}/{{- repo.repo}}</u>:n puhdistaminen",
     "successPublishOneNote": "<i><u>{{- file}}</u></i> :n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
     "successfulPublish": "<i>{{- nbNotes}}</i>:n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
+    "wait": "",
+    "wait_plural": "",
     "waitingWorkflow": "Nyt odotellaan työnkulun valmistumista…"
   },
   "modals": {

@@ -115,6 +115,8 @@
     "startingClean": "Начинаем очистку <u>{{- repo.owner}}/{{- repo.repo}}</u>",
     "successPublishOneNote": "Успешно загружено <i><u>{{- file}}</u></i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
     "successfulPublish": "Успешно загружено <i>{{- nbNotes}}</i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
+    "wait": "",
+    "wait_plural": "",
     "waitingWorkflow": "Ожидаем завершения выполнения workflow…"
   },
   "modals": {
