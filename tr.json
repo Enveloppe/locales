@@ -1,638 +1,647 @@
 {
-  "commands": {
-    "checkValidity": {
-      "error": "Geçersiz yapılandırma",
-      "inBranch": {
-        "error403": "Hata 403: {{- repo.owner}}/{{- repo.repo}} (buradan {{- repo.branch}}) kalıcı olarak taşındı",
-        "error404": "Hata 404: {{- repo.branch}} dalı {{- repo.owner}}/{{- repo.repo}} konumunda bulunamadı."
-      },
-      "inRepo": {
-        "error301": "",
-        "error403": "Hata 403: Bu eylem {{- repo.owner}}/{{- repo.repo}} için yasaktır.",
-        "error404": "Hata 404: {{- repo.owner}}/{{- repo.repo}}: bulunamadı."
-      },
-      "rateLimit": {
-        "command": "Github API'ının istek limitini kontrol edin",
-        "limited": "Github API'ının istek limitini doldurdunuz. Limit {{- resetTime}} içerisinde sıfırlanacak.",
-        "notLimited": "İstek limitini aşmadınız. {{- remaining}} kadar istek atabilirsiniz ta ki {{- resetTime}} zamanında sıfırlanana kadar."
-      },
-      "repoExistsTestBranch": "Depo {{- repo.owner}}/{{- repo.repo}} mevcut. Şimdi {{- repo.branch}} dalı test ediliyor.",
-      "success": "{{- repo.owner}}/{{- repo.repo}} geçerli gözüküyor!",
-      "title": "Yapılandırılmış repoyu test edin"
-    },
-    "copyLink": {
-      "onActivation": "Link kopyalandı",
-      "title": "Bu nota bir link oluştur"
-    },
-    "publisherDeleteClean": "Yayımlanmamış ve silinmiş dosyaları temizle",
-    "refreshAllSets": "(Diğer depolar): Kaydedilen tüm kümeleri yeniden yükle",
-    "refreshOpenedSet": "(Diğer depolar): Açılan ön metni yeniden yükle",
-    "runOtherRepo": {
-      "noFile": "Hiçbir dosya etkin değil veya dosya paylaşılmıyor",
-      "title": "Bir depo için komut çalıştır"
-    },
-    "shareActiveFile": "Tek bir geçerli aktif notu yükleyin",
-    "shareViewFiles": {
-      "multiple": {
-        "on": "{{- doc}} dosyasını {{- smartKey }}'e yükleyin",
-        "other": "Şuraya yükle…"
-      }
-    },
-    "uploadAllEditedNote": "Yayımlanan tüm notları yenile",
-    "uploadAllNewEditedNote": "Yayımlanan notları yenile ve yeni notlar yükle",
-    "uploadAllNotes": "Paylaşılan tüm notları yükle",
-    "uploadNewNotes": "Yayımlanmamış notları yükle"
-  },
-  "common": {
-    "add": "{{-şeyler}} ekle",
-    "after": "Sonrasında",
-    "attachments": "Ekler",
-    "before": "Önce",
-    "cancel": "İptal etmek",
-    "close": "Kapalı",
-    "default": "default",
-    "defaultName": "varsayılan klasör",
-    "delete": "{{-şeyleri}} sil",
-    "edit": "{{-şeyleri}} düzenle",
-    "error": "Hata",
-    "files": "Dosyalar",
-    "ghToken": "GitHub belirteci",
-    "here": "here",
-    "in": "in",
-    "no": "HAYIR",
-    "or": "or",
-    "path": {
-      "file": "Dosya adı",
-      "folder": "Klasör yolu",
-      "full": "Dosya yolu"
-    },
-    "points": ": ",
-    "published": "yayınlandı",
-    "regex": "düzenli ifade",
-    "rename": "Yeniden adlandırılan anahtar(lar)…",
-    "repository": "Depo",
-    "rootFolder": "kök klasör",
-    "save": "Kaydetmek",
-    "shared": "Paylaşılan",
-    "text": "text",
-    "warning": "Uyarı",
-    "yes": "Evet"
-  },
-  "deletion": {
-    "failed": "{{- nb}} dosya silinemedi.",
-    "noFile": "Hiçbir dosya silinmedi.",
-    "success": "{{- nb}} dosya başarıyla silindi."
-  },
-  "error": {
-    "alreadyExists": "{{- dosya}} zaten mevcut.",
-    "autoClean": "{{- what}} boş olduğundan, otomatik temizleme devre dışıdır. Bunu yeniden etkinleştirebilirsiniz, ancak şablonunuzun ihtiyaç duyduğu dosya silme işlemine dikkat edin.",
-    "dataview": "Dataview sorgusu işlenemiyor. Lütfen dataview eklentisini son sürüme güncelleyin.",
-    "errorConfig": "{{- repo.owner}}/{{- repo.repo}} yapılandırılırken hata oluştu. Lütfen ayarlarınızı kontrol edin.",
-    "errorPublish": "<u>{{- repo.owner}}/{{- repo.repo}}</u> adresine yükleme sırasında hata: <i>{{- repo.branch}}</i>",
-    "isEmpty": "{{- ne}} boştur.",
-    "mergeconflic": "Çekme isteği birleştirilemez, bunu manuel olarak yapmanız gerekir.",
-    "normal": "404 hatası normaldir! Dosyanın henüz mevcut olmadığı anlamına gelir. Endişelenmeyin ❤️.",
-    "parseYaml": "Ön sayfaya etiket veya başlık ekleme hatası.\nDataview veya başka bir eklenti buna müdahale ediyor olmalı.\nAdım atlandı.",
-    "reading-token-file": "",
-    "unablePublishMultiNotes": "",
-    "unablePublishNote": "",
-    "whatEmpty": {
-      "branch": "",
-      "owner": ""
-    }
-  },
-  "informations": {
-    "foundNoteToSend": "",
-    "migrating": {
-      "fileReplace": "",
-      "normalFormat": "",
-      "oldSettings": "",
-      "subFolder": ""
-    },
-    "noNewNote": "",
-    "scanningRepo": "",
-    "sendMessage": "",
-    "startingClean": "",
-    "successPublishOneNote": "",
-    "successfulPublish": "",
-    "wait": "",
+	"commands": {
+		"checkValidity": {
+			"error": "Geçersiz yapılandırma",
+			"inBranch": {
+				"error403": "Hata 403: {{- repo.owner}}/{{- repo.repo}} (buradan {{- repo.branch}}) kalıcı olarak taşındı",
+				"error404": "Hata 404: {{- repo.branch}} dalı {{- repo.owner}}/{{- repo.repo}} konumunda bulunamadı."
+			},
+			"inRepo": {
+				"error301": "",
+				"error403": "Hata 403: Bu eylem {{- repo.owner}}/{{- repo.repo}} için yasaktır.",
+				"error404": "Hata 404: {{- repo.owner}}/{{- repo.repo}}: bulunamadı."
+			},
+			"rateLimit": {
+				"command": "Github API'ının istek limitini kontrol edin",
+				"limited": "Github API'ının istek limitini doldurdunuz. Limit {{- resetTime}} içerisinde sıfırlanacak.",
+				"notLimited": "İstek limitini aşmadınız. {{- remaining}} kadar istek atabilirsiniz ta ki {{- resetTime}} zamanında sıfırlanana kadar."
+			},
+			"repoExistsTestBranch": "Depo {{- repo.owner}}/{{- repo.repo}} mevcut. Şimdi {{- repo.branch}} dalı test ediliyor.",
+			"success": "{{- repo.owner}}/{{- repo.repo}} geçerli gözüküyor!",
+			"title": "Yapılandırılmış repoyu test edin"
+		},
+		"copyLink": {
+			"onActivation": "Link kopyalandı",
+			"title": "Bu nota bir link oluştur"
+		},
+		"publisherDeleteClean": "Yayımlanmamış ve silinmiş dosyaları temizle",
+		"refreshAllSets": "(Diğer depolar): Kaydedilen tüm kümeleri yeniden yükle",
+		"refreshOpenedSet": "(Diğer depolar): Açılan ön metni yeniden yükle",
+		"runOtherRepo": {
+			"noFile": "Hiçbir dosya etkin değil veya dosya paylaşılmıyor",
+			"title": "Bir depo için komut çalıştır"
+		},
+		"shareActiveFile": "Tek bir geçerli aktif notu yükleyin",
+		"shareViewFiles": {
+			"multiple": {
+				"on": "{{- doc}} dosyasını {{- smartKey }}'e yükleyin",
+				"other": "Şuraya yükle…"
+			}
+		},
+		"uploadAllEditedNote": "Yayımlanan tüm notları yenile",
+		"uploadAllNewEditedNote": "Yayımlanan notları yenile ve yeni notlar yükle",
+		"uploadAllNotes": "Paylaşılan tüm notları yükle",
+		"uploadNewNotes": "Yayımlanmamış notları yükle"
+	},
+	"common": {
+		"add": "{{-şeyler}} ekle",
+		"after": "Sonrasında",
+		"attachments": "Ekler",
+		"before": "Önce",
+		"cancel": "İptal etmek",
+		"close": "Kapalı",
+		"default": "default",
+		"defaultName": "varsayılan klasör",
+		"delete": "{{-şeyleri}} sil",
+		"edit": "{{-şeyleri}} düzenle",
+		"error": "Hata",
+		"files": "Dosyalar",
+		"ghToken": "GitHub belirteci",
+		"here": "here",
+		"in": "in",
+		"no": "HAYIR",
+		"or": "or",
+		"path": {
+			"file": "Dosya adı",
+			"folder": "Klasör yolu",
+			"full": "Dosya yolu"
+		},
+		"points": ": ",
+		"published": "yayınlandı",
+		"regex": "düzenli ifade",
+		"rename": "Yeniden adlandırılan anahtar(lar)…",
+		"repository": "Depo",
+		"rootFolder": "kök klasör",
+		"save": "Kaydetmek",
+		"shared": "Paylaşılan",
+		"text": "text",
+		"warning": "Uyarı",
+		"yes": "Evet"
+	},
+	"deletion": {
+		"failed": "{{- nb}} dosya silinemedi.",
+		"noFile": "Hiçbir dosya silinmedi.",
+		"success": "{{- nb}} dosya başarıyla silindi."
+	},
+	"error": {
+		"alreadyExists": "{{- dosya}} zaten mevcut.",
+		"autoClean": "{{- what}} boş olduğundan, otomatik temizleme devre dışıdır. Bunu yeniden etkinleştirebilirsiniz, ancak şablonunuzun ihtiyaç duyduğu dosya silme işlemine dikkat edin.",
+		"dataview": "Dataview sorgusu işlenemiyor. Lütfen dataview eklentisini son sürüme güncelleyin.",
+		"errorConfig": "{{- repo.owner}}/{{- repo.repo}} yapılandırılırken hata oluştu. Lütfen ayarlarınızı kontrol edin.",
+		"errorPublish": "<u>{{- repo.owner}}/{{- repo.repo}}</u> adresine yükleme sırasında hata: <i>{{- repo.branch}}</i>",
+		"isEmpty": "{{- ne}} boştur.",
+		"mergeconflic": "Çekme isteği birleştirilemez, bunu manuel olarak yapmanız gerekir.",
+		"normal": "404 hatası normaldir! Dosyanın henüz mevcut olmadığı anlamına gelir. Endişelenmeyin ❤.",
+		"parseYaml": "Ön sayfaya etiket veya başlık ekleme hatası.\nDataview veya başka bir eklenti buna müdahale ediyor olmalı.\nAdım atlandı.",
+		"reading-token-file": "",
+		"unablePublishMultiNotes": "",
+		"unablePublishNote": "",
+		"whatEmpty": {
+			"branch": "",
+			"owner": ""
+		}
+	},
+	"informations": {
+		"foundNoteToSend": "",
+		"migrating": {
+			"fileReplace": "",
+			"normalFormat": "",
+			"oldSettings": "",
+			"subFolder": ""
+		},
+		"noNewNote": "",
+		"scanningRepo": "",
+		"sendMessage": "",
+		"startingClean": "",
+		"successPublishOneNote": "",
+		"successfulPublish": "",
+		"wait": "",
     "wait_plural": "",
     "waitingWorkflow": ""
-  },
-  "modals": {
-    "export": {
-      "copy": "",
-      "desc": "",
-      "download": "",
-      "title": ""
-    },
-    "import": {
-      "desc": "",
-      "error": {
-        "isEmpty": "",
-        "span": ""
-      },
-      "importFromFile": "",
-      "paste": "",
-      "presets": {
-        "desc": "",
-        "title": ""
-      },
-      "title": ""
-    },
-    "listChangedFiles": {
-      "added": "",
-      "deleted": "",
-      "edited": "",
-      "error": "",
-      "notDeleted": "",
-      "title": "",
-      "unpublished": ""
-    }
-  },
-  "publish": {
-    "branch": {
-      "alreadyExists": "",
-      "error": "",
-      "prMessage": "",
-      "success": ""
-    },
-    "upToDate": ""
-  },
-  "regex": {
-    "entry": "",
-    "replace": ""
-  },
-  "settings": {
-    "conversion": {
-      "dataview": {
-        "desc": "",
-        "title": ""
-      },
-      "desc": "",
-      "hardBreak": {
-        "desc": "",
-        "title": ""
-      },
-      "links": {
-        "desc": "",
-        "folderNote": {
-          "desc": "",
-          "title": ""
-        },
-        "internals": {
-          "dataview": "",
-          "desc": "",
-          "shareAll": "",
-          "title": ""
-        },
-        "nonShared": {
-          "desc": "",
-          "title": ""
-        },
-        "slugify": {
-          "desc": "",
-          "disable": "",
-          "lower": "",
-          "strict": "",
-          "title": ""
-        },
-        "title": "",
-        "unlink": {
-          "desc": "",
-          "title": ""
-        },
-        "wikilinks": {
-          "desc": "",
-          "title": ""
-        }
-      },
-      "sectionTitle": "",
-      "tags": {
-        "desc": "",
-        "exclude": {
-          "desc": "",
-          "placeholder": "",
-          "title": ""
-        },
-        "inlineTags": {
-          "desc": "",
-          "title": ""
-        },
-        "title": ""
-      },
-      "title": ""
-    },
-    "embed": {
-      "attachment": "",
-      "bake": {
-        "text": "",
-        "textAfter": {
-          "title": ""
-        },
-        "textBefore": {
-          "title": ""
-        },
-        "title": "",
-        "variable": {
-          "desc": "",
-          "title": "",
-          "url": ""
-        },
-        "warning": ""
-      },
-      "char": {
-        "desc": "",
-        "title": ""
-      },
-      "defaultImageFolder": {
-        "desc": "",
-        "title": ""
-      },
-      "forcePush": {
-        "all": "",
-        "default": "",
-        "desc": "",
-        "info": "",
-        "title": ""
-      },
-      "imagePath": {
-        "desc": "",
-        "title": ""
-      },
-      "links": {
-        "desc": "",
-        "dp": {
-          "bake": "",
-          "keep": "",
-          "links": "",
-          "remove": ""
-        },
-        "title": ""
-      },
-      "notes": "",
-      "overrides": {
-        "desc": "",
-        "modal": {
-          "dest": "",
-          "path": "",
-          "title": ""
-        }
-      },
-      "sendSimpleLinks": {
-        "desc": "",
-        "title": ""
-      },
-      "title": "",
-      "transferImage": {
-        "title": ""
-      },
-      "transferMetaFile": {
-        "desc": "",
-        "title": ""
-      },
-      "transferNotes": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "embeds": {
-      "unHandledObsidianExt": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "github": {
-      "apiType": {
-        "desc": "",
-        "dropdown": {
-          "enterprise": "",
-          "free": ""
-        },
-        "hostname": {
-          "desc": "",
-          "title": ""
-        },
-        "title": ""
-      },
-      "automaticallyMergePR": "",
-      "branch": {
-        "desc": "",
-        "title": ""
-      },
-      "dryRun": {
-        "enable": {
-          "desc": "",
-          "title": ""
-        },
-        "folder": {
-          "desc": "",
-          "error": "",
-          "title": ""
-        }
-      },
-      "ghToken": {
-        "button": {
-          "configDir": "",
-          "default": "",
-          "description": "",
-          "pluginID": "",
-          "tooltip": "",
-          "variables": ""
-        },
-        "desc": "",
-        "error": ""
-      },
-      "repoName": {
-        "desc": "",
-        "placeholder": "",
-        "title": ""
-      },
-      "smartRepo": {
-        "button": "",
-        "modals": {
-          "default": "",
-          "desc": "",
-          "duplicate": "",
-          "empty": "",
-          "frontmatterInfo": "",
-          "newRepo": "",
-          "otherConfig": "",
-          "shortcuts": {
-            "desc": "",
-            "title": ""
-          },
-          "title": ""
-        }
-      },
-      "testConnection": "",
-      "title": "",
-      "username": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "githubWorkflow": {
-      "autoCleanUp": {
-        "desc": "",
-        "popup": {
-          "desc": "",
-          "exclude": "",
-          "sure": "",
-          "title": ""
-        },
-        "title": ""
-      },
-      "excludedFiles": {
-        "desc": "",
-        "title": ""
-      },
-      "githubAction": {
-        "desc": "",
-        "title": ""
-      },
-      "includeAttachments": {
-        "desc": "",
-        "title": ""
-      },
-      "prRequest": {
-        "desc": "",
-        "error": "",
-        "title": ""
-      },
-      "useMetadataExtractor": {
-        "desc": "",
-        "title": ""
-      }
-    },
-    "help": {
-      "frontmatter": {
-        "attachment": {
-          "folder": "",
-          "send": ""
-        },
-        "autoclean": "",
-        "baselink": {
-          "desc": "",
-          "remove": ""
-        },
-        "convert": {
-          "enableOrDisable": "",
-          "syntax": ""
-        },
-        "dataview": "",
-        "desc": "",
-        "embed": {
-          "char": "",
-          "remove": {
-            "bake": "",
-            "desc": "",
-            "keep": "",
-            "links": "",
-            "remove": ""
-          },
-          "send": ""
-        },
-        "hardBreak": "",
-        "includeLinks": "",
-        "internals": "",
-        "mdlinks": "",
-        "nestedKey": "",
-        "nonShared": "",
-        "path": "",
-        "repo": {
-          "branch": "",
-          "desc": "",
-          "owner": ""
-        },
-        "share": {
-          "other": "",
-          "title": ""
-        },
-        "shortRepo": "",
-        "title": "",
-        "titleKey": "",
-        "unlink": ""
-      },
-      "multiRepoHelp": {
-        "desc": "",
-        "desc2": "",
-        "exampleDesc": "",
-        "title": ""
-      },
-      "title": "",
-      "usefulLinks": {
-        "discussion": "",
-        "documentation": "",
-        "issue": "",
-        "title": "",
-        "translation": ""
-      }
-    },
-    "plugin": {
-      "copyLink": {
-        "applyRegex": {
-          "desc": "",
-          "title": ""
-        },
-        "baselink": {
-          "desc": "",
-          "title": ""
-        },
-        "command": {
-          "desc": ""
-        },
-        "desc": "",
-        "linkPathRemover": {
-          "desc": "",
-          "title": ""
-        },
-        "slugify": {
-          "disable": "",
-          "lower": "",
-          "strict": "",
-          "title": "Bağlantı yavaşladı"
-        },
-        "title": "Bağlantıyı kopyala",
-        "toUri": {
-          "desc": "",
-          "title": ""
-        }
-      },
-      "dev": {
-        "desc": "",
-        "title": ""
-      },
-      "editorMenu": {
-        "desc": "",
-        "title": "Editör menüsü"
-      },
-      "embedEditRepo": {
-        "desc": "",
-        "title": ""
-      },
-      "excludedFolder": {
-        "desc": "",
-        "title": "Hariç tutulan klasörler"
-      },
-      "fileMenu": {
-        "desc": "",
-        "title": "Dosya menüsü"
-      },
-      "head": {
-        "copyLinks": "",
-        "log": "",
-        "menu": "",
-        "other": "",
-        "share": "Yapılandırmayı paylaşma"
-      },
-      "logNoticeHeader": {
-        "desc": "",
-        "title": ""
-      },
-      "noticeLength": {
-        "desc": "",
-        "error": "",
-        "title": ""
-      },
-      "saveTab": {
-        "desc": "",
-        "title": "Sekmeyi kaydet"
-      },
-      "set": {
-        "desc": "",
-        "title": ""
-      },
-      "setImport": {
-        "desc": "",
-        "title": ""
-      },
-      "shareKey": {
-        "all": {
-          "desc": "",
-          "title": ""
-        },
-        "desc": "",
-        "excludedFileName": {
-          "title": ""
-        },
-        "otherRepo": "",
-        "title": "Anahtar paylaşımı"
-      },
-      "title": "Eklenti ayarları"
-    },
-    "regexReplacing": {
-      "empty": "",
-      "emptyRegex": "",
-      "forbiddenValue": "",
-      "inCodeBlocks": {
-        "runIn": "",
-        "runOut": ""
-      },
-      "invalidRegex": "",
-      "modal": {
-        "desc": "",
-        "force": "Kuvvet itme",
-        "keywords": "",
-        "name": "",
-        "title": {
-          "all": "",
-          "only": "Dosya adını değiştir",
-          "text": "Metin değiştirici"
-        }
-      },
-      "momentReplaceRegex": "",
-      "warningPath": ""
-    },
-    "upload": {
-      "defaultFolder": {
-        "desc": "",
-        "placeholder": "",
-        "title": ""
-      },
-      "folderBehavior": {
-        "desc": "",
-        "fixedFolder": "",
-        "obsidianPath": "",
-        "title": "",
-        "yaml": ""
-      },
-      "folderNote": {
-        "addTitle": {
-          "key": "",
-          "title": ""
-        }
-      },
-      "frontmatterKey": {
-        "desc": "",
-        "placeholder": "",
-        "title": ""
-      },
-      "regexFilePathTitle": {
-        "desc": "",
-        "title": {
-          "FolderPathTitle": "",
-          "titleOnly": ""
-        }
-      },
-      "rootFolder": {
-        "desc": "",
-        "other": "",
-        "title": ""
-      },
-      "title": "",
-      "useFrontmatterTitle": {
-        "desc": "",
-        "title": ""
-      }
-    }
-  },
-  "statusBar": {
-    "counter": "",
-    "loading": "",
-    "main": "",
-    "markedForSharing": "",
-    "sharing": "",
-    "success": ""
-  }
+	},
+	"modals": {
+		"export": {
+			"copy": "",
+			"desc": "",
+			"download": "",
+			"title": ""
+		},
+		"import": {
+			"desc": "",
+			"error": {
+				"isEmpty": "",
+				"span": ""
+			},
+			"importFromFile": "",
+			"paste": "",
+			"presets": {
+				"desc": "",
+				"title": ""
+			},
+			"title": ""
+		},
+		"listChangedFiles": {
+			"added": "",
+			"deleted": "",
+			"edited": "",
+			"error": "",
+			"notDeleted": "",
+			"title": "",
+			"unpublished": ""
+		}
+	},
+	"publish": {
+		"branch": {
+			"alreadyExists": "",
+			"error": "",
+			"prMessage": "",
+			"success": ""
+		},
+		"upToDate": ""
+	},
+	"regex": {
+		"entry": "",
+		"replace": ""
+	},
+	"settings": {
+		"conversion": {
+			"dataview": {
+				"desc": "",
+				"title": ""
+			},
+			"desc": "",
+			"hardBreak": {
+				"desc": "",
+				"title": ""
+			},
+			"links": {
+				"desc": "",
+				"folderNote": {
+					"desc": "",
+					"title": ""
+				},
+				"internals": {
+					"dataview": "",
+					"desc": "",
+					"shareAll": "",
+					"title": ""
+				},
+				"key": "<code>links: false</code>",
+				"nonShared": {
+					"desc": "",
+					"title": ""
+				},
+				"relativePath": {
+					"desc": "",
+					"title": ""
+				},
+				"slugify": {
+					"desc": "",
+					"disable": "",
+					"lower": "",
+					"strict": "",
+					"title": ""
+				},
+				"textBefore": {
+					"desc": "",
+					"title": ""
+				},
+				"title": "",
+				"unlink": {
+					"desc": "",
+					"title": ""
+				},
+				"wikilinks": {
+					"desc": "",
+					"title": ""
+				}
+			},
+			"sectionTitle": "",
+			"tags": {
+				"desc": "",
+				"exclude": {
+					"desc": "",
+					"placeholder": "",
+					"title": ""
+				},
+				"inlineTags": {
+					"desc": "",
+					"title": ""
+				},
+				"title": ""
+			},
+			"title": ""
+		},
+		"embed": {
+			"attachment": "",
+			"bake": {
+				"text": "",
+				"textAfter": {
+					"title": ""
+				},
+				"textBefore": {
+					"title": ""
+				},
+				"title": "",
+				"variable": {
+					"desc": "",
+					"title": "",
+					"url": ""
+				},
+				"warning": ""
+			},
+			"char": {
+				"desc": "",
+				"title": ""
+			},
+			"defaultImageFolder": {
+				"desc": "",
+				"title": ""
+			},
+			"forcePush": {
+				"all": "",
+				"default": "",
+				"desc": "",
+				"info": "",
+				"title": ""
+			},
+			"imagePath": {
+				"desc": "",
+				"title": ""
+			},
+			"links": {
+				"desc": "",
+				"dp": {
+					"bake": "",
+					"keep": "",
+					"links": "",
+					"remove": ""
+				},
+				"title": ""
+			},
+			"notes": "",
+			"overrides": {
+				"desc": "",
+				"modal": {
+					"dest": "",
+					"path": "",
+					"title": ""
+				}
+			},
+			"sendSimpleLinks": {
+				"desc": "",
+				"title": ""
+			},
+			"title": "",
+			"transferImage": {
+				"title": ""
+			},
+			"transferMetaFile": {
+				"desc": "",
+				"title": ""
+			},
+			"transferNotes": {
+				"desc": "",
+				"title": ""
+			}
+		},
+		"embeds": {
+			"unHandledObsidianExt": {
+				"desc": "",
+				"title": ""
+			}
+		},
+		"github": {
+			"apiType": {
+				"desc": "",
+				"dropdown": {
+					"enterprise": "",
+					"free": ""
+				},
+				"hostname": {
+					"desc": "",
+					"title": ""
+				},
+				"title": ""
+			},
+			"automaticallyMergePR": "",
+			"branch": {
+				"desc": "",
+				"title": ""
+			},
+			"dryRun": {
+				"enable": {
+					"desc": "",
+					"title": ""
+				},
+				"folder": {
+					"desc": "",
+					"error": "",
+					"title": ""
+				}
+			},
+			"ghToken": {
+				"button": {
+					"configDir": "",
+					"default": "",
+					"description": "",
+					"pluginID": "",
+					"tooltip": "",
+					"variables": ""
+				},
+				"desc": "",
+				"error": ""
+			},
+			"repoName": {
+				"desc": "",
+				"placeholder": "",
+				"title": ""
+			},
+			"smartRepo": {
+				"button": "",
+				"modals": {
+					"default": "",
+					"desc": "",
+					"duplicate": "",
+					"empty": "",
+					"frontmatterInfo": "",
+					"newRepo": "",
+					"otherConfig": "",
+					"shortcuts": {
+						"desc": "",
+						"title": ""
+					},
+					"title": ""
+				}
+			},
+			"testConnection": "",
+			"title": "",
+			"username": {
+				"desc": "",
+				"title": ""
+			}
+		},
+		"githubWorkflow": {
+			"autoCleanUp": {
+				"desc": "",
+				"popup": {
+					"desc": "",
+					"exclude": "",
+					"sure": "",
+					"title": ""
+				},
+				"title": ""
+			},
+			"excludedFiles": {
+				"desc": "",
+				"title": ""
+			},
+			"githubAction": {
+				"desc": "",
+				"title": ""
+			},
+			"includeAttachments": {
+				"desc": "",
+				"title": ""
+			},
+			"prRequest": {
+				"desc": "",
+				"error": "",
+				"title": ""
+			},
+			"useMetadataExtractor": {
+				"desc": "",
+				"title": ""
+			}
+		},
+		"help": {
+			"frontmatter": {
+				"attachment": {
+					"folder": "",
+					"send": ""
+				},
+				"autoclean": "",
+				"baselink": {
+					"desc": "",
+					"remove": ""
+				},
+				"convert": {
+					"enableOrDisable": "",
+					"syntax": ""
+				},
+				"dataview": "",
+				"desc": "",
+				"embed": {
+					"char": "",
+					"remove": {
+						"bake": "",
+						"desc": "",
+						"keep": "",
+						"links": "",
+						"remove": ""
+					},
+					"send": ""
+				},
+				"hardBreak": "",
+				"includeLinks": "",
+				"internals": "",
+				"mdlinks": "",
+				"nestedKey": "",
+				"nonShared": "",
+				"path": "",
+				"repo": {
+					"branch": "",
+					"desc": "",
+					"owner": ""
+				},
+				"share": {
+					"other": "",
+					"title": ""
+				},
+				"shortRepo": "",
+				"title": "",
+				"titleKey": "",
+				"unlink": ""
+			},
+			"multiRepoHelp": {
+				"desc": "",
+				"desc2": "",
+				"exampleDesc": "",
+				"title": ""
+			},
+			"title": "",
+			"usefulLinks": {
+				"discussion": "",
+				"documentation": "",
+				"issue": "",
+				"title": "",
+				"translation": ""
+			}
+		},
+		"plugin": {
+			"copyLink": {
+				"applyRegex": {
+					"desc": "",
+					"title": ""
+				},
+				"baselink": {
+					"desc": "",
+					"title": ""
+				},
+				"command": {
+					"desc": ""
+				},
+				"desc": "",
+				"linkPathRemover": {
+					"desc": "",
+					"title": ""
+				},
+				"slugify": {
+					"disable": "",
+					"lower": "",
+					"strict": "",
+					"title": "Bağlantı yavaşladı"
+				},
+				"title": "Bağlantıyı kopyala",
+				"toUri": {
+					"desc": "",
+					"title": ""
+				}
+			},
+			"dev": {
+				"desc": "",
+				"title": ""
+			},
+			"editorMenu": {
+				"desc": "",
+				"title": "Editör menüsü"
+			},
+			"embedEditRepo": {
+				"desc": "",
+				"title": ""
+			},
+			"excludedFolder": {
+				"desc": "",
+				"title": "Hariç tutulan klasörler"
+			},
+			"fileMenu": {
+				"desc": "",
+				"title": "Dosya menüsü"
+			},
+			"head": {
+				"copyLinks": "",
+				"log": "",
+				"menu": "",
+				"other": "",
+				"share": "Yapılandırmayı paylaşma"
+			},
+			"logNoticeHeader": {
+				"desc": "",
+				"title": ""
+			},
+			"noticeLength": {
+				"desc": "",
+				"error": "",
+				"title": ""
+			},
+			"saveTab": {
+				"desc": "",
+				"title": "Sekmeyi kaydet"
+			},
+			"set": {
+				"desc": "",
+				"title": ""
+			},
+			"setImport": {
+				"desc": "",
+				"title": ""
+			},
+			"shareKey": {
+				"all": {
+					"desc": "",
+					"title": ""
+				},
+				"desc": "",
+				"excludedFileName": {
+					"title": ""
+				},
+				"otherRepo": "",
+				"title": "Anahtar paylaşımı"
+			},
+			"title": "Eklenti ayarları"
+		},
+		"regexReplacing": {
+			"empty": "",
+			"emptyRegex": "",
+			"forbiddenValue": "",
+			"inCodeBlocks": {
+				"runIn": "",
+				"runOut": ""
+			},
+			"invalidRegex": "",
+			"modal": {
+				"desc": "",
+				"force": "Kuvvet itme",
+				"keywords": "",
+				"name": "",
+				"title": {
+					"all": "",
+					"only": "Dosya adını değiştir",
+					"text": "Metin değiştirici"
+				}
+			},
+			"momentReplaceRegex": "",
+			"warningPath": ""
+		},
+		"upload": {
+			"defaultFolder": {
+				"desc": "",
+				"placeholder": "",
+				"title": ""
+			},
+			"folderBehavior": {
+				"desc": "",
+				"fixedFolder": "",
+				"obsidianPath": "",
+				"title": "",
+				"yaml": ""
+			},
+			"folderNote": {
+				"addTitle": {
+					"key": "",
+					"title": ""
+				}
+			},
+			"frontmatterKey": {
+				"desc": "",
+				"placeholder": "",
+				"title": ""
+			},
+			"regexFilePathTitle": {
+				"desc": "",
+				"title": {
+					"FolderPathTitle": "",
+					"titleOnly": ""
+				}
+			},
+			"rootFolder": {
+				"desc": "",
+				"other": "",
+				"title": ""
+			},
+			"title": "",
+			"useFrontmatterTitle": {
+				"desc": "",
+				"title": ""
+			}
+		}
+	},
+	"statusBar": {
+		"counter": "",
+		"loading": "",
+		"main": "",
+		"markedForSharing": "",
+		"sharing": "",
+		"success": ""
+	}
 }
