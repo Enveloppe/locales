@@ -2,6 +2,7 @@
 	"commands": {
 		"checkValidity": {
 			"error": "Geçersiz yapılandırma",
+			"errorToken": "",
 			"inBranch": {
 				"error403": "Hata 403: {{- repo.owner}}/{{- repo.repo}} (buradan {{- repo.branch}}) kalıcı olarak taşındı",
 				"error404": "Hata 404: {{- repo.branch}} dalı {{- repo.owner}}/{{- repo.repo}} konumunda bulunamadı."
@@ -116,8 +117,8 @@
 		"successPublishOneNote": "",
 		"successfulPublish": "",
 		"wait": "",
-    "wait_plural": "",
-    "waitingWorkflow": ""
+		"wait_plural": "",
+		"waitingWorkflow": ""
 	},
 	"modals": {
 		"export": {

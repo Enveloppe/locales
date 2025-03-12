@@ -2,6 +2,7 @@
 	"commands": {
 		"checkValidity": {
 			"error": "Virheellinen kokoonpano",
+			"errorToken": "",
 			"inBranch": {
 				"error403": "",
 				"error404": ""
@@ -116,8 +117,8 @@
 		"successPublishOneNote": "<i><u>{{- file}}</u></i> :n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
 		"successfulPublish": "<i>{{- nbNotes}}</i>:n uloslataaminen <u>{{- repo.owner}}/{{- repo.repo}}</u>:een onnistui",
 		"wait": "",
-    "wait_plural": "",
-    "waitingWorkflow": "Nyt odotellaan työnkulun valmistumista…"
+		"wait_plural": "",
+		"waitingWorkflow": "Nyt odotellaan työnkulun valmistumista…"
 	},
 	"modals": {
 		"export": {

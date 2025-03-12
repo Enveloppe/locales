@@ -2,6 +2,7 @@
 	"commands": {
 		"checkValidity": {
 			"error": "錯誤配置",
+			"errorToken": "",
 			"inBranch": {
 				"error403": "錯誤 403：{{- repo.owner}}/{{- repo.repo}} 已永久移動（來自 {{- repo.branch}}）。",
 				"error404": "錯誤 404：在 {{- repo.owner}}/{{- repo.repo}} 中找不到分支 {{- repo.branch}}。"
@@ -116,8 +117,8 @@
 		"successPublishOneNote": "已成功上載 <i><u>{{- file}}</u></i> 至 <u>{{- repo.owner}}/{{- repo.repo}}</u>",
 		"successfulPublish": "已成功上載 <i>{{- nbNotes}}</i> 至 <u>{{- repo.owner}}/{{- repo.repo}}</u>",
 		"wait": "",
-    "wait_plural": "",
-    "waitingWorkflow": "現在，等待工作流程完成…"
+		"wait_plural": "",
+		"waitingWorkflow": "現在，等待工作流程完成…"
 	},
 	"modals": {
 		"export": {

@@ -2,6 +2,7 @@
 	"commands": {
 		"checkValidity": {
 			"error": "Configuration incorrecte",
+			"errorToken": "Erreur 401 : Le token associé à {{- owner}} n'est pas valide. Veuillez créer un nouveau token.",
 			"inBranch": {
 				"error403": "Erreur 403 : {{- repo.owner}}/{{- repo.repo}} a été déplacé de manière permanente (depuis {{- repo.branch}}).",
 				"error404": "Erreur 404 : La branche {{- repo.branch}} est introuvable depuis {{- repo.owner}}/{{- repo.repo}}."
@@ -116,8 +117,8 @@
 		"successPublishOneNote": "Transfert réussi de <i><u>{{- file}}</u></i> vers <u>{{- repo.owner}}/{{- repo.repo}}</u>",
 		"successfulPublish": "Transfert réussi de <i>{{- nbNotes}}</i> notes vers <u>{{- repo.owner}}/{{- repo.repo}}</u>",
 		"wait": "Scan du fichier {{- file}}... Veuillez attendre...",
-    "wait_plural": "Scan des fichiers... Merci d'attendre...",
-    "waitingWorkflow": "Maintenant, attente de la fin du workflow…"
+		"wait_plural": "Scan des fichiers... Merci d'attendre...",
+		"waitingWorkflow": "Maintenant, attente de la fin du workflow…"
 	},
 	"modals": {
 		"export": {

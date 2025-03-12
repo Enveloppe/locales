@@ -2,6 +2,7 @@
 	"commands": {
 		"checkValidity": {
 			"error": "Incorrect configuration",
+			"errorToken": "Error 401: The token associated to {{- owner}} is not valid. Please, create a new token.",
 			"inBranch": {
 				"error403": "Error 403: {{- repo.owner}}/{{- repo.repo}} was moved permanently (from {{- repo.branch}}).",
 				"error404": "Error 404: The branch {{- repo.branch}} was not found in {{- repo.owner}}/{{- repo.repo}}."
@@ -116,8 +117,8 @@
 		"successPublishOneNote": "Successfully uploaded <i><u>{{- file}}</u></i> to <u>{{- repo.owner}}/{{- repo.repo}}</u>",
 		"successfulPublish": "Successfully uploaded <i>{{- nbNotes}}</i> to <u>{{- repo.owner}}/{{- repo.repo}}</u>",
 		"wait": "Scanning file {{-file}}... Please wait...",
-    "wait_plural": "Scanning files... Please wait...",
-    "waitingWorkflow": "Now, waiting for the workflow to be completed…"
+		"wait_plural": "Scanning files... Please wait...",
+		"waitingWorkflow": "Now, waiting for the workflow to be completed…"
 	},
 	"modals": {
 		"export": {

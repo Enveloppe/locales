@@ -2,6 +2,7 @@
 	"commands": {
 		"checkValidity": {
 			"error": "Некорректная конфигурация",
+			"errorToken": "",
 			"inBranch": {
 				"error403": "Ошибка 403: {{- repo.owner}}/{{- repo.repo}} был перемещён навсегда (из {{- repo.branch}}).",
 				"error404": "Ошибка 404: Ветка {{- repo.branch}} не найдена в {{- repo.owner}}/{{- repo.repo}}."
@@ -116,8 +117,8 @@
 		"successPublishOneNote": "Успешно загружено <i><u>{{- file}}</u></i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
 		"successfulPublish": "Успешно загружено <i>{{- nbNotes}}</i> в <u>{{- repo.owner}}/{{- repo.repo}}</u>",
 		"wait": "",
-    "wait_plural": "",
-    "waitingWorkflow": "Ожидаем завершения выполнения workflow…"
+		"wait_plural": "",
+		"waitingWorkflow": "Ожидаем завершения выполнения workflow…"
 	},
 	"modals": {
 		"export": {

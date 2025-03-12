@@ -2,6 +2,7 @@
 	"commands": {
 		"checkValidity": {
 			"error": "잘못된 설정",
+			"errorToken": "",
 			"inBranch": {
 				"error403": "오류 403: {{- repo.owner}}/{{- repo.repo}}가 {{- repo.branch}}에서 영구적으로 이동되었습니다.",
 				"error404": "오류 404: 브랜치 {{- repo.branch}}는 {{-repo.owner}}/{{- repo.repo}}에 존재하지 않습니다."
@@ -116,8 +117,8 @@
 		"successPublishOneNote": "<u>{{- repo.owner}}/{{- repo.repo}}</u>에 <i><u>{{- file}}</u></i>를 성공적으로 업로드했습니다",
 		"successfulPublish": "<u>{{- repo.owner}}/{{- repo.repo}}</u>에 <i>{{- nbNotes}}</i>개를 성공적으로 업로드했습니다",
 		"wait": "",
-    "wait_plural": "",
-    "waitingWorkflow": "지금, 워크플로우가 완료될 때까지 기다리는 중입니다…"
+		"wait_plural": "",
+		"waitingWorkflow": "지금, 워크플로우가 완료될 때까지 기다리는 중입니다…"
 	},
 	"modals": {
 		"export": {

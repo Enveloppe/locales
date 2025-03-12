@@ -2,6 +2,7 @@
 	"commands": {
 		"checkValidity": {
 			"error": "Falsche Konfiguration",
+			"errorToken": "",
 			"inBranch": {
 				"error403": "Fehler 403: {{- repo.owner}}/{{- repo.repo}} wurde dauerhaft aus {{- repo.branch}} verschoben.",
 				"error404": "Fehler 404: Der Zweig {{- repo.branch}} wurde nicht in {{- repo.owner}}/{{- repo.repo}} gefunden."
@@ -116,8 +117,8 @@
 		"successPublishOneNote": "",
 		"successfulPublish": "",
 		"wait": "",
-    "wait_plural": "",
-    "waitingWorkflow": ""
+		"wait_plural": "",
+		"waitingWorkflow": ""
 	},
 	"modals": {
 		"export": {

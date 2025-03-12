@@ -2,6 +2,7 @@
 	"commands": {
 		"checkValidity": {
 			"error": "Configuración errónea",
+			"errorToken": "",
 			"inBranch": {
 				"error403": "Error 403: {{- repo.owner}}/{{- repo.repo}} se ha movido permanentemente (desde {{- repo.branch}}).",
 				"error404": "Error 404: La rama {{- repo.branch}} no se encontró en {{- repo.owner}}/{{- repo.repo}}."
@@ -116,8 +117,8 @@
 		"successPublishOneNote": "",
 		"successfulPublish": "",
 		"wait": "",
-    "wait_plural": "",
-    "waitingWorkflow": ""
+		"wait_plural": "",
+		"waitingWorkflow": ""
 	},
 	"modals": {
 		"export": {
