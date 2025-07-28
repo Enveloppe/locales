@@ -201,7 +201,7 @@
 					"disable": "",
 					"lower": "",
 					"strict": "",
-					"title": ""
+					"title": "Bağlantı yavaşladı"
 				},
 				"textBefore": {
 					"desc": "",
@@ -496,12 +496,6 @@
 				"linkPathRemover": {
 					"desc": "",
 					"title": ""
-				},
-				"slugify": {
-					"disable": "",
-					"lower": "",
-					"strict": "",
-					"title": "Bağlantı yavaşladı"
 				},
 				"title": "Bağlantıyı kopyala",
 				"toUri": {

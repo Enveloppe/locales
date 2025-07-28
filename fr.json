@@ -197,11 +197,11 @@
 					"title": "Chemin relatif"
 				},
 				"slugify": {
-					"desc": "Normaliser le lien (slug) des liens d'ancrage (pointant vers le titre de la rubrique). Transforme le texte en minuscules. Remplace l'espace par un tiret. Applicable uniquement aux liens d'ancrage dans la syntaxe de lien markdown.",
+					"desc": "Normaliser les liens : transformation et remplacement des espaces par un tiret.",
 					"disable": "Désactiver",
-					"lower": "Lower",
-					"strict": "Convertit tout en alphanumérique et tirets, y compris l'unicode et les langues non latine.",
-					"title": "Slugifier l'ancre des liens markdown"
+					"lower": "Minuscule",
+					"strict": "Strict : Texte sans majuscules ni caractères spéciaux.",
+					"title": "Slugifier les liens markdown"
 				},
 				"textBefore": {
 					"desc": "Ajouter un texte avant le chemin créé. Utiliser {{- slash}} pour créer un chemin absolu. Ce texte ne sera ajouté que si un chemin doit être généré.",
@@ -496,12 +496,6 @@
 				"linkPathRemover": {
 					"desc": "Supprimer cette partie des liens créés. Séparer par une virgule si plusieurs valeurs doivent être supprimées.",
 					"title": "Suppression d'une partie du lien"
-				},
-				"slugify": {
-					"disable": "Désactiver",
-					"lower": "Minuscule",
-					"strict": "Strict : Texte sans majuscules ni caractères spéciaux.",
-					"title": "Slugifier le lien"
 				},
 				"title": "Copie de lien",
 				"toUri": {

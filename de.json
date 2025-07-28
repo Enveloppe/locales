@@ -497,12 +497,6 @@
 					"desc": "",
 					"title": ""
 				},
-				"slugify": {
-					"disable": "",
-					"lower": "",
-					"strict": "",
-					"title": ""
-				},
 				"title": "",
 				"toUri": {
 					"desc": "",

@@ -200,7 +200,7 @@
 					"desc": "",
 					"disable": "Poista käytöstä",
 					"lower": "Alempi",
-					"strict": "Muunna kaikki aakkosnumeerisiksi ja yhdysviivoiksi, mukaan lukien unicode-kieli ja muut kuin latinalaiset kielet.",
+					"strict": "Tiukka: Teksti ilman isoja kirjaimia tai erikoismerkkejä.",
 					"title": ""
 				},
 				"textBefore": {
@@ -495,12 +495,6 @@
 				"desc": "",
 				"linkPathRemover": {
 					"desc": "",
-					"title": ""
-				},
-				"slugify": {
-					"disable": "",
-					"lower": "",
-					"strict": "",
 					"title": ""
 				},
 				"title": "",

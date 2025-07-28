@@ -197,11 +197,11 @@
 					"title": "Relative path"
 				},
 				"slugify": {
-					"desc": "Standardize the slug of anchor links (pointing to heading title). Transform the slug into all lower case. Replace space with hyphen. Applicable only for anchor links in markdown link syntax.",
+					"desc": "Standardize links : transform it and replace space with hyphen. ",
 					"disable": "Disable",
 					"lower": "Lower",
-					"strict": "Convert all to alphanumeric and dashes, including unicode and non latin languages.",
-					"title": "Sluglify anchor in markdown links"
+					"strict": "Strict: Text without capital letters or special characters. ",
+					"title": "Sluglify markdown links"
 				},
 				"textBefore": {
 					"desc": "Add a string before the created path. Use {{- slash}} to create absolute path. This text will be happened only if a path should be generated.",
@@ -496,12 +496,6 @@
 				"linkPathRemover": {
 					"desc": "Delete this part of the links created. Separate with a comma if several values are to be deleted.",
 					"title": "Deleting part of the link"
-				},
-				"slugify": {
-					"disable": "Disable",
-					"lower": "Lowercase",
-					"strict": "Strict: Text without capital letters or special characters.",
-					"title": "Link slugify"
 				},
 				"title": "Copy link",
 				"toUri": {

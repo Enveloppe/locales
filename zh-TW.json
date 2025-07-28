@@ -497,12 +497,6 @@
 					"desc": "",
 					"title": ""
 				},
-				"slugify": {
-					"disable": "停用",
-					"lower": "小寫",
-					"strict": "",
-					"title": ""
-				},
 				"title": "複製連結",
 				"toUri": {
 					"desc": "",
