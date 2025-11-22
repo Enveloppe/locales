@@ -398,7 +398,7 @@
 				"title": "Excluded files and folder"
 			},
 			"githubAction": {
-				"desc": "If you want to activate a GitHub action when the plugin push the file, set the name of the file (in your .github/worfklows folder). Only workflow with the \"workflow_dispatch\" event will be triggered.",
+				"desc": "If you want to activate a GitHub action when the plugin pushes the file, set the name of the file (in your .github/workflows folder). Only a workflow with the \"workflow_dispatch\" event will be triggered.",
 				"title": "GitHub action name"
 			},
 			"includeAttachments": {
