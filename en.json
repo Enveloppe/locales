@@ -128,7 +128,7 @@
 			"title": "Export settings"
 		},
 		"import": {
-			"desc": "Import settings from text or a file. Note : this will overwrite your current settings (except for username, repo name and token).",
+			"desc": "Import settings from text or a file. Note: this will overwrite your current settings (except for username, repo name and token).",
 			"error": {
 				"isEmpty": "the configuration is empty.",
 				"span": "Error importing configuration: "
@@ -170,7 +170,7 @@
 				"desc": "Convert Dataview queries to markdown. \nOnly works if Dataview and internal link conversion are enabled.",
 				"title": "Dataview"
 			},
-			"desc": "Theses option won't change the content of the file in your Obsidian Vault, but will change the content of the file in GitHub.",
+			"desc": "These options won't change the content of the file in your Obsidian Vault, but will change the content of the file in GitHub.",
 			"hardBreak": {
 				"desc": "Add a markdown hard line break (double whitespace) after each line.",
 				"title": "Markdown hard line break"
@@ -197,7 +197,7 @@
 					"title": "Relative path"
 				},
 				"slugify": {
-					"desc": "Standardize links : transform it and replace space with hyphen. ",
+					"desc": "Standardize links: transform it and replace space with hyphen. ",
 					"disable": "Disable",
 					"lower": "Lower",
 					"strict": "Strict: Text without capital letters or special characters. ",
@@ -302,7 +302,7 @@
 				"title": "Send files using a metadata field"
 			},
 			"transferNotes": {
-				"desc": "Send embedded notes in a shared file to GitHub. Only shared files will be send!",
+				"desc": "Send embedded notes in a shared file to GitHub. Only shared files will be sent!",
 				"title": "Transfer embedded notes"
 			}
 		},
@@ -448,7 +448,7 @@
 				"internals": "Convert internals links to their counterpart in the website, with relative path. Disabled, the plugin will keep the internal link as is.",
 				"mdlinks": "Convert all ",
 				"nestedKey": "It's also possible to use \"dot\" syntax, i.e. to denote nested keys with dots. For example, using ",
-				"nonShared": "Convert internal links pointing to a unshared file to their counterpart in the website, with relative path. Disabled, the plugin will keep the filename.",
+				"nonShared": "Convert internal links pointing to an unshared file to their counterpart in the website, with relative path. Disabled, the plugin will keep the filename.",
 				"path": "You can override all path settings using this key. The path will be relative to the root of your repository.",
 				"repo": {
 					"branch": "Branch of the repo",
@@ -486,7 +486,7 @@
 					"title": "Add a text transformation to the URL"
 				},
 				"baselink": {
-					"desc": "The base link of your website. By default : https://username.github.io/repo/",
+					"desc": "The base link of your website. By default: https://username.github.io/repo/",
 					"title": "Base link"
 				},
 				"command": {
@@ -505,7 +505,7 @@
 			},
 			"dev": {
 				"desc": "Advanced user only. Will display as notice according to the previous setting.",
-				"title": "Display developper logs"
+				"title": "Display developer logs"
 			},
 			"editorMenu": {
 				"desc": "Add a sharing command in the right-click menu",
@@ -585,7 +585,7 @@
 					"text": "Text replacer"
 				}
 			},
-			"momentReplaceRegex": "Run replacement {{- moment}} the other plugin conversion (dataview, internals links…)",
+			"momentReplaceRegex": "Run replacement {{- moment}} the other plugin conversion (dataview, internal links…)",
 			"warningPath": "Warning! Using the character \"/\" will edit the path, be careful with this option."
 		},
 		"upload": {
