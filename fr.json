@@ -216,6 +216,10 @@
 					"desc": "Permet de supprimer la syntaxe de lien (conserve uniquement le nom ou l'alias) uniquement pour les fichiers non-partagés.",
 					"title": "Retirer les liens"
 				},
+				"wikiDisplayText": {
+					"desc": "Maintenir le texte d'affichage quand les liens wikilinks sont convertis",
+					"title": "Affichage des liens wikilinks"
+				},
 				"wikilinks": {
 					"desc": "Conversion des liens wikilinks en liens Markdown, sans en modifier le contenu.",
 					"title": "Convertir [[WikiLinks]] en [liens](Markdown)"

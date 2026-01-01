@@ -216,6 +216,10 @@
 					"desc": "E.g. `[[note name|alias]]` → `alias`",
 					"title": "Unlink unshared files"
 				},
+				"wikiDisplayText": {
+					"desc": "Maintain display text when converting wikilinks",
+					"title": "Wiki display text"
+				},
 				"wikilinks": {
 					"desc": "Convert Wikilinks to MDlinks, without changing the contents.",
 					"title": "[[Wikilinks]] to [MDlinks](links)"

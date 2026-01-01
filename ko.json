@@ -216,6 +216,10 @@
 					"desc": "",
 					"title": ""
 				},
+				"wikiDisplayText": {
+					"desc": "",
+					"title": ""
+				},
 				"wikilinks": {
 					"desc": "내용 변경 없이 Wikilink를 MDlink로 변환합니다.",
 					"title": "[[Wikilinks]]를 [MDlinks]로(links)"

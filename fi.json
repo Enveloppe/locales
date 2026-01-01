@@ -216,6 +216,10 @@
 					"desc": "Poistaa linkkien syntaksin (säilyttää vain nimen tai aliaksen) vain jakamattomille tiedostoille.",
 					"title": "Pura linkitys"
 				},
+				"wikiDisplayText": {
+					"desc": "",
+					"title": ""
+				},
 				"wikilinks": {
 					"desc": "Muunna Wikilinkit MD-linkeiksi sisältöä muuttamatta.",
 					"title": "[[Wikilinkit]] [MDlinkit](links):hin"

@@ -216,6 +216,10 @@
 					"desc": "Например, `[[название заметки|псевдоним]]` → `псевдоним`",
 					"title": "Удалить ссылки на неопубликованные файлы"
 				},
+				"wikiDisplayText": {
+					"desc": "",
+					"title": ""
+				},
 				"wikilinks": {
 					"desc": "Преобразовать Wikilinks в MDlinks, без изменения содержимого.",
 					"title": "[[Wikilinks]] в [MDlinks](links)"
