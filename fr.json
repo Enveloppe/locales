@@ -176,6 +176,10 @@
 				"title": "Saut de ligne strict"
 			},
 			"links": {
+				"anchor": {
+					"desc": "Normaliser les ancre Markdown : transformation et remplacement des espaces par un tiret.",
+					"title": "Slugifier les ancres markdown"
+				},
 				"desc": "Mettre $t(settings.conversion.links.key) dans les propriétés d'une note pour empêcher la conversion des liens vers cette note et conserver l'alias (ou le nom du fichier)",
 				"folderNote": {
 					"desc": "Renommer les fichiers en un nom spécifique (défaut : \"index.md\") s'il porte le même nom que leur dossier/catégorie parent (fonctionne aussi si la note est à l'extérieur du dossier).",

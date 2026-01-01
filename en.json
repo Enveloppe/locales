@@ -176,6 +176,10 @@
 				"title": "Markdown hard line break"
 			},
 			"links": {
+				"anchor": {
+					"desc": "Standardize anchor: transform it and replace space with hyphen.",
+					"title": "Slugify anchor markdown link"
+				},
 				"desc": "Put $t(settings.conversion.links.key) in the frontmatter of a note to prevent links to it to be converted and keep the alt text (or filename)",
 				"folderNote": {
 					"desc": "Rename files to a specified name (default: index.md) if it has the same name as their parent folder/category (also works if the note is outside of the folder).",

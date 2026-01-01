@@ -176,6 +176,10 @@
 				"title": "Kova rivinvaihto -merkintä"
 			},
 			"links": {
+				"anchor": {
+					"desc": "",
+					"title": ""
+				},
 				"desc": "",
 				"folderNote": {
 					"desc": "Nimeä tiedostot uudelleen määritetyllä nimellä (oletus: index.md), jos sillä on sama nimi kuin niiden yläkansion/luokan (toimii myös, jos muistiinpano on kansion ulkopuolella).",

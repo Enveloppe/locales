@@ -176,6 +176,10 @@
 				"title": "마크다운에서 강제 줄 바꿈"
 			},
 			"links": {
+				"anchor": {
+					"desc": "",
+					"title": ""
+				},
 				"desc": "해당 노트의 프론트매터에 $t(settings.conversion.links.key) 를 추가하여 해당 노트로의 링크 변환을 막고 alt 텍스트(또는 파일 이름)를 유지하세요",
 				"folderNote": {
 					"desc": "파일 이름을 지정된 이름(default: index.md)으로 변경합니다. 이는 해당 파일이 부모 폴더/카테고리와 같은 이름을 가질 때 적용됩니다 (노트가 폴더 밖에 있는 경우에도 동작합니다).",
