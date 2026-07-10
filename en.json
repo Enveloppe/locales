@@ -171,6 +171,9 @@
 				"title": "Dataview"
 			},
 			"desc": "These options won't change the content of the file in your Obsidian Vault, but will change the content of the file in GitHub.",
+			"folderNote": {
+				"name": "Folder note file name"
+			},
 			"hardBreak": {
 				"desc": "Add a markdown hard line break (double whitespace) after each line.",
 				"title": "Markdown hard line break"
@@ -371,16 +374,17 @@
 				"modals": {
 					"default": "The name \"default\" is reserved for your primary configuration.",
 					"desc": "These \"other repositories\" allow you to use all the commands on the repositories added below.",
+					"details": "Manage repository",
 					"duplicate": "Smartkey must be unique!",
 					"empty": "Smartkeys cannot be empty",
 					"frontmatterInfo": "Using the \"shortRepo\" properties key with the \"smartKey\" also allows you to use this repository in a file without having to write its path.",
-					"newRepo": "a new repository",
+					"newRepo": "Add new repository",
 					"otherConfig": "Other settings",
 					"shortcuts": {
 						"desc": "Add all commands for this repository in the command palette",
 						"title": "Shortcuts"
 					},
-					"title": "Manage others repositories"
+					"title": "Repositories"
 				}
 			},
 			"testConnection": "Test connection",

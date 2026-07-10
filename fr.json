@@ -171,6 +171,9 @@
 				"title": "Dataview"
 			},
 			"desc": "Ces options ne changent pas le contenu du fichier dans votre coffre Obsidian, mais changeront le contenu du fichier publié sur GitHub.",
+			"folderNote": {
+				"name": "Nom du fichier de la folder note"
+			},
 			"hardBreak": {
 				"desc": "Ajoutez un retour à la ligne Markdown (double espace) après chaque ligne.",
 				"title": "Saut de ligne strict"
@@ -371,16 +374,17 @@
 				"modals": {
 					"default": "Le nom \"default\" est réservé pour votre configuration principale.",
 					"desc": "Ces \"autres dépôts\" vous permettent d'utiliser toutes les commandes sur les dépôts ajoutés ci-dessous.",
+					"details": "Gérer les dépôts",
 					"duplicate": "Les smartKey doivent être uniques !",
 					"empty": "Les smartkeys ne peuvent pas être vide",
 					"frontmatterInfo": "L'utilisation de la clé propriété \"shortRepo\" avec la \"smartKey\" permet également d'utiliser ce dépôt dans un fichier sans avoir à écrire son chemin.",
-					"newRepo": "un nouveau dépôt",
+					"newRepo": "Ajouter un nouveau dépôt",
 					"otherConfig": "Autres paramètres",
 					"shortcuts": {
 						"desc": "Ajoute toutes les commandes de ce dépôt dans la palette de commandes",
 						"title": "Raccourci"
 					},
-					"title": "Gérer d'autres dépôts"
+					"title": "Dépôts"
 				}
 			},
 			"testConnection": "Tester la connexion",
@@ -403,7 +407,7 @@
 			},
 			"excludedFiles": {
 				"desc": "Si vous voulez exclure certains dossier ou fichier du nettoyage automatique, définissez leur chemin. Les regex sont acceptées en les encadrant par des slashs. Séparer les valeurs par une virgule.",
-				"title": "fichiers et dossier exclus"
+				"title": "Fichiers et dossier exclus"
 			},
 			"githubAction": {
 				"desc": "Si vous souhaitez activer une action GitHub lorsque le plugin push les fichiers dans le dépôt, il vous faut indiquer le nom du fichier issus du dossier .github/workflows/. Seules les actions activées par un workflow_dispatch sont activées.",
