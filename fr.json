@@ -639,6 +639,7 @@
 			"title": "Chemins des fichiers",
 			"useFrontmatterTitle": {
 				"desc": "Utiliser un champ des propriétés pour générer le nom du fichier. Par défaut, \"title\" est utilisé. ",
+				"key": "Clé pour le titre",
 				"title": "Utiliser une clé de propriété pour définir le titre"
 			}
 		}

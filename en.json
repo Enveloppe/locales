@@ -639,6 +639,7 @@
 			"title": "File paths",
 			"useFrontmatterTitle": {
 				"desc": "Use a property value to generate the filename. By default, \"title\" is used. ",
+				"key": "Title's key",
 				"title": "Set the key where to get the value of the filename"
 			}
 		}
