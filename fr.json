@@ -406,7 +406,7 @@
 				"title": "Auto-nettoyage"
 			},
 			"excludedFiles": {
-				"desc": "Si vous voulez exclure certains dossier ou fichier du nettoyage automatique, définissez leur chemin. Les regex sont acceptées en les encadrant par des slashs. Séparer les valeurs par une virgule.",
+				"desc": "Si vous voulez exclure certains dossier ou fichier du nettoyage automatique, définissez leur chemin. Les regex sont acceptées en les encadrant par des slashs. Ajoutez une entrée par fichier ou dossier.",
 				"title": "Fichiers et dossier exclus"
 			},
 			"githubAction": {
@@ -416,6 +416,10 @@
 			"includeAttachments": {
 				"desc": "Les pièces-jointes seront aussi auto-nettoyées avec les autres notes.",
 				"title": "Auto-nettoyage des pièces-jointes"
+			},
+			"keepUnshared": {
+				"desc": "Conserve les fichiers index (notes de dossier) du dépôt dont la clé de partage est absente ou fausse. Si désactivé, ils sont supprimés lorsqu'ils n'existent plus dans le coffre, sauf s'ils ont « index: true » ou « delete: false » dans leur frontmatter.",
+				"title": "Conserver les fichiers index non partagés"
 			},
 			"prRequest": {
 				"desc": "Le message envoyé lorsque la pull-request est fusionnée. Sera toujours suivi par le numéro de la pull-request.",

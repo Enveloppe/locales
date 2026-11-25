@@ -406,7 +406,7 @@
 				"title": "Auto clean up"
 			},
 			"excludedFiles": {
-				"desc": "If you want to exclude some folders or files from the autoclean, add them here. You can use regex by surrounding the string with \"/\". Separate files with a comma.",
+				"desc": "If you want to exclude some folders or files from the autoclean, add them here. You can use regex by surrounding the string with \"/\". Add one entry per file or folder.",
 				"title": "Excluded files and folder"
 			},
 			"githubAction": {
@@ -416,6 +416,10 @@
 			"includeAttachments": {
 				"desc": "Attachments will also be auto-cleaned among other notes.",
 				"title": "Self-cleaning of attachments"
+			},
+			"keepUnshared": {
+				"desc": "Keep the index files (folder notes) of the repository whose share key is missing or false. When disabled, they are deleted if they no longer exist in the vault, unless they have \"index: true\" or \"delete: false\" in their frontmatter.",
+				"title": "Keep unshared index files"
 			},
 			"prRequest": {
 				"desc": "The message sent when the pull request is merged. Will always be followed by the pull-request number.",
